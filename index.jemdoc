@@ -33,22 +33,8 @@ Wuhan University(WUH), Hubei, China
 School of Computer Science\n
 Wuhan University(WUH), Hubei, China
 
-
-<!-- == Research
-My research interests include 
-- Convex Optimisation  
-- Distributed Algorithms
-- Real-time Sensor Networking
-- Wireless Networks
-- Machine Learning
-
-[research.html Find out more]. -->
 == Recent Publications 
 - *B Zhang*, Z Wang, B Du.\n
 Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching.\n
-In [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859 /IEEE Geoscience and Remote Sensing Letters(GRSL 2024)/]
-\[[upload/papers/FINAL VERSION.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\]
-
-<!-- [publications.html Full list of publications].
-\n
-[cv.pdf A brief cv]. -->
+In [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859 /IEEE Geoscience and Remote Sensing Letters(GRSL 2024)/]\n
+\[[upload/papers/FINAL_VERSION.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\]
