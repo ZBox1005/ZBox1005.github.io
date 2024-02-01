@@ -23,7 +23,7 @@ E-mail: zhangboxuan1005 \[at\] gmail.com
 {{</div>}}
 
 == Short Bio
-I am currently on M.Eng program in artificial intelligence at [http://sigma.whu.edu.cn/ Sensing IntelliGence and MAchine learning(SIGMA) Lab] in the [https://cs.whu.edu.cn/ School of Computer Science], [https://www.whu.edu.cn/ Wuhan University], advised by Dr.[http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141 Zengmao Wang] and Prof.[https://cs.whu.edu.cn/info/1019/2892.htm Bo Du] Before this I completed my B.Eng in Wuhan University of Computer Science and Technology. I am seeking 24fall Ph.D opportunity now. 
+I am currently on M.Eng program in artificial intelligence at [http://sigma.whu.edu.cn/ Sensing IntelliGence and MAchine learning(SIGMA) Lab] in the [https://cs.whu.edu.cn/ School of Computer Science], [https://www.whu.edu.cn/ Wuhan University], advised by Dr.[http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141 Zengmao Wang] and Prof.[https://cs.whu.edu.cn/info/1019/2892.htm Bo Du]. Before this I completed my B.Eng in Wuhan University of Computer Science and Technology. I am seeking 24fall Ph.D opportunity now. 
 
 My research interests include machine learning(e.g., self-supervised & semi-supervised learning & active learning, reliable machine learning like learning and inference with Out-of-distribution data) and computer vision(e.g., classification and object detection).
 
@@ -36,7 +36,7 @@ School of Computer Science\n
 Wuhan University(WUH), Hubei, China
 
 == Recent Publications 
-- *B Zhang*, Z Wang, B Du.\n
+- *B. Zhang*, Z. Wang, B. Du.\n
 Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching.\n
 In [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859 /IEEE Geoscience and Remote Sensing Letters(GRSL 2024)/].\n
 \[[upload/papers/FINAL_VERSION.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\]
