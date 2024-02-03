@@ -1,7 +1,21 @@
-#item: mld
 ~~~
 {}{raw}
-<div id="bib_mld" class="bibtex noshow" onmousedown="event.stopPropagation()" onmouseup="event.stopPropagation()">
+<ul>
+~~~
+
+~~~
+{}{raw}
+<li>
+<p>
+~~~
+*B. Zhang*, Z. Wang, B. Du.\n
+Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching.\n
+In [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859 /IEEE Geoscience and Remote Sensing Letters(GRSL 2024)/].\n
+\[[upload/papers/24-grsl-ssodat.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\] [javascript:toggleBibtex('mld') \[BibTeX\]]
+~~~
+{}{raw}
+</p>
+<div id="bib_mld" class="bibtex noshow">
 <pre>
 @article{mld,
   author = {Alberto Bemporad and Manfred Morari},
@@ -12,5 +26,12 @@
   pages = {407-427}
 }
 </pre></div>
-</div>
+</li>
+~~~
+
+
+
+~~~
+{}{raw}
+</ul>
 ~~~
