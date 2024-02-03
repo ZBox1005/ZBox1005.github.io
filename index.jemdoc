@@ -1,4 +1,4 @@
-# jemdoc: {index.html}, notime, showsource, title{Box Zhang}
+# jemdoc: {index.html}, notime, showsource, title{Box Zhang}, addcss{bibover.css}
 \n
 = Boxuan Zhang\n\n
 === Master Student\n 
@@ -39,4 +39,19 @@ Wuhan University(WUH), Hubei, China
 - *B. Zhang*, Z. Wang, B. Du.\n
 Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching.\n
 In [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859 /IEEE Geoscience and Remote Sensing Letters(GRSL 2024)/].\n
-\[[upload/papers/24-grsl-ssodat.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\] \[[upload/papers/24-grsl-ssodat.bib BibTeX]\] 
+\[[upload/papers/24-grsl-ssodat.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\] [javascript:toggleBibtex('mld') \[BibTeX\]]
+~~~
+{}{raw}
+<div id="bib_mld" class="bibtex noshow">
+<pre>
+@article{mld,
+  author = {Alberto Bemporad and Manfred Morari},
+  title = {Control of systems integrating logic, dynamics, and constraints},
+  journal = {Automatica},
+  year = {1999},
+  volume = {35},
+  pages = {407-427}
+}
+</pre></div>
+</div>
+~~~

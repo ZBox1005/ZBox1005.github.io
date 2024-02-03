@@ -1,0 +1,16 @@
+#item: mld
+~~~
+{}{raw}
+<div id="bib_mld" class="bibtex noshow" onmousedown="event.stopPropagation()" onmouseup="event.stopPropagation()">
+<pre>
+@article{mld,
+  author = {Alberto Bemporad and Manfred Morari},
+  title = {Control of systems integrating logic, dynamics, and constraints},
+  journal = {Automatica},
+  year = {1999},
+  volume = {35},
+  pages = {407-427}
+}
+</pre></div>
+</div>
+~~~
