@@ -1,4 +1,4 @@
-# jemdoc: {index.html}, notime, showsource, title{Box Zhang}, addcss{bibover.css}
+# jemdoc: {index.html}, notime, showsource, title{Box Zhang}, addcss{bibover.css}, addcss{jemdoc.css}
 \n
 = Boxuan Zhang\n\n
 === Master Student\n 
@@ -39,4 +39,5 @@ Wuhan University(WUH), Hubei, China
 - *B. Zhang*, Z. Wang, B. Du.\n
 Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching.\n
 In [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859 /IEEE Geoscience and Remote Sensing Letters(GRSL 2024)/].\n
-\[[upload/papers/24-grsl-ssodat.pdf PDF]\] \[[https://github.com/ZBox1005/SSOD-AT Code]\] [javascript:toggleBibtex('mld') \[BibTeX\]]
+[upload/papers/24-grsl-ssodat.pdf \[PDF\]] [https://github.com/ZBox1005/SSOD-AT \[Code\]] [javascript:toggleBibtex('mld') \[BibTeX\]] \n
+#include{exbib.jeminc}
