@@ -109,7 +109,5 @@ Awards
 - (3st place) The Second TBM Excavation Parameter Data Sharing and Machine Learning Competition, Oct. 2023
 
 
-<html>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=8P_6aH7IpLsujkyx87NuC0JYbr6UylUmiy6k3vT0RGQ&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff"></script>
-</html>
+
 
