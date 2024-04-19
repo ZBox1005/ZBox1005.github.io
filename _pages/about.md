@@ -65,7 +65,7 @@ Work Experience
 - **Research Intern**, 2023.11 - 2024.06 (Expected) <br>
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/)
-- **Research Intern**, 2023.08 - 2024.10 (Expected) <br>
+- **Research Intern**, 2023.08 - 2023.10 <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm)
 - **Research Assistant**, 2022.09 - 2024.06 (Expected) <br>

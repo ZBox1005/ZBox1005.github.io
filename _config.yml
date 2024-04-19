@@ -7,14 +7,14 @@
 # server process.
 
 # Basic Site Settings
-theme                    : "minimal-mistakes-jekyll"
+# theme                    : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale                   : "en-US"
 title                    : "Boxuan Zhang"
 title_separator          : "-"
 name                     : &name "Boxuan Zhang"
 description              : &description "Academic Website"
-# url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ZBox1005.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 # repository               : "academicpages/academicpages.github.io"
 logo                     : "logo3.png"
