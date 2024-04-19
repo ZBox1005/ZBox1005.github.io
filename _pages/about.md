@@ -1,49 +1,111 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - /home/
+  - /home.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+<html>
+<style>
+div.noshow { display: none; }
+div.bibtex {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1em;
+	border: 1px solid silver;
+	padding: 0em 1em;
+	background: #ffffee;
+}
+div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
+<script type="text/javascript">
+    function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_'+articleid);
+        if (bib) {
+            if(bib.className.indexOf('bibtex') != -1) {
+                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+            }
+        } else {
+            return;
+        }
+    }
+</script>
+</html>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I’m a M.S. student at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am an intern student at [Trustworthy Machine Learning and Reasoning(TMLR) Group](https://github.com/tmlr-group) in [HongKong Baptist University](https://www.hkbu.edu.hk/en/index.html), under the supervision of [Prof. Bo Han](https://bhanml.github.io/). <br>
+You can find my CV here: [Boxuan Zhang's Curriculum Vitae](assets/CV-4.10.pdf).
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
+Research Interests
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+Currently, my primary research objective is to build a reliable and efficient AI model. <br>
+My research interests include Trustworthy and Efficient Machine Learning, Active Learning and Computer Vision.
 
-Create content & metadata
+Recent News
 ------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+- \[April 2024\]  I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June. <br>
+- \[Jan. 2024\]  One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
+- \[Nov. 2023\]  I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. <br>
+- \[Oct. 2023\]  Honored to receive [3rd Award](http://www.csrme.com/Home/Content/show/id/4432.do) @ TBM Machine Learning Competition.  <br>
+<!-- \[Oct. 2023\]  Attend 2nd TBM Machine Learning Competition(held by [CSRME](http://www.csrme.com/)) and present research work @ Shanghai. <br> -->
+- \[Sept. 2023\]  Start my second-year research & learning journey in WHU. <br>
+- \[Aug. 2023\]  Welcome to check the [project page](https://github.com/ZBox1005/SSOD-AT) of my first work **SSOD-AT**, which has been submitted to [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
 
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
+Education
 ------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+- **M.S.** in Artificial Intelligence, 2022.09 - 2024.06 (Expected) <br>
+  School of Computer Science <br>
+  Wuhan University ([WHU](https://www.whu.edu.cn/)), Hubei, China
+- **B.Eng.** in Computer Science and Technology, 2018.09 - 2022.06 <br>
+  School of Computer Science <br>
+  Wuhan University ([WHU](https://www.whu.edu.cn/)), Hubei, China
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
+Work Experience
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+- **Research Intern**, 2023.11 - 2024.06 (Expected) <br>
+  [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
+  Supervisor: [Prof. Bo Han](https://bhanml.github.io/)
+- **Research Intern**, 2023.08 - 2024.10 (Expected) <br>
+  School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
+  Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm)
+- **Research Assistant**, 2022.09 - 2024.06 (Expected) <br>
+  [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
+  Supervisor: [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) 
+- **Research Assistant**, 2021.12 - 2022.05 <br>
+  [NERCMS](http://multimedia.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
+  Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm)
+  
+
+Publications
+------
+- **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
+  **Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching** <br>
+  *IEEE Geoscience and Remote Sensing Letters* (**GRSL**), 2024 <br>
+  \[<a href="javascript:toggleBibtex('menpo14')">BibTeX</a>\] \[[PDF](https://ieeexplore.ieee.org/document/10411936)\] \[[Code](https://github.com/ZBox1005/SSOD-AT)\] <br>
+
+  <div id="bib_menpo14" class="bibtex noshow">
+    <pre>
+@article{zhang2024boosting,
+    title={Boosting Semi-Supervised Object Detection in Remote Sensing Images with Active Teaching},
+    author={Zhang, Boxuan and Wang, Zengmao and Du, Bo},
+    journal={IEEE Geoscience and Remote Sensing Letters},
+    year={2024},
+    publisher={IEEE}
+} </pre>
+  </div>
+ 
+
+Projects
+------
+- **Machine Learning for Tunnel Boring Machine Excavation** <br>
+  [CSRME](http://www.csrme.com/), National Competition @ Shanghai, Oct. 2023 <br>
+  \[[Slides](files/TBM.pptx)\] \[[Paper](files/TBM-paper.pdf)\] \[[Code](https://github.com/ZBox1005/TBM-Competition)\]
+- **Self-Supervised Techniques for Intelligent Image Annotation** <br>
+  [Department of Science and Technology of Hubei Province](https://kjt.hubei.gov.cn/), Technology Innovation Program, April 2023 <br> 
+
+Awards
+------
+- Outstanding Communist Party member and Communist Youth League member, School of Computer Science, WHU, April 2024
+- (3st place) The Second TBM Excavation Parameter Data Sharing and Machine Learning Competition, Oct. 2023
+
+
