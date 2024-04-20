@@ -43,12 +43,12 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 
 Recent News
 ------
-- \[April 2024\]  I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June. <br>
-- \[Jan. 2024\]  One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
-- \[Nov. 2023\]  I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. <br>
-- \[Oct. 2023\]  Honored to receive [3rd Award](http://www.csrme.com/Home/Content/show/id/4432.do) @ TBM Machine Learning Competition.  <br>
+- \[April 2024\] I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024. <br>
+- \[Jan. 2024\] One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
+- \[Nov. 2023\] I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. <br>
+- \[Oct. 2023\] Honored to receive [3rd Award](http://www.csrme.com/Home/Content/show/id/4432.do) @ TBM Machine Learning Competition.  <br>
 <!-- \[Oct. 2023\]  Attend 2nd TBM Machine Learning Competition(held by [CSRME](http://www.csrme.com/)) and present research work @ Shanghai. <br> -->
-- \[Sept. 2023\]  Start my second-year research & learning journey in WHU. <br>
+- \[Sept. 2023\] Start my second-year research & learning journey in WHU. <br>
 - \[Aug. 2023\]  Welcome to check the [project page](https://github.com/ZBox1005/SSOD-AT) of my first work **SSOD-AT**, which has been submitted to [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
 
 Education
