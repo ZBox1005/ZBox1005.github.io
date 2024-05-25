@@ -43,6 +43,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 
 Recent News
 ------
+- \[May 2024\] 🔥 Successfully defended my Master thesis!
 - \[April 2024\] I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024. <br>
 - \[Jan. 2024\] One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
 - \[Nov. 2023\] I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. <br>
