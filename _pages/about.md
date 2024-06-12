@@ -43,7 +43,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 
 Recent News
 ------
-- \[June 2024\] Start my remote internship in [CS@Purdue University](https://www.cs.purdue.edu/), supervised by [Dr. Ruqi Zhang](https://ruqizhang.github.io/). <br>
+- \[June 2024\] Start my remote research internship in [CS@Purdue University](https://www.cs.purdue.edu/), collaborating with [Dr. Ruqi Zhang](https://ruqizhang.github.io/). <br>
 - \[May 2024\] 🔥 Successfully defended my Master thesis!
 - \[April 2024\] I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024. <br>
 - \[Jan. 2024\] One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
