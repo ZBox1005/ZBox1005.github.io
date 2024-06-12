@@ -53,6 +53,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 <!-- - \[Sept. 2023\] Start my second-year research & learning journey in WHU. <br> -->
 <!-- - \[Aug. 2023\]  Welcome to check the [project page](https://github.com/ZBox1005/SSOD-AT) of my first work **SSOD-AT**, which has been submitted to [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br> -->
 
+
 🎓 Education
 ------
 - **M.S.** in Artificial Intelligence, 2022.09 - 2024.06 <br>
@@ -61,6 +62,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 - **B.Eng.** in Computer Science and Technology, 2018.09 - 2022.06 <br>
   School of Computer Science <br>
   Wuhan University ([WHU](https://www.whu.edu.cn/)), Hubei, China
+
 
 💼 Work Experience
 ------
@@ -104,6 +106,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
   \[[Slides](files/TBM.pptx)\] \[[Paper](files/TBM-paper.pdf)\] \[[Code](https://github.com/ZBox1005/TBM-Competition)\]
 - **Self-Supervised Techniques for Intelligent Image Annotation** <br>
   [Department of Science and Technology of Hubei Province](https://kjt.hubei.gov.cn/), Technology Innovation Program, April 2023 <br> 
+
 
 🏆 Awards
 ------
