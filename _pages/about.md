@@ -43,18 +43,19 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 
 Recent News
 ------
+- \[June 2024\] Start my remote internship in [CS@Purdue University](https://www.cs.purdue.edu/), supervised by [Dr. Ruqi Zhang](https://ruqizhang.github.io/). <br>
 - \[May 2024\] 🔥 Successfully defended my Master thesis!
 - \[April 2024\] I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024. <br>
 - \[Jan. 2024\] One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
 - \[Nov. 2023\] I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. <br>
 - \[Oct. 2023\] Honored to receive [3rd Award](http://www.csrme.com/Home/Content/show/id/4432.do) @ TBM Machine Learning Competition.  <br>
 <!-- \[Oct. 2023\]  Attend 2nd TBM Machine Learning Competition(held by [CSRME](http://www.csrme.com/)) and present research work @ Shanghai. <br> -->
-- \[Sept. 2023\] Start my second-year research & learning journey in WHU. <br>
+<!-- - \[Sept. 2023\] Start my second-year research & learning journey in WHU. <br> -->
 <!-- - \[Aug. 2023\]  Welcome to check the [project page](https://github.com/ZBox1005/SSOD-AT) of my first work **SSOD-AT**, which has been submitted to [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br> -->
 
 Education
 ------
-- **M.S.** in Artificial Intelligence, 2022.09 - 2024.06 (Expected) <br>
+- **M.S.** in Artificial Intelligence, 2022.09 - 2024.06 <br>
   School of Computer Science <br>
   Wuhan University ([WHU](https://www.whu.edu.cn/)), Hubei, China
 - **B.Eng.** in Computer Science and Technology, 2018.09 - 2022.06 <br>
@@ -63,16 +64,16 @@ Education
 
 Work Experience
 ------
-- **Research Intern**, 2023.11 - 2024.06 (Expected) <br>
+- **Research Intern**, 2023.11 - 2024.06 <br>
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/)
 - **Research Intern**, 2023.08 - 2023.10 <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm)
-- **Research Assistant**, 2022.09 - 2024.06 (Expected) <br>
+- **Research Assistant**, 2022.09 - 2024.09 (Expected) <br>
   [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) 
-- **Research Assistant**, 2021.12 - 2022.05 <br>
+- **Undergraduate Research Assistant**, 2021.12 - 2022.05 <br>
   [NERCMS](http://multimedia.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm)
   
