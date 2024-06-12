@@ -80,7 +80,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
   Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm)
   
 
-📖 Publications
+📝 Publications
 ------
 - **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
   **Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching** <br>
