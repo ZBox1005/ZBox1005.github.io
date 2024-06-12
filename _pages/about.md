@@ -53,7 +53,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
 <!-- - \[Sept. 2023\] Start my second-year research & learning journey in WHU. <br> -->
 <!-- - \[Aug. 2023\]  Welcome to check the [project page](https://github.com/ZBox1005/SSOD-AT) of my first work **SSOD-AT**, which has been submitted to [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br> -->
 
-📖 Education
+🎓 Education
 ------
 - **M.S.** in Artificial Intelligence, 2022.09 - 2024.06 <br>
   School of Computer Science <br>
@@ -78,7 +78,7 @@ My research interests include Trustworthy and Efficient Machine Learning, Active
   Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm)
   
 
-📝 Publications
+📖 Publications
 ------
 - **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
   **Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching** <br>
