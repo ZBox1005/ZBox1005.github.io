@@ -34,7 +34,7 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 </html>
 
 I’m a M.S. student at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am an intern student at [Trustworthy Machine Learning and Reasoning(TMLR) Group](https://github.com/tmlr-group) in [HongKong Baptist University](https://www.hkbu.edu.hk/en/index.html), under the supervision of [Prof. Bo Han](https://bhanml.github.io/). <br>
-You can find my CV here: [Boxuan Zhang's Curriculum Vitae](assets/CV-4.10.pdf).
+You can find my CV here: [Boxuan Zhang's Curriculum Vitae](assets/CV-6.18.pdf).
 
 🚀 Research Interests
 ------
