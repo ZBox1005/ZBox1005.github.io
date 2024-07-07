@@ -33,13 +33,15 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 </script>
 </html>
 
-I’m a M.S. student at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am an intern student at [Trustworthy Machine Learning and Reasoning(TMLR) Group](https://github.com/tmlr-group) in [HongKong Baptist University](https://www.hkbu.edu.hk/en/index.html), under the supervision of [Prof. Bo Han](https://bhanml.github.io/). <br>
+I’m a M.S. student at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am a Research Intern in the Department of [Computer Science](https://www.cs.purdue.edu/) at [Purdue University](https://www.purdue.edu/), under the supervision of [Prof. Ruqi Zhang](https://ruqizhang.github.io/). Before that, I was a Research Intern at [TMLR Group](https://github.com/tmlr-group), [Hong Kong Baptist University](https://www.hkbu.edu.hk/en/index.html), fortunately working with [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
 You can find my CV here: [Boxuan Zhang's Curriculum Vitae](assets/CV-6.18.pdf).
 
 🚀 Research Interests
 ------
-My primary research objective is to build a safe and reliable AI model. <br>
-My research interests include **trustworthy machine learning**, particularly in *reliability* and its applications to boost the **safety** of foundation models. If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations!
+My primary research objective is to build a reliable and efficient AI model. <br>
+My research interests include **trustworthy machine learning**, particularly in *reliability* and its applications to boost the **safety** of foundation models. 
+Besides, I am also experienced in other fields of machine learning, **including incremental** and **active learning**, and their application to **computer vision**.
+If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations!
 
 🔥 Recent News
 ------
@@ -69,6 +71,7 @@ My research interests include **trustworthy machine learning**, particularly in 
 - **Research Intern**, 2023.11 - 2024.06 <br>
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/)
+  Collaborate with: [Jianing Zhu](https://zfancy.github.io/)
 - **Research Intern**, 2023.08 - 2023.10 <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm)
