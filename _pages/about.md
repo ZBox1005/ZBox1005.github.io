@@ -70,7 +70,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 ------
 - **Research Intern**, 2023.11 - 2024.06 <br>
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
-  Supervisor: [Prof. Bo Han](https://bhanml.github.io/)
+  Supervisor: [Prof. Bo Han](https://bhanml.github.io/) <br>
   Collaborate with: [Jianing Zhu](https://zfancy.github.io/)
 - **Research Intern**, 2023.08 - 2023.10 <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
