@@ -40,7 +40,7 @@ You can find my CV here: [Boxuan Zhang's Curriculum Vitae](assets/CV-6.18.pdf).
 ------
 My primary research objective is to build a reliable and efficient AI model. <br>
 My research interests include **trustworthy machine learning**, particularly in *reliability* and its applications to boost the **safety** of foundation models. 
-Besides, I am also experienced in other fields of machine learning, **including incremental** and **active learning**, and their application to **computer vision**. <br>
+Besides, I am also experienced in other fields of machine learning, including **incremental learning** and **active learning**, and their application to **computer vision**. <br>
 If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations!
 
 🔥 Recent News
