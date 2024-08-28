@@ -68,19 +68,27 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 👨🏻‍💻 Research Experience
 ------
+- **Research Intern**, 2024.06 -  <br>
+  Department of [Computer Science](https://www.cs.purdue.edu/), [Purdue University](https://www.purdue.edu/) <br>
+  Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/) <br>
+  Topic: Uncertainty Quantification in LLMs
 - **Research Intern**, 2023.11 - 2024.06 <br>
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/) <br>
-  Collaborate with: [Jianing Zhu](https://zfancy.github.io/)
+  Collaborate with: [Jianing Zhu](https://zfancy.github.io/) <br>
+  Topic: Out-of-distribution Detection
 - **Research Intern**, 2023.08 - 2023.10 <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
-  Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm)
+  Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br>
+  Topic: ML Applications in Tunnel Boring Machine
 - **Research Assistant**, 2022.09 - 2024.09 (Expected) <br>
   [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
-  Supervisor: [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) 
+  Supervisor: [Prof. Zengmao Wang](http://multimedia.whu.edu.cn/index.php?a=show&catid=69&id=141) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
+  Topic: Computer Vision in Remote Sensing, Continual Learning (now)
 - **Undergraduate Research Assistant**, 2021.12 - 2022.05 <br>
   [NERCMS](http://multimedia.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
-  Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm)
+  Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm) <br>
+  Topic: Open-set Domain Adaptation
   
 
 📝 Publications
