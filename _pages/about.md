@@ -89,10 +89,17 @@ If you are intereted in these areas or my previous works, feel free to reach out
   [NERCMS](http://multimedia.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Jing Xiao](http://jszy.whu.edu.cn/xiaojing2/zh_CN/index.htm) <br>
   Topic: Open-set Domain Adaptation
-  
+
+
 
 📝 Publications
 ------
+
+- **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han. <br>
+  **What If the Input is Expanded in OOD Detection?** <br>
+  *Preprint*
+  \[[PDF (first page)](files/neurips24.pdf)\]
+
 - **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
   **Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching** <br>
   *IEEE Geoscience and Remote Sensing Letters* (**GRSL**), 2024 <br>
