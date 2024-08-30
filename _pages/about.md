@@ -97,7 +97,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 - **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han. <br>
   **What If the Input is Expanded in OOD Detection?** <br>
-  *Preprint*
+  *Preprint*, 2024 <br>
   \[[PDF (first page)](files/neurips24.pdf)\]
 
 - **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
