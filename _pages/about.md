@@ -95,6 +95,8 @@ If you are intereted in these areas or my previous works, feel free to reach out
 📝 Publications
 ------
 
+(\* indicates equal contribution)
+
 - **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han. <br>
   **What If the Input is Expanded in OOD Detection?** <br>
   *Preprint*, 2024 <br>
