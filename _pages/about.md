@@ -45,6 +45,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 🔥 Recent News
 ------
+- \[Sept. 2024\] Our paper titled "What If the Input is Expanded in OOD Detection?" has been accepted by [NeurIPS 2024](https://neurips.cc/). <br>
 - \[June 2024\] Start my remote research internship in [CS@Purdue University](https://www.cs.purdue.edu/), collaborating with [Dr. Ruqi Zhang](https://ruqizhang.github.io/). <br>
 - \[May 2024\] Successfully defended my Master thesis!
 - \[April 2024\] I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024. <br>
@@ -99,8 +100,18 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 - **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han. <br>
   **What If the Input is Expanded in OOD Detection?** <br>
-  *Preprint*, 2024 <br>
-  \[[PDF (first page)](files/preprint.pdf)\]
+  *Neural Information Processing Systems* (**NeurIPS**), 2024 <br>
+  \[<a href="javascript:toggleBibtex('what24')">BibTeX</a>\] \[[PDF](files/_NeurIPS_2024__What_If_the_Input_is_Expanded_in_OOD_Detection.pdf)\]
+
+  <div id="bib_what24" class="bibtex noshow">
+    <pre>
+@inproceedings{zhang2024what,
+    title={What If the Input is Expanded in OOD Detection?},
+    author={Zhang, Boxuan and Zhu, Jianing and Wang, Zengmao and Liu, Tongliang and Du, Bo and Han, Bo},
+    booktitle={The Thirty-Eighth Annual Conference on Neural Information Processing Systems},
+    year={2024},
+} </pre>
+  </div>
 
 - **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
   **Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching** <br>
