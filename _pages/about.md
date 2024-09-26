@@ -34,7 +34,7 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 </html>
 
 I’m a M.S. student at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am a Research Intern in the Department of [Computer Science](https://www.cs.purdue.edu/) at [Purdue University](https://www.purdue.edu/), under the supervision of [Prof. Ruqi Zhang](https://ruqizhang.github.io/). Before that, I was a Research Intern at [TMLR Group](https://github.com/tmlr-group), [Hong Kong Baptist University](https://www.hkbu.edu.hk/en/index.html), fortunately working with [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
-You can find my CV here: [Curriculum Vitae](files/CV.pdf), and my Research Statement here: [Research Statement](files/research-statement.pdf).
+You can find my CV here: [Curriculum Vitae](files/CV-Boxuan.pdf), and my Research Statement here: [Research Statement](files/research-statement.pdf).
 
 🚀 Research Interests
 ------
