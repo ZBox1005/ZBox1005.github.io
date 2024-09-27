@@ -49,7 +49,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 - \[June 2024\] Start my remote research internship in [CS@Purdue University](https://www.cs.purdue.edu/), collaborating with [Dr. Ruqi Zhang](https://ruqizhang.github.io/). <br>
 - \[May 2024\] Successfully defended my Master thesis!
 - \[April 2024\] I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024. <br>
-- \[Jan. 2024\] One paper is accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
+- \[Jan. 2024\] One paper has been accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"). <br>
 - \[Nov. 2023\] I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. <br>
 - \[Oct. 2023\] Honored to receive [3rd Prize](http://www.csrme.com/Home/Content/show/id/4432.do) @ TBM Machine Learning Competition.  <br>
 <!-- \[Oct. 2023\]  Attend 2nd TBM Machine Learning Competition(held by [CSRME](http://www.csrme.com/)) and present research work @ Shanghai. <br> -->
