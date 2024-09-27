@@ -100,7 +100,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 - **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han. <br>
   **What If the Input is Expanded in OOD Detection?** <br>
-  In [Advances in Neural Information Processing Systems (NeurIPS 2024)](https://neurips.cc/), Vancouver, 2024. <br>
+  In [Advances in Neural Information Processing Systems (NeurIPS)](https://neurips.cc/), Vancouver, 2024. <br>
   \[<a href="javascript:toggleBibtex('what24')">BibTeX</a>\] \[[PDF](files/zhang2024what.pdf)\] \[[Code]()\]
   <div id="bib_what24" class="bibtex noshow">
     <pre>
@@ -114,7 +114,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 - **Boxuan Zhang**, Zengmao Wang and Bo Du. <br>
   **Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching** <br>
-  *IEEE Geoscience and Remote Sensing Letters* (**GRSL**), 2024 <br>
+  In [IEEE Geoscience and Remote Sensing Letters (GRSL)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859"), 2024 <br>
   \[<a href="javascript:toggleBibtex('boosting24')">BibTeX</a>\] \[[PDF](https://ieeexplore.ieee.org/document/10411936)\] \[[Code](https://github.com/ZBox1005/SSOD-AT)\] <br>
 
   <div id="bib_boosting24" class="bibtex noshow">
