@@ -92,6 +92,15 @@ If you are intereted in these areas or my previous works, feel free to reach out
   Topic: Open-set Domain Adaptation
 
 
+Recent Projects
+------
+(For more details can click the images)
+<ul>
+    <br>
+        <a href="https://confidence-average.github.io/"><img src="./files/logo-cover.jpg" width="280" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
+    <br>
+</ul>
+
 
 📝 Publications
 ------
