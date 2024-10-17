@@ -110,7 +110,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 - **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han. <br>
   **What If the Input is Expanded in OOD Detection?** <br>
   In [Advances in Neural Information Processing Systems (NeurIPS)](https://neurips.cc/), Vancouver, 2024. <br>
-  \[<a href="javascript:toggleBibtex('what24')">BibTeX</a>\] \[[PDF](files/zhang2024what.pdf)\] \[[Code]()\]
+  \[<a href="javascript:toggleBibtex('what24')">BibTeX</a>\] \[[PDF](files/zhang2024what.pdf)\] \[[Code](https://github.com/ZBox1005/CoVer/)\]
   <div id="bib_what24" class="bibtex noshow">
     <pre>
 @inproceedings{zhang2024what,
