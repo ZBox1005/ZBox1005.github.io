@@ -60,15 +60,16 @@ If you are intereted in these areas or my previous works, feel free to reach out
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859)
+**<font color=DarkSlateBlue style="font-size: 18px;">Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching</font>**
 
-**Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han
+**Boxuan Zhang**, Zengmao Wang and Bo Du
 
-**<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection.
+**<font color=SandyBrown>TL;DR:</font>** Propose to boost semi-supervised object detection with active teaching (SSOD-AT) in remote sensing images, which helps to alleviate the dependency on limited labeled images in remote sensing scenarios.
 
 **<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>**
 
-[**\[Code\]**](https://github.com/tmlr-group/CoVer) 
+[**\[PDF\]**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859) &nbsp; 
+[**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) 
 </div>
 </div>
 
