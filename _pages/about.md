@@ -128,7 +128,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 <!-- **<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>** -->
 
-[**\[PDF\]**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859) &nbsp; 
+[**\[PDF\]**](https://ieeexplore.ieee.org/document/10411936) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) 
 </div>
 </div>
