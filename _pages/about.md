@@ -38,6 +38,28 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 (\* indicates **equal contribution**)
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;"></font>**
+
+**<font color=DarkSlateBlue style="font-size: 18px;">CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought</font>**
+
+**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
+
+**Boxuan Zhang** and Ruqi Zhang
+
+**<font color=SandyBrown>TL;DR:</font>** Propose to quantify response-wise uncertainty by integrating LLMs’ inherent reasoning capabilities through Chain-of-Thought (CoT) into the UQ process.
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**]() &nbsp; 
+[**\[Code\]**](https://github.com/ZBox1005/CoT-UQ) 
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/cover.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -45,17 +67,21 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 **<font color=DarkSlateBlue style="font-size: 18px;">What If the Input is Expanded in OOD Detection?</font>**
 
+**\[<font color="#993333">Neural Information Processing Systems (NeurIPS), 2024</font>\]**
+
 **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han
 
 **<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection.
 
-**<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>**
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
 [**\[PDF\]**](https://proceedings.neurips.cc/paper_files/paper/2024/file/25cc3adf8c85f7c70989cb8a97a691a7-Paper-Conference.pdf) &nbsp; 
 [**\[Project\]**](https://confidence-average.github.io/) &nbsp; 
 [**\[Code\]**](https://github.com/tmlr-group/CoVer) 
 </div>
 </div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/ssod-at.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -84,7 +110,20 @@ If you are intereted in these areas or my previous works, feel free to reach out
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Research Experience
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+<!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
+- *2024.06 - present*, **Research Intern** <br>
+  Department of [Computer Science](https://www.cs.purdue.edu/), [Purdue University](https://www.purdue.edu/) <br>
+  Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/) <br>
+- *2023.11 - 2024.06*, **Research Intern** <br>
+  [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
+  Supervisor: [Prof. Bo Han](https://bhanml.github.io/) <br>
+  Collaborate with: [Jianing Zhu](https://zfancy.github.io/) <br>
+- *2023.08 - 2023.10*, **Research Intern** <br>
+  School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
+  Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br>
+- 2022.09 - 2024.06, **Research Assistant** <br>
+  [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
+  Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
 
 # 🎖 Honors and Awards
 - *2023.10* Third Prize Winner of TBM Machine Learning Competition.
