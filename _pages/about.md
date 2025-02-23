@@ -23,8 +23,8 @@ I am an incoming CS PhD student (25 Fall) at [Rutgers University](https://www.ru
 Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
 
 🤔**Research Interests:** <br>
-My research interests include **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and **healthcare**. 
-Besides, I am also experienced in other fields of machine learning like **active learning**, and their applications to **computer vision**. <br>
+My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
+Besides, I am also experienced in other fields of machine learning like **active learning**, and its applications to **object detection** and **remote sensing**. <br>
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
 ## **<font color=FireBrick>I'm finding research intern opportunities! You can find my</font> [<font color=DarkSlateBlue>CV</font>](docs/CV-Boxuan.pdf) <font color=FireBrick>here. If you share the same research interests with me and are intereted in these areas or my previous works, welcome to add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
 
