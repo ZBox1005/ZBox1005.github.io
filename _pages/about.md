@@ -38,7 +38,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 (\* indicates **equal contribution**)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='neurips-24.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;"></font>**
