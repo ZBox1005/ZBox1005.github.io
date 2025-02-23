@@ -27,41 +27,62 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 
 # 🔥 News
-- *2024.09*: &nbsp;🎉🎉 Our paper titled "What If the Input is Expanded in OOD Detection?" has been accepted by [NeurIPS 2024](https://neurips.cc/) 
-- *2024.06*: &nbsp;🎉🎉 Start my remote research internship in [CS@Purdue University](https://www.cs.purdue.edu/), collaborating with [Dr. Ruqi Zhang](https://ruqizhang.github.io/). 
-- *2024.05*: &nbsp;🎉🎉 Successfully defended my Master thesis!
-- *2024.04*: &nbsp;🎉🎉 I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024.
-- *2024.01*: &nbsp;🎉🎉 One paper has been accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859").
-- *2023.11*: &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern.
+- **2024.09:** &nbsp;🎉🎉 Our paper titled "What If the Input is Expanded in OOD Detection?" has been accepted by [NeurIPS 2024](https://neurips.cc/) 
+- **2024.06:** &nbsp;🎉🎉 Start my remote research internship in [CS@Purdue University](https://www.cs.purdue.edu/), collaborating with [Dr. Ruqi Zhang](https://ruqizhang.github.io/). 
+- **2024.05:** &nbsp;🎉🎉 Successfully defended my Master thesis!
+- **2024.04:** &nbsp;🎉🎉 I will join [CS@Purdue University](https://www.cs.purdue.edu/) as a research intern in June 2024.
+- **2024.01:** &nbsp;🎉🎉 One paper has been accepted by [GRSL 2024](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859").
+- **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern.
 
-# 📝 Publications 
+# 📝 Publications
+
+(\* indicates **equal contribution**)
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[What If the Input is Expanded in OOD Detection?](https://proceedings.neurips.cc/paper_files/paper/2024/file/25cc3adf8c85f7c70989cb8a97a691a7-Paper-Conference.pdf)
+**<font color=DarkSlateBlue style="font-size: 18px;"></font>**
+
+**<font color=DarkSlateBlue style="font-size: 18px;">What If the Input is Expanded in OOD Detection?</font>**
 
 **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han
 
-**<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection. With the expectation among multiple input dimension, our method performs a better ID-OOD separability. 
+**<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection.
 
-**<font color=DarkSlateBlue>International Conference on Learning Representations (ICLR), 2025</font>**
+**<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>**
 
-[**\[Project\]**](https://confidence-average.github.io/) &nbsp; [**\[Code\]**](https://github.com/tmlr-group/CoVer) 
+[**\[PDF\]**](https://proceedings.neurips.cc/paper_files/paper/2024/file/25cc3adf8c85f7c70989cb8a97a691a7-Paper-Conference.pdf) &nbsp; 
+[**\[Project\]**](https://confidence-average.github.io/) &nbsp; 
+[**\[Code\]**](https://github.com/tmlr-group/CoVer) 
 </div>
 </div>
 
-# 🎖 Honors and Awards
-- *2023.10* Third Prize Winner of TBM Machine Learning Competition.
-- *2024.04* Outstanding Communist Party and Youth League member, Wuhan University. 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859)
+
+**Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han
+
+**<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection.
+
+**<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>**
+
+[**\[Code\]**](https://github.com/tmlr-group/CoVer) 
+</div>
+</div>
 
 # 📖 Educations
 - *2022.09 - 2024.06*, Master, School of Computer Science, Wuhan University, China. 
 - *2018.09 - 2022.06*, Undergraduate, School of Computer Science, Wuhan University, China. 
 
-# 💬 Invited Talks
+<!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Research Experience
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+
+# 🎖 Honors and Awards
+- *2023.10* Third Prize Winner of TBM Machine Learning Competition.
+- *2024.04* Outstanding Communist Party and Youth League member, Wuhan University. 
