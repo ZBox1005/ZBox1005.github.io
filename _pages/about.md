@@ -43,8 +43,11 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 **Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han
 
-[**\[Project\]**](https://confidence-average.github.io/) &nbsp;&nbsp; [**\[Code\]**](https://github.com/tmlr-group/CoVer) 
-- TL;DR: Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection. With the expectation among multiple input dimension, our method performs a better ID-OOD separability. 
+**<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection. With the expectation among multiple input dimension, our method performs a better ID-OOD separability. 
+
+**<font color=DarkSlateBlue>International Conference on Learning Representations (ICLR), 2025</font>**
+
+[**\[Project\]**](https://confidence-average.github.io/) &nbsp; [**\[Code\]**](https://github.com/tmlr-group/CoVer) 
 </div>
 </div>
 
