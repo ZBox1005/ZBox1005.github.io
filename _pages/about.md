@@ -21,9 +21,8 @@ redirect_from:
 I have completed my **master’s degree** at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am a **Research Intern** at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). Before that, I was a **Research Intern** at [TMLR Group](https://github.com/tmlr-group), [Hong Kong Baptist University](https://www.hkbu.edu.hk/en/index.html), fortunately working with [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).
 
 🤔**Research Interests:** <br>
-My primary research objective is to build a reliable and efficient AI model. <br>
 My research interests include **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and **healthcare**. 
-Besides, I am also experienced in other fields of machine learning like **active learning**, and their applications to **computer vision** . <br>
+Besides, I am also experienced in other fields of machine learning like **active learning**, and their applications to **computer vision**. <br>
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
 ## **<font color=FireBrick>I'm finding research intern opportunities! You can find my</font> [<font color=DarkSlateBlue>CV</font>](docs/CV-Boxuan.pdf) <font color=FireBrick>here. If you share the same research interests with me and are intereted in these areas or my previous works, welcome to add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
 
