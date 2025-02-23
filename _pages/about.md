@@ -20,7 +20,7 @@ redirect_from:
 # 🧐 About Me
 I have completed my **master’s degree** at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm). Currently, I am a **Research Intern** at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). Before that, I was a **Research Intern** at [TMLR Group](https://github.com/tmlr-group), [Hong Kong Baptist University](https://www.hkbu.edu.hk/en/index.html), fortunately working with [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).
 
-**Research Interests:** <br>
+🤔**Research Interests:** <br>
 My primary research objective is to build a reliable and efficient AI model. <br>
 My research interests include **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and **healthcare**. 
 Besides, I am also experienced in other fields of machine learning like **active learning**, and their applications to **computer vision** . <br>
@@ -43,8 +43,6 @@ Besides, I am also experienced in other fields of machine learning like **active
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;"></font>**
-
 **<font color=DarkSlateBlue style="font-size: 18px;">CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought</font>**
 
 **\[<font color="#993333">Preprint, arXiv 2025</font>\]**
@@ -60,7 +58,23 @@ Besides, I am also experienced in other fields of machine learning like **active
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+**<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
+
+**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
+
+Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
+
+**<font color=SandyBrown>TL;DR:</font>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**]() &nbsp; 
+[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) 
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/cover.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -128,5 +142,5 @@ Besides, I am also experienced in other fields of machine learning like **active
   Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
 
 # 🎖 Honors and Awards
-- *2023.10* Third Prize Winner of TBM Machine Learning Competition.
 - *2024.04* Outstanding Communist Party and Youth League member, Wuhan University. 
+- *2023.10* Third Prize Winner of TBM Machine Learning Competition.
