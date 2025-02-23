@@ -143,7 +143,10 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 # 💻 Research Experience
 <!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
-- *2024.06 - present*, **Research Intern** <br>
+- *2024.06 - present*, **Research Assistant** <br>
+  Department of [Computer Science](https://cs.uic.edu/), University of Illinois Chicago([UIC](https://www.uic.edu/)) <br>
+  Supervisor: [Prof. Lu Cheng](https://lcheng.org/) <br>
+- *2024.06 - 2025.02*, **Research Intern** <br>
   Department of [Computer Science](https://www.cs.purdue.edu/), [Purdue University](https://www.purdue.edu/) <br>
   Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/) <br>
 - *2023.11 - 2024.06*, **Research Intern** <br>
