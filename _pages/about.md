@@ -38,7 +38,7 @@ If you are intereted in these areas or my previous works, feel free to reach out
 
 (\* indicates **equal contribution**)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/neurips-24.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/cover.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;"></font>**
@@ -57,16 +57,18 @@ If you are intereted in these areas or my previous works, feel free to reach out
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/ssod-at.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;">Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching</font>**
+
+**\[<font color="#993333">IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>\]**
 
 **Boxuan Zhang**, Zengmao Wang and Bo Du
 
 **<font color=SandyBrown>TL;DR:</font>** Propose to boost semi-supervised object detection with active teaching (SSOD-AT) in remote sensing images, which helps to alleviate the dependency on limited labeled images in remote sensing scenarios.
 
-**<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>**
+<!-- **<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>** -->
 
 [**\[PDF\]**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) 
