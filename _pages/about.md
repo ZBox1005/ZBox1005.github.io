@@ -25,7 +25,7 @@ My primary research objective is to build a reliable and efficient AI model. <br
 My research interests include **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and **healthcare**. 
 Besides, I am also experienced in other fields of machine learning like **active learning**, and their applications to **computer vision** . <br>
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
-## **<font color=FireBrick>I'm finding research intern opportunities! You can find my</font> [<font color=DarkSlateBlue>CV</font>](docs/CV-Boxuan.pdf) <font color=FireBrick>here. If you share the same research interests with me and are intereted in these areas or my previous works, welcome to add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)**. I am always delighted for potential collaborations!
+## **<font color=FireBrick>I'm finding research intern opportunities! You can find my</font> [<font color=DarkSlateBlue>CV</font>](docs/CV-Boxuan.pdf) <font color=FireBrick>here. If you share the same research interests with me and are intereted in these areas or my previous works, welcome to add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
 
 
 # 🔥 News
