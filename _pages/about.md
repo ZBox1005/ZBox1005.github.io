@@ -147,7 +147,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 [**\[PDF\]**](https://proceedings.neurips.cc/paper_files/paper/2024/file/25cc3adf8c85f7c70989cb8a97a691a7-Paper-Conference.pdf) &nbsp; 
 [**\[Project Page\]**](https://confidence-average.github.io/) &nbsp; 
 [**\[Code\]**](https://github.com/tmlr-group/CoVer) &nbsp;
-<a href="javascript:toggleBibtex('what24')"><strong>[BibTeX]</strong></a>
+<a href="#" onclick="toggleBibtex('what24'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_what24" class="bibtex noshow">
     <pre>
 @inproceedings{zhang2024what,
