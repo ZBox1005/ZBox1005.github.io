@@ -52,6 +52,16 @@ Besides, I am also experienced in other fields of machine learning like **active
 </ul>
 </div>
 
+# 💻 Recent Projects
+(For more details can click the images)
+<ul>
+    <!-- <br> -->
+        <a href="https://confidence-average.github.io/"><img src="./images/logo_cover.jpg" width="320" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="320" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
+    <br>
+</ul>
+
 # 📝 Publications
 
 (\* indicates **equal contribution**)
@@ -141,7 +151,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Research Experience
+# 👨🏻‍💻 Research Experience
 <!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
 - *2024.06 - present*, **Research Assistant** <br>
   Department of [Computer Science](https://cs.uic.edu/), University of Illinois Chicago([UIC](https://www.uic.edu/)) <br>
