@@ -176,7 +176,18 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 <!-- **<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>** -->
 
 [**\[PDF\]**](https://ieeexplore.ieee.org/document/10411936) &nbsp; 
-[**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) 
+[**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) &nbsp; 
+<a href="#" onclick="toggleBibtex('boosting24'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+  <div id="bib_boosting24" class="bibtex noshow">
+    <pre>
+@article{zhang2024boosting,
+    title={Boosting Semi-Supervised Object Detection in Remote Sensing Images with Active Teaching},
+    author={Zhang, Boxuan and Wang, Zengmao and Du, Bo},
+    journal={IEEE Geoscience and Remote Sensing Letters},
+    year={2024},
+    publisher={IEEE}
+} </pre>
+  </div>
 </div>
 </div>
 
