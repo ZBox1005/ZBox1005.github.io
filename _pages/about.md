@@ -80,13 +80,14 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 # 💻 Recent Projects
 (For more details can click the images)
+<div>
 <ul>
     <!-- <br> -->
         <a href="https://confidence-average.github.io/"><img src="./images/logo_cover.jpg" width="320" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
         &nbsp;&nbsp;
         <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="320" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
-    <br>
 </ul>
+</div>
 
 # 📝 Publications
 
