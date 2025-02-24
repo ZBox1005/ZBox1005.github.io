@@ -8,6 +8,32 @@ redirect_from:
   - /about.html
 ---
 
+<html>
+<style>
+div.noshow { display: none; }
+div.bibtex {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1em;
+	border: 1px solid silver;
+	padding: 0em 1em;
+	background: #ffffee;
+}
+div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
+<script type="text/javascript">
+    function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_'+articleid);
+        if (bib) {
+            if(bib.className.indexOf('bibtex') != -1) {
+                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+            }
+        } else {
+            return;
+        }
+    }
+</script>
+</html>
+
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -119,7 +145,17 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 [**\[PDF\]**](https://proceedings.neurips.cc/paper_files/paper/2024/file/25cc3adf8c85f7c70989cb8a97a691a7-Paper-Conference.pdf) &nbsp; 
 [**\[Project Page\]**](https://confidence-average.github.io/) &nbsp; 
-[**\[Code\]**](https://github.com/tmlr-group/CoVer) 
+[**\[Code\]**](https://github.com/tmlr-group/CoVer) &nbsp;
+\[**<a href="javascript:toggleBibtex('what24')">BibTeX</a>**\]
+<div id="bib_what24" class="bibtex noshow">
+    <pre>
+@inproceedings{zhang2024what,
+    title={What If the Input is Expanded in OOD Detection?},
+    author={Zhang, Boxuan and Zhu, Jianing and Wang, Zengmao and Liu, Tongliang and Du, Bo and Han, Bo},
+    booktitle={The Thirty-Eighth Annual Conference on Neural Information Processing Systems},
+    year={2024},
+} </pre>
+  </div>
 </div>
 </div>
 
