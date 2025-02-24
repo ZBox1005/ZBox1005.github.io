@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<html>
+<!-- <html>
 <style>
 div.noshow { display: none; }
 div.bibtex {
@@ -32,7 +32,7 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
         }
     }
 </script>
-</html>
+</html> -->
 
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
