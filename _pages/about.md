@@ -201,7 +201,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 # 👨🏻‍💻 Research Experience
 <!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
-- *2024.06 - present*, **Research Assistant** <br>
+- *2024.11 - present*, **Research Assistant** <br>
   Department of [Computer Science](https://cs.uic.edu/), University of Illinois Chicago([UIC](https://www.uic.edu/)) <br>
   Supervisor: [Prof. Lu Cheng](https://lcheng.org/) <br>
 - *2024.06 - 2025.02*, **Research Intern** <br>
