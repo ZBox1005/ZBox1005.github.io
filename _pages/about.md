@@ -64,7 +64,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
-  <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprint works regarding LLMs! One investigates <a href="">Uncertainty Quantification for LLMs</a>, and the other explores <a href="">Connections between Creativity and Hallucination in LLMs</a>.</li>
+  <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprint works regarding LLMs! One investigates <a href="https://arxiv.org/abs/2502.17214">Uncertainty Quantification for LLMs</a>, and the other explores <a href="">Connections between Creativity and Hallucination in LLMs</a>.</li>
   <li><em>2025.02:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.rutgers.edu/">CS@Rutgers University</a> as a PhD student in 2025 Fall, supervised by <a href="https://www.ruixiangtang.net/">Prof. Ryan Tang</a>!</li>
   <li><em>2024.09:</em> &nbsp;🎉🎉 Our paper titled "What If the Input is Expanded in OOD Detection?" has been accepted by <a href="https://neurips.cc/">NeurIPS 2024</a>.</li>
   <li><em>2024.06:</em> &nbsp;🎉🎉 Start my remote research internship in <a href="https://www.cs.purdue.edu/">CS@Purdue University</a>, collaborating with <a href="https://ruqizhang.github.io/">Dr. Ruqi Zhang</a>.</li>
