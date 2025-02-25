@@ -106,7 +106,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
-[**\[PDF\]**]() &nbsp; 
+[**\[PDF\]**](https://arxiv.org/pdf/2502.17214) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/CoT-UQ) 
 </div>
 </div>
