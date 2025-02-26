@@ -52,7 +52,7 @@ Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in
 My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
 Besides, I am also experienced in other fields of machine learning like **active learning**, and its applications to **object detection** and **remote sensing**. <br>
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
-## **<font color=FireBrick>I'm finding research intern opportunities! You can find my</font> [<font color=DarkSlateBlue>CV</font>](images/CV-Boxuan.pdf) <font color=FireBrick>here. If you share the same research interests with me and are intereted in these areas or my previous works, welcome to add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
+## **<font color=FireBrick>I'm finding research intern opportunities! You can find my</font> [<font color=DarkSlateBlue>CV</font>](images/CV-BoxuanZhang.pdf) <font color=FireBrick>here. If you share the same research interests with me and are intereted in these areas or my previous works, welcome to add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
 
 
 # 🔥 News
