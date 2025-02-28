@@ -108,6 +108,18 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 [**\[PDF\]**](https://arxiv.org/pdf/2502.17214) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/CoT-UQ) 
+<a href="#" onclick="toggleBibtex('cot25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_cot25" class="bibtex noshow">
+    <pre>
+@article{zhang2025cot,
+    title={CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought},
+    author={Zhang, Boxuan and Zhang, Ruqi},
+    journal={arXiv preprint arXiv:2502.17214},
+    year={2025}
+} </pre>
+  </div>
+</div>
+</div>
 </div>
 </div>
 
