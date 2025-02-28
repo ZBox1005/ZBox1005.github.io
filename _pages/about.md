@@ -120,8 +120,6 @@ Besides, I am also experienced in other fields of machine learning like **active
   </div>
 </div>
 </div>
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
