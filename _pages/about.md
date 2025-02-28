@@ -107,7 +107,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
 [**\[PDF\]**](https://arxiv.org/pdf/2502.17214) &nbsp; 
-[**\[Code\]**](https://github.com/ZBox1005/CoT-UQ) 
+[**\[Code\]**](https://github.com/ZBox1005/CoT-UQ) &nbsp;
 <a href="#" onclick="toggleBibtex('cot25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_cot25" class="bibtex noshow">
     <pre>
