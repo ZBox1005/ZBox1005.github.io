@@ -135,7 +135,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
 [**\[PDF\]**](https://arxiv.org/pdf/2503.02851) &nbsp; 
-[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) 
+[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp; 
 <a href="#" onclick="toggleBibtex('shakes25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_shakes25" class="bibtex noshow">
     <pre>
