@@ -83,9 +83,12 @@ Besides, I am also experienced in other fields of machine learning like **active
 <div>
 <ul>
     <!-- <br> -->
-        <a href="https://confidence-average.github.io/"><img src="./images/logo_cover.jpg" width="320" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
+        <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
         &nbsp;&nbsp;
-        <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="320" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
+        <a href="https://github.com/ZicongHe2002/HCL-Spark"><img src="./images/logo-hcl.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="HCL-Spark"></a>
+        &nbsp;&nbsp;
+        <a href="https://confidence-average.github.io/"><img src="./images/logo_cover.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
+        
 </ul>
 </div>
 
