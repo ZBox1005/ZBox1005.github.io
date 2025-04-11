@@ -47,9 +47,9 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 I am an incoming CS PhD student (25 Fall) at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ryan Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at School of [Computer Science](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/).
 
 🤔**Research Interests:** <br>
-My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
-Besides, I am also experienced in other fields of machine learning like **active learning**, and its applications to **object detection** and **remote sensing**. <br>
-## **<font color=FireBrick>If you share the same research interests with me and are intereted in these areas or my previous works, feel free to drop me an email or add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
+My current research focus is to develop methodologies for **robust data mining**, particularly in *noise-tolerant modeling* and its applications to enhance *real-world decision-making* in areas like education and public information systems. <br>
+Besides, I am also experienced in other fields like **data-efficient learning**, and its applications to *image classification* and *recommendation systems*. 
+<!-- ## **<font color=FireBrick>If you share the same research interests with me and are intereted in these areas or my previous works, feel free to drop me an email or add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font> -->
 
 
 # 🔥 News
