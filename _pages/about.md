@@ -48,7 +48,7 @@ I am an incoming CS PhD student (25 Fall) at [Rutgers University](https://www.ru
 
 Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
 
-🤔**Research Interests:** <br>
+🧩 **Research Interests:** <br>
 My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
 Besides, I am also experienced in other fields of machine learning like **active learning**, and its applications to **object detection** and **remote sensing**. <br>
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
@@ -64,6 +64,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
+  <li><em>2025.04:</em> &nbsp;🎉🎉 I will serve as a reviewer for NeurIPS 2025.</li>
   <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprint works regarding LLMs! One investigates <a href="https://arxiv.org/abs/2502.17214">Uncertainty Quantification in LLMs</a>, and the other explores <a href="https://arxiv.org/abs/2503.02851">Connections between Creativity and Hallucination in LLMs</a>.</li>
   <li><em>2025.02:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.rutgers.edu/">CS@Rutgers University</a> as a PhD student in 2025 Fall, supervised by <a href="https://www.ruixiangtang.net/">Prof. Ryan Tang</a>!</li>
   <li><em>2024.09:</em> &nbsp;🎉🎉 Our paper titled "What If the Input is Expanded in OOD Detection?" has been accepted by <a href="https://neurips.cc/">NeurIPS 2024</a>.</li>
@@ -240,6 +241,12 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - 2022.09 - 2024.06, **Research Assistant** <br>
   [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
+
+# 💁🏻‍♂️ Academic Service
+- **Journal Reviewer:** 
+  ISPRS Journal of Photogrammetry and Remote Sensing
+- **Conference Reviewer:** 
+  NeurIPS (2025)
 
 # 🎖 Honors and Awards
 - *2024.04* Outstanding Communist Party and Youth League member, Wuhan University. 
