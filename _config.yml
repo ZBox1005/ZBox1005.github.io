@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Boxuan Zhang"
-  avatar           : "images/avator(cute).png"
+  avatar           : "images/avator(cute).jpg"
   bio              : "Incoming PhD student @Rutgers CS"
   location         : "Wuhan, Hubei"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=aPQaEz8AAAAJ"
-  email            : "zhangboxuan1005@gmail.com"
+  email            : "bz362@rutgers.edu"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
