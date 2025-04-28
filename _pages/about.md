@@ -247,7 +247,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
   [OpenTrustLab](https://open-trust-lab.vercel.app/), [Shanghai AI Laboratory](https://www.shlab.org.cn/) <br>
   Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/) and [Dr. Dongrui Liu](https://shenqildr.github.io/) <br>
 
-# 💁🏻‍♂️ Academic Service
+# 💁🏻‍♂️ Services
 - **Journal Reviewer:** 
   ISPRS Journal of Photogrammetry and Remote Sensing
 - **Conference Reviewer:** 
