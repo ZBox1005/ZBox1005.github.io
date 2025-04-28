@@ -243,9 +243,9 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
   Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
 
 # 💼 Work Experience
-- *2024.04 - present*, **Research Assistant** <br>
+- *2025.03 - present*, **Research Assistant** <br>
   [OpenTrustLab](https://open-trust-lab.vercel.app/), [Shanghai AI Laboratory](https://www.shlab.org.cn/) <br>
-  Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/) <br>
+  Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/), [Dr. Dongrui Liu](https://shenqildr.github.io/) <br>
 
 # 💁🏻‍♂️ Academic Service
 - **Journal Reviewer:** 
