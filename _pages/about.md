@@ -245,7 +245,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 # 💼 Work Experience
 - *2025.03 - present*, **Research Assistant** <br>
   [OpenTrustLab](https://open-trust-lab.vercel.app/), [Shanghai AI Laboratory](https://www.shlab.org.cn/) <br>
-  Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/), [Dr. Dongrui Liu](https://shenqildr.github.io/) <br>
+  Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/) and [Dr. Dongrui Liu](https://shenqildr.github.io/) <br>
 
 # 💁🏻‍♂️ Academic Service
 - **Journal Reviewer:** 
