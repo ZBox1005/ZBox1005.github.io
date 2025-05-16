@@ -64,6 +64,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
+  <li><em>2025.05:</em> &nbsp;🎉🎉 <a href="https://arxiv.org/abs/2502.17214">CoT-UQ</a> has been accepted by <a href="https://2025.aclweb.org/">ACL 2025</a>.</li>
   <li><em>2025.04:</em> &nbsp;🎉🎉 I will serve as a reviewer for NeurIPS 2025.</li>
   <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprint works regarding LLMs! One investigates <a href="https://arxiv.org/abs/2502.17214">Uncertainty Quantification in LLMs</a>, and the other explores <a href="https://arxiv.org/abs/2503.02851">Connections between Creativity and Hallucination in LLMs</a>.</li>
   <li><em>2025.02:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.rutgers.edu/">CS@Rutgers University</a> as a PhD student in 2025 Fall, supervised by <a href="https://www.ruixiangtang.net/">Prof. Ryan Tang</a>!</li>
@@ -102,7 +103,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 **<font color=DarkSlateBlue style="font-size: 18px;">CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought</font>**
 
-**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
+**\[<font color="#993333">ACL 2025 Findings</font>\]**
 
 **Boxuan Zhang** and Ruqi Zhang
 
