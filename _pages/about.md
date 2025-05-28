@@ -254,6 +254,5 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - **Conference Reviewer:** 
   NeurIPS (2025)
 
-# 🎖 Honors and Awards
-- *2024.04* Outstanding Communist Party and Youth League member, Wuhan University. 
-- *2023.10* Third Prize Winner of TBM Machine Learning Competition.
+<!-- # 🎖 Honors and Awards
+- *2023.10* Third Prize Winner of TBM Machine Learning Competition. -->
