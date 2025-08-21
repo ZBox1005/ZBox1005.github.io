@@ -99,35 +99,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 (\* indicates **equal contribution**)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
-
-**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
-
-Shanghai AI Lab and Concordia AI
-
-**<font color=SandyBrown>TL;DR:</font>** Drawing on the E-T-C analysis (deployment environment, threat source, enabling capability) from the Frontier AI Risk Management Framework (v1.0) (SafeWork-F1-Framework), we identify critical risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
-
-[**\[PDF\]**](https://arxiv.org/pdf/2507.16534) &nbsp; 
-[**\[Blog\]**](https://ai45.shlab.org.cn/research/posts/safework-f1/) &nbsp; 
-<a href="#" onclick="toggleBibtex('frontier25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_frontier25" class="bibtex noshow">
-    <pre>
-@article{shailab2025frontier,
-  title={Frontier ai risk management framework (v1.0)},
-  author={Shanghai AI Lab & Concordia AI},
-  url={https://research.ai45.shlab.org.cn/safework-f1-framework.pdf},
-  year={2025}
-} </pre>
-  </div>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;">CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought</font>**
@@ -155,33 +127,7 @@ Shanghai AI Lab and Concordia AI
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
-
-**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
-
-Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
-
-**<font color=SandyBrown>TL;DR:</font>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
-
-[**\[PDF\]**](https://arxiv.org/pdf/2503.02851) &nbsp; 
-[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp; 
-<a href="#" onclick="toggleBibtex('shakes25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_shakes25" class="bibtex noshow">
-    <pre>
-@article{he2025shakespearean,
-  title={Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs' Decoding Layers},
-  author={He, Zicong and Zhang, Boxuan and Cheng, Lu},
-  journal={arXiv preprint arXiv:2503.02851},
-  year={2025}
-} </pre>
-  </div>
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/cover.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -240,6 +186,66 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
     journal={IEEE Geoscience and Remote Sensing Letters},
     year={2024},
     publisher={IEEE}
+} </pre>
+  </div>
+</div>
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
+
+**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
+
+Shanghai AI Lab and Concordia AI
+
+**<font color=SandyBrown>TL;DR:</font>** Drawing on the E-T-C analysis (deployment environment, threat source, enabling capability) from the Frontier AI Risk Management Framework (v1.0) (SafeWork-F1-Framework), we identify critical risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2507.16534) &nbsp; 
+[**\[Blog\]**](https://ai45.shlab.org.cn/research/posts/safework-f1/) &nbsp; 
+<a href="#" onclick="toggleBibtex('frontier25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_frontier25" class="bibtex noshow">
+    <pre>
+@article{shailab2025frontier,
+  title={Frontier ai risk management framework (v1.0)},
+  author={Shanghai AI Lab & Concordia AI},
+  url={https://research.ai45.shlab.org.cn/safework-f1-framework.pdf},
+  year={2025}
+} </pre>
+  </div>
+</div>
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
+
+**\[<font color="#993333">Preprint, arXiv 2025</font>\]**
+
+Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
+
+**<font color=SandyBrown>TL;DR:</font>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2503.02851) &nbsp; 
+[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp; 
+<a href="#" onclick="toggleBibtex('shakes25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_shakes25" class="bibtex noshow">
+    <pre>
+@article{he2025shakespearean,
+  title={Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs' Decoding Layers},
+  author={He, Zicong and Zhang, Boxuan and Cheng, Lu},
+  journal={arXiv preprint arXiv:2503.02851},
+  year={2025}
 } </pre>
   </div>
 </div>
