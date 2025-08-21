@@ -193,7 +193,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/logo-self-replication.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
