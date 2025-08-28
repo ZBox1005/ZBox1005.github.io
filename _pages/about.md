@@ -44,7 +44,7 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 <span class='anchor' id='about-me'></span>
 
 # 🧐 About Me
-I am an incoming CS PhD student (25 Fall) at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ryan Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm).
+I am a CS PhD student at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ryan Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm).
 
 Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
 
@@ -252,6 +252,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 </div>
 
 # 📖 Educations
+- *2025.08 - 2030 (Expected)*, PhD, Department of Computer Science, Rutgers University, United States. 
 - *2022.09 - 2024.06*, Master, School of Computer Science, Wuhan University, China. 
 - *2018.09 - 2022.06*, Undergraduate, School of Computer Science, Wuhan University, China. 
 
@@ -279,7 +280,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
   Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
 
 # 💼 Work Experience
-- *2025.03 - present*, **Research Assistant** <br>
+- *2025.03 - 2025.07*, **Research Assistant** <br>
   [OpenTrustLab](https://open-trust-lab.vercel.app/), [Shanghai AI Laboratory](https://www.shlab.org.cn/) <br>
   Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/) and [Dr. Dongrui Liu](https://shenqildr.github.io/) <br>
 
