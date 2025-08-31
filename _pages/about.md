@@ -44,7 +44,7 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 <span class='anchor' id='about-me'></span>
 
 # 🧐 About Me
-I am a CS PhD student at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ryan Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm).
+I am a 1st CS PhD student at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm).
 
 Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
 
@@ -64,7 +64,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
-  <li><em>2025.07:</em> &nbsp;🎉🎉 Our <a href="https://arxiv.org/abs/2507.16534">Frontier AI Risk Management Framework</a> has been released. I was responsible for exploring self-replication risks in LLM Agents.</li>
+  <li><em>2025.07:</em> &nbsp;🎉🎉 Our <a href="https://arxiv.org/abs/2507.16534">Frontier AI Risk Management Framework</a> has been released. I participated in exploring self-replication risks in LLM Agents.</li>
   <li><em>2025.05:</em> &nbsp;🎉🎉 <a href="https://arxiv.org/abs/2502.17214">CoT-UQ</a> has been accepted by <a href="https://2025.aclweb.org/">ACL 2025</a>.</li>
   <li><em>2025.04:</em> &nbsp;🎉🎉 I will serve as a reviewer for NeurIPS 2025.</li>
   <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprint works regarding LLMs! One investigates <a href="https://arxiv.org/abs/2502.17214">Uncertainty Quantification in LLMs</a>, and the other explores <a href="https://arxiv.org/abs/2503.02851">Connections between Creativity and Hallucination in LLMs</a>.</li>
@@ -252,7 +252,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 </div>
 
 # 📖 Educations
-- *2025.08 - 2030 (Expected)*, PhD, Department of Computer Science, Rutgers University, United States. 
+- *2025.09 - present*, PhD, Department of Computer Science, Rutgers University, USA. 
 - *2022.09 - 2024.06*, Master, School of Computer Science, Wuhan University, China. 
 - *2018.09 - 2022.06*, Undergraduate, School of Computer Science, Wuhan University, China. 
 
