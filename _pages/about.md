@@ -50,7 +50,7 @@ Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in
 
 🧩 **Research Interests:** <br>
 My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
-Besides, I am also experienced in other fields of machine learning like **active learning**, and its applications to **object detection** and **remote sensing**. <br>
+Besides, I am also experienced in other fields of machine learning like **active learning** and **semi-supervised learning**, and their applications to **object detection** and **remote sensing**. <br>
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
 ## **<font color=FireBrick>If you share the same research interests with me and are intereted in these areas or my previous works, feel free to drop me an <a href="mailto:bz362@rutgers.edu"><font color=DarkSlateBlue>Email</font></a> or add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
 
@@ -281,7 +281,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 # 💼 Work Experience
 - *2025.03 - 2025.07*, **Research Assistant** <br>
-  [OpenTrustLab](https://open-trust-lab.vercel.app/), [Shanghai AI Laboratory](https://www.shlab.org.cn/) <br>
+  [Center of Safe & Trustworthy AI](https://ai45.shlab.org.cn/), [Shanghai AI Laboratory](https://www.shlab.org.cn/) <br>
   Mentor: [Dr. Yi Yu](https://eveyuyi.github.io/) and [Dr. Dongrui Liu](https://shenqildr.github.io/) <br>
 
 # 💁🏻‍♂️ Academic Service
