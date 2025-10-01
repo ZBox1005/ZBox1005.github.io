@@ -115,7 +115,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 **Boxuan Zhang\***, Yi Yu\*, Jiaxuan Guo, and Jing Shao
 
-**<font color=SandyBrown>TL;DR:</font>** we present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks (e.g., dynamic load balancing) to enable scenario-driven assessment of agent behaviors.
+**<font color=SandyBrown>TL;DR:</font>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks (e.g., dynamic load balancing) to enable scenario-driven assessment of agent behaviors.
 
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
@@ -148,7 +148,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 Shanghai AI Lab and Concordia AI, ..., **Boxuan Zhang**, [30+ authors]
 
-**<font color=SandyBrown>TL;DR:</font>** Drawing on the E-T-C analysis (deployment environment, threat source, enabling capability) from the Frontier AI Risk Management Framework (v1.0) (SafeWork-F1-Framework), we identify critical risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
+**<font color=SandyBrown>TL;DR:</font>** We identify critical frontier AI risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
 
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
