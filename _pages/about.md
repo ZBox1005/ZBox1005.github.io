@@ -164,7 +164,6 @@ Shanghai AI Lab and Concordia AI, ..., **Boxuan Zhang**, [30+ authors]
 </div>
 
 
-
 <div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -193,6 +192,8 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
   </div>
 </div>
 </div>
+
+## Published
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
