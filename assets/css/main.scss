@@ -69,13 +69,13 @@
             order: 2;
         }
     }
-    // 新增：没有图片时文字独占一行
-    &.no-image {
-        .paper-box-text {
-            max-width: 100%;
-            padding-left: 0;
-        }
-    }
+    // // 没有图片时文字独占一行
+    // &.no-image {
+    //     .paper-box-text {
+    //         max-width: 100% !important;
+    //         padding-left: 0 !important;
+    //     }
+    // }
 }
 
 $scroll_offset: 2em;
