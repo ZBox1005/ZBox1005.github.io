@@ -193,7 +193,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 ## Preprint
 
-<div class='paper-box'>
+<div class='paper-box no-image'>
 <!-- <div class='paper-box-image'>
 <div><div class="badge">Preprint</div>
 <img src='images/logo-self-replication.png' alt="sym" width="100%"></div>
@@ -227,7 +227,8 @@ Shanghai AI Lab and Concordia AI
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
+<div class='paper-box no-image'>
+<!-- <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div> -->
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
