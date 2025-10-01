@@ -121,8 +121,8 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 [**\[PDF\]**](https://arxiv.org/pdf/2509.25302) &nbsp; 
 <!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
-<a href="#" onclick="toggleBibtex('shakes25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_shakes25" class="bibtex noshow">
+<a href="#" onclick="toggleBibtex('dive25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_dive25" class="bibtex noshow">
     <pre>
 @article{zhang2025dive,
   title={Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents},
