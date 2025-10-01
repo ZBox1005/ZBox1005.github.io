@@ -191,9 +191,13 @@ Besides, I am also experienced in other fields of machine learning like **active
 </div>
 </div>
 
+## Preprint
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/logo-self-replication.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'>
+<!-- <div class='paper-box-image'>
+<div><div class="badge">Preprint</div>
+<img src='images/logo-self-replication.png' alt="sym" width="100%"></div>
+</div> -->
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
@@ -288,7 +292,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - **Journal Reviewer:** 
   ISPRS Journal of Photogrammetry and Remote Sensing
 - **Conference Reviewer:** 
-  NeurIPS (2025)
+  NeurIPS (2025) ICLR (2026)
 
 <!-- # 🎖 Honors and Awards
 - *2023.10* Third Prize Winner of TBM Machine Learning Competition. -->
