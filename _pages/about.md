@@ -311,7 +311,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - *2023.11 - 2024.06*, **Research Intern** <br>
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/) <br>
-  Collaborate with: [Jianing Zhu](https://zfancy.github.io/) <br>
+  Collaborate with: [Dr. Jianing Zhu](https://zfancy.github.io/) <br>
 - *2023.08 - 2023.10*, **Research Intern** <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br>
