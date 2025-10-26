@@ -46,7 +46,7 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 # 🧐 About Me
 I am a 1st year CS PhD student at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm).
 
-Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Jianing Zhu](https://zfancy.github.io/).<br>
+Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Dr. Jianing Zhu](https://zfancy.github.io/).<br>
 
 🧩 **Research Interests:** <br>
 My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
@@ -128,6 +128,36 @@ Besides, I am also experienced in other fields of machine learning like **active
   title={Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents},
   author={Zhang, Boxuan and Yu, Yi and Guo, Jiaxuan and Shao, Jing},
   journal={arXiv preprint arXiv:2509.25302},
+  year={2025}
+} </pre>
+  </div>
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/c2eval.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models</font>**
+
+**\[<font color="#993333">Preprint. Under Review</font>\]**
+
+Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
+
+**<font color=SandyBrown>TL;DR:</font>** We introduce \\C^2\\-Eval, a holistic benchmark for the unified assessment of creativity in FMs. \\C^2\\-Eval distinguishes between two complementary forms of Creativity (\\C^2\\): convergent creativity, where tasks admit constrained solutions (e.g., code generation), and divergent creativity, where tasks are open-ended (e.g., story telling).
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2510.04009) &nbsp; 
+<!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
+<a href="#" onclick="toggleBibtex('what25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_what25" class="bibtex noshow">
+    <pre>
+@article{he2025what,
+  title={What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models},
+  author={He, Zicong and Zhang, Boxuan and Liu, Weihao and Tang, Ruixiang and Cheng, Lu},
+  journal={arXiv preprint arXiv:2510.04009},
   year={2025}
 } </pre>
   </div>
