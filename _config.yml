@@ -57,6 +57,10 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  links:
+    - label: "CV"
+      icon: "fas fa-fw fa-file-alt"   # \faFileAlt 对应 Font Awesome 类
+      url: "/files/boxuan-cv.pdf"
 
 
 # Reading Files
