@@ -4,6 +4,6 @@ permalink: /cv/
 author_profile: true
 ---
 
-<embed src="https://eveyuyi.github.io/files/boxuan-cv.pdf" type="application/pdf" height="300px"/>
+<embed src="https://zbox1005.github.io/files/boxuan-cv.pdf" type="application/pdf" height="300px"/>
 
-* [CV in PDF](https://eveyuyi.github.io/files/boxuan-cv.pdf)
+* [CV in PDF](https://zbox1005.github.io/files/boxuan-cv.pdf)
