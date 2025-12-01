@@ -1,25 +1,25 @@
 # main links links
 main:
   - title: "About Me"
-    url: "/#about-me"
+    url: "https://zbox1005.github.io/#about-me"
 
   - title: "News"
-    url: "/#-news"
+    url: "https://zbox1005.github.io/#-news"
 
   - title: "Recent Projects"
-    url: "/#-recent-projects"
+    url: "https://zbox1005.github.io/#-recent-projects"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "https://zbox1005.github.io/#-publications"
 
   - title: "Educations"
-    url: "/#-educations"
+    url: "https://zbox1005.github.io/#-educations"
 
   - title: "Research Experience"
-    url: "/#-research-experience"
+    url: "https://zbox1005.github.io/#-research-experience"
   
   - title: "Work Experience"
-    url: "/#-work-experience"
+    url: "https://zbox1005.github.io/#-work-experience"
 
   # - title: "Honors and Awards"
   #   url: "/#-honors-and-awards"
