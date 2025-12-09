@@ -64,7 +64,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
-  <li><em>2025.11:</em> &nbsp;🎉🎉 Excited to share our <a href="https://arxiv.org/pdf/2509.25302">Agent Matrix</a> featured in several tech blogs, including <a href="https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee">From Chatbots to Clones</a> and <a href="https://ai.gopubby.com/ai-just-learned-to-clone-itself-not-out-of-malice-but-out-of-stress-2f9c9bc86b3b">AI Just Learned to Clone Itself</a>. Great to see growing attention to this emerging topic!</li>
+  <li><em>2025.11:</em> &nbsp;🎉🎉 Excited to share our <a href="https://arxiv.org/abs/2509.25302">Agent Matrix</a> featured in several tech blogs, including <a href="https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee">From Chatbots to Clones</a> and <a href="https://ai.gopubby.com/ai-just-learned-to-clone-itself-not-out-of-malice-but-out-of-stress-2f9c9bc86b3b">AI Just Learned to Clone Itself</a>. Great to see growing attention to this emerging topic!</li>
   <li><em>2025.07:</em> &nbsp;🎉🎉 Our <a href="https://arxiv.org/abs/2507.16534">Frontier AI Risk Management Framework</a> has been released. I participated in exploring self-replication risks in LLM Agents.</li>
   <li><em>2025.05:</em> &nbsp;🎉🎉 <a href="https://arxiv.org/abs/2502.17214">CoT-UQ</a> has been accepted by <a href="https://2025.aclweb.org/">ACL 2025</a>.</li>
   <li><em>2025.04:</em> &nbsp;🎉🎉 I will serve as a reviewer for NeurIPS 2025.</li>
