@@ -122,6 +122,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 [**\[PDF\]**](https://arxiv.org/pdf/2509.25302) &nbsp; 
 <!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
+[**\[BLOG\]**](https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee) &nbsp; 
 <a href="#" onclick="toggleBibtex('dive25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_dive25" class="bibtex noshow">
     <pre>
