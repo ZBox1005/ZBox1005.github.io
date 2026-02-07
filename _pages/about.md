@@ -83,6 +83,14 @@ Besides, I am also experienced in other fields of machine learning like **active
 </div>
 
 # 💻 Recent Projects
+(Comming soon...)
+<div>
+<ul>
+    <!-- <br> -->
+        <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
+        
+</ul>
+</div>
 (For more details can click the images)
 <div>
 <ul>
