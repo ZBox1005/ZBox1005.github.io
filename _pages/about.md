@@ -368,7 +368,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - **Journal Reviewer:** 
   ISPRS Journal of Photogrammetry and Remote Sensing
 - **Conference Reviewer:** 
-  NeurIPS (2025) ICLR (2026)
+  NeurIPS (2025) ICLR (2026) ICML (2026)
 
 <!-- # 🎖 Honors and Awards
 - *2023.10* Third Prize Winner of TBM Machine Learning Competition. -->
