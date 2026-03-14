@@ -87,7 +87,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 <div>
 <ul>
     <!-- <br> -->
-        <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
+        <a href="files/MDMF-paper.pdf"><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
         
 </ul>
 </div>
