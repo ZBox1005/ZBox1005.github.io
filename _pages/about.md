@@ -64,6 +64,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
+  <li><em>2024.09:</em> &nbsp;🎉🎉 One paper has been accepted by <a href="https://2026.ieeeicme.org/">ICME 2026</a>.</li>
   <li><em>2025.11:</em> &nbsp;🎉🎉 Excited to share our <a href="https://arxiv.org/abs/2509.25302">Agent Matrix</a> featured in several tech blogs, including <a href="https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee">From Chatbots to Clones</a> and <a href="https://ai.gopubby.com/ai-just-learned-to-clone-itself-not-out-of-malice-but-out-of-stress-2f9c9bc86b3b">AI Just Learned to Clone Itself</a>. Great to see growing attention to this emerging topic!</li>
   <li><em>2025.07:</em> &nbsp;🎉🎉 Our <a href="https://arxiv.org/abs/2507.16534">Frontier AI Risk Management Framework</a> has been released. I participated in exploring self-replication risks in LLM Agents.</li>
   <li><em>2025.05:</em> &nbsp;🎉🎉 <a href="https://arxiv.org/abs/2502.17214">CoT-UQ</a> has been accepted by <a href="https://2025.aclweb.org/">ACL 2025</a>.</li>
@@ -112,132 +113,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 (\* indicates **equal contribution**)
 
-## Preprint
-
-<div class='paper-box'>
-<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/matrix.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**<font color=DarkSlateBlue style="font-size: 18px;">Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents</font>**
-
-**\[<font color="#993333">Preprint. Under Review</font>\]**
-
-**Boxuan Zhang\***, Yi Yu\*, Jiaxuan Guo, and Jing Shao
-
-**<font color=SandyBrown>TL;DR:</font>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks (e.g., dynamic load balancing) to enable scenario-driven assessment of agent behaviors.
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
-
-[**\[PDF\]**](https://arxiv.org/pdf/2509.25302) &nbsp; 
-<!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
-[**\[BLOG\]**](https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee) &nbsp; 
-<a href="#" onclick="toggleBibtex('dive25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_dive25" class="bibtex noshow">
-    <pre>
-@article{zhang2025dive,
-  title={Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents},
-  author={Zhang, Boxuan and Yu, Yi and Guo, Jiaxuan and Shao, Jing},
-  journal={arXiv preprint arXiv:2509.25302},
-  year={2025}
-} </pre>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'>
-<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/c2eval.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**<font color=DarkSlateBlue style="font-size: 18px;">What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models</font>**
-
-**\[<font color="#993333">Preprint. Under Review</font>\]**
-
-Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
-
-**<font color=SandyBrown>TL;DR:</font>** We introduce \\C^2\\-Eval, a holistic benchmark for the unified assessment of creativity in FMs. \\C^2\\-Eval distinguishes between two complementary forms of Creativity (\\C^2\\): convergent creativity, where tasks admit constrained solutions (e.g., code generation), and divergent creativity, where tasks are open-ended (e.g., story telling).
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
-
-[**\[PDF\]**](https://arxiv.org/pdf/2510.04009) &nbsp; 
-<!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
-<a href="#" onclick="toggleBibtex('what25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_what25" class="bibtex noshow">
-    <pre>
-@article{he2025what,
-  title={What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models},
-  author={He, Zicong and Zhang, Boxuan and Liu, Weihao and Tang, Ruixiang and Cheng, Lu},
-  journal={arXiv preprint arXiv:2510.04009},
-  year={2025}
-} </pre>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'>
-<div class='paper-box-image'>
-<div><div class="badge">Technical Report</div>
-<img src='images/logo-self-replication.png' alt="sym" width="100%"></div>
-</div>
-<div class='paper-box-text' markdown="1">
-
-**<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
-
-**\[<font color="#993333">Technical Report</font>\]**
-
-Shanghai AI Lab and Concordia AI, ..., **Boxuan Zhang**, [30+ authors]
-
-**<font color=SandyBrown>TL;DR:</font>** We identify critical frontier AI risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
-
-[**\[PDF\]**](https://arxiv.org/pdf/2507.16534) &nbsp; 
-[**\[Blog\]**](https://ai45.shlab.org.cn/research/posts/safework-f1/) &nbsp; 
-<a href="#" onclick="toggleBibtex('frontier25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_frontier25" class="bibtex noshow">
-    <pre>
-@article{shailab2025frontier,
-  title={Frontier ai risk management framework (v1.0)},
-  author={Shanghai AI Lab & Concordia AI},
-  url={https://research.ai45.shlab.org.cn/safework-f1-framework.pdf},
-  year={2025}
-} </pre>
-  </div>
-</div>
-</div>
-
-
-<div class='paper-box'>
-<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
-
-**\[<font color="#993333">Preprint. Under Review</font>\]**
-
-Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
-
-**<font color=SandyBrown>TL;DR:</font>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
-
-[**\[PDF\]**](https://arxiv.org/pdf/2503.02851) &nbsp; 
-[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp; 
-<a href="#" onclick="toggleBibtex('shakes25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
-<div id="bib_shakes25" class="bibtex noshow">
-    <pre>
-@article{he2025shakespearean,
-  title={Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs' Decoding Layers},
-  author={He, Zicong and Zhang, Boxuan and Cheng, Lu},
-  journal={arXiv preprint arXiv:2503.02851},
-  year={2025}
-} </pre>
-  </div>
-</div>
-</div>
-
-## Published
+## Selected Publication
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -302,7 +178,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/ssod-at.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/ssod-at.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<font color=DarkSlateBlue style="font-size: 18px;">Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching</font>**
@@ -312,8 +188,6 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 **Boxuan Zhang**, Zengmao Wang and Bo Du
 
 **<font color=SandyBrown>TL;DR:</font>** Propose to boost semi-supervised object detection with active teaching (SSOD-AT) in remote sensing images, which helps to alleviate the dependency on limited labeled images in remote sensing scenarios.
-
-<!-- **<font color=DarkSlateBlue>IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>** -->
 
 [**\[PDF\]**](https://ieeexplore.ieee.org/document/10411936) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) &nbsp; 
@@ -329,10 +203,132 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 } </pre>
   </div>
 </div>
+</div> -->
+
+## Working Preprint
+
+<div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/matrix.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents</font>**
+
+**\[<font color="#993333">Preprint. Under Review</font>\]**
+
+**Boxuan Zhang\***, Yi Yu\*, Jiaxuan Guo, and Jing Shao
+
+**<font color=SandyBrown>TL;DR:</font>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks (e.g., dynamic load balancing) to enable scenario-driven assessment of agent behaviors.
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2509.25302) &nbsp; 
+<!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
+[**\[BLOG\]**](https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee) &nbsp; 
+<a href="#" onclick="toggleBibtex('dive25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_dive25" class="bibtex noshow">
+    <pre>
+@article{zhang2025dive,
+  title={Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents},
+  author={Zhang, Boxuan and Yu, Yi and Guo, Jiaxuan and Shao, Jing},
+  journal={arXiv preprint arXiv:2509.25302},
+  year={2025}
+} </pre>
+  </div>
+</div>
 </div>
 
-# 📖 Educations
-- *2025.09 - present*, PhD, Department of Computer Science, Rutgers University, USA. 
+
+<div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/c2eval.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models</font>**
+
+**\[<font color="#993333">Preprint. Under Review</font>\]**
+
+Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
+
+**<font color=SandyBrown>TL;DR:</font>** We introduce \\C^2\\-Eval, a holistic benchmark for the unified assessment of creativity in FMs. \\C^2\\-Eval distinguishes between two complementary forms of Creativity (\\C^2\\): convergent creativity, where tasks admit constrained solutions (e.g., code generation), and divergent creativity, where tasks are open-ended (e.g., story telling).
+
+<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2510.04009) &nbsp; 
+<!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
+<a href="#" onclick="toggleBibtex('what25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_what25" class="bibtex noshow">
+    <pre>
+@article{he2025what,
+  title={What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models},
+  author={He, Zicong and Zhang, Boxuan and Liu, Weihao and Tang, Ruixiang and Cheng, Lu},
+  journal={arXiv preprint arXiv:2510.04009},
+  year={2025}
+} </pre>
+  </div>
+</div>
+</div>
+
+
+<!-- <div class='paper-box'>
+<div class='paper-box-image'>
+<div><div class="badge">Technical Report</div>
+<img src='images/logo-self-replication.png' alt="sym" width="100%"></div>
+</div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
+
+**\[<font color="#993333">Technical Report</font>\]**
+
+Shanghai AI Lab and Concordia AI, ..., **Boxuan Zhang**, [30+ authors]
+
+**<font color=SandyBrown>TL;DR:</font>** We identify critical frontier AI risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
+
+[**\[PDF\]**](https://arxiv.org/pdf/2507.16534) &nbsp; 
+[**\[Blog\]**](https://ai45.shlab.org.cn/research/posts/safework-f1/) &nbsp; 
+<a href="#" onclick="toggleBibtex('frontier25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_frontier25" class="bibtex noshow">
+    <pre>
+@article{shailab2025frontier,
+  title={Frontier ai risk management framework (v1.0)},
+  author={Shanghai AI Lab & Concordia AI},
+  url={https://research.ai45.shlab.org.cn/safework-f1-framework.pdf},
+  year={2025}
+} </pre>
+  </div>
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
+
+**\[<font color="#993333">Preprint. Under Review</font>\]**
+
+Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
+
+**<font color=SandyBrown>TL;DR:</font>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
+
+[**\[PDF\]**](https://arxiv.org/pdf/2503.02851) &nbsp; 
+[**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp; 
+<a href="#" onclick="toggleBibtex('shakes25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_shakes25" class="bibtex noshow">
+    <pre>
+@article{he2025shakespearean,
+  title={Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs' Decoding Layers},
+  author={He, Zicong and Zhang, Boxuan and Cheng, Lu},
+  journal={arXiv preprint arXiv:2503.02851},
+  year={2025}
+} </pre>
+  </div>
+</div>
+</div> -->
+
+
+# 📖 Education
+- *2025.09 - present*, PhD, Department of Computer Science, Rutgers University, United States. 
 - *2022.09 - 2024.06*, Master, School of Computer Science, Wuhan University, China. 
 - *2018.09 - 2022.06*, Undergraduate, School of Computer Science, Wuhan University, China. 
 
@@ -342,7 +338,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
 # 👨🏻‍💻 Research Experience
 <!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
-- *2024.11 - present*, **Research Assistant** <br>
+- *2024.11 - 2025.08*, **Research Assistant** <br>
   Department of [Computer Science](https://cs.uic.edu/), University of Illinois Chicago([UIC](https://www.uic.edu/)) <br>
   Supervisor: [Prof. Lu Cheng](https://lcheng.org/) <br>
 - *2024.06 - 2025.02*, **Research Intern** <br>
@@ -352,9 +348,9 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
   [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/) <br>
   Collaborate with: [Dr. Jianing Zhu](https://zfancy.github.io/) <br>
-- *2023.08 - 2023.10*, **Research Intern** <br>
+<!-- - *2023.08 - 2023.10*, **Research Intern** <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
-  Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br>
+  Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br> -->
 - 2022.09 - 2024.06, **Research Assistant** <br>
   [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
