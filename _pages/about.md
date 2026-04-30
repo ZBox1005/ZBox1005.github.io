@@ -46,14 +46,14 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 # 🧐 About Me
 I am a 1st year CS PhD student at [Rutgers University](https://www.rutgers.edu/), advised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US).
 
-Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Dr. Jianing Zhu](https://zfancy.github.io/).<br>
+Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/), [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Dr. Jianing Zhu](https://zfancy.github.io/).<br>
 
 🧩 **Research Interests:** <br>
-<!-- My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
+<!-- My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<span style="color: red">reliability</span>* and its applications to boost the *<span style="color: red">safety</span>* of **large language models** and address critical challenges in **healthcare**. 
 Besides, I am also experienced in other fields of machine learning like **active learning** and **semi-supervised learning**, and their applications to **object detection** and **remote sensing**. <br> -->
-My current research centers on developing **trustworthy** agentic and generative AI systems, especially *Agentic LLMs* and *Diffusion Models*, with a focus on *<font color=darkred>safety</font>*, *<font color=darkgoldenrod>reliability</font>*, and *<font color=darkblue>robustness</font>*. I am also working on reliable detection for AI-generated visual content (e.g., images and videos), and interdisciplinary applications of machine learning methods in healthcare (e.g., Immunology, Cell Morphology).
-<!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
-## **<font color=FireBrick>If you share the same research interests with me and are intereted in these areas or my previous works, feel free to drop me an <a href="mailto:bz362@rutgers.edu"><font color=DarkSlateBlue>Email</font></a> or add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
+My current research centers on developing **trustworthy** agentic and generative AI systems, especially *Agentic LLMs* and *Diffusion Models*, with a focus on *<span style="color: darkred">safety</span>*, *<span style="color: darkgoldenrod">reliability</span>*, and *<span style="color: darkblue">robustness</span>*. I am also working on reliable detection for AI-generated visual content (e.g., images and videos), and interdisciplinary applications of machine learning methods in healthcare (e.g., Immunology, Cell Morphology).
+<!-- If you are interested in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
+## **<span style="color: FireBrick">If you share the same research interests with me and are interested in these areas or my previous works, feel free to drop me an <a href="mailto:bz362@rutgers.edu"><span style="color: DarkSlateBlue">Email</span></a> or add my</span> [<span style="color: DarkSlateBlue">Wechat</span>](images/IMG_2944.JPG)** <span style="color: FireBrick">. I am always delighted for potential collaborations!</span>
 
 
 # 🔥 News
@@ -85,7 +85,7 @@ My current research centers on developing **trustworthy** agentic and generative
 </div>
 
 # 💻 Recent Projects
-(Comming soon...)
+(Coming soon...)
 <div>
 <ul>
     <!-- <br> -->
@@ -93,7 +93,7 @@ My current research centers on developing **trustworthy** agentic and generative
         
 </ul>
 </div>
-(For more details can click the images)
+(Click the images for more details)
 <div>
 <ul>
     <!-- <br> -->
@@ -120,15 +120,15 @@ My current research centers on developing **trustworthy** agentic and generative
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/cot-uq.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought</font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">CoT-UQ: Improving Response-wise Uncertainty Quantification in LLMs with Chain-of-Thought</span>**
 
-**\[<font color="#993333">ACL 2025 Findings</font>\]**
+**\[<span style="color: #993333">ACL 2025 Findings</span>\]**
 
 **Boxuan Zhang** and Ruqi Zhang
 
-**<font color=SandyBrown>TL;DR:</font>** Propose to quantify response-wise uncertainty by integrating LLMs’ inherent reasoning capabilities through Chain-of-Thought (CoT) into the UQ process.
+**<span style="color: SandyBrown">TL;DR:</span>** Propose to quantify response-wise uncertainty by integrating LLMs’ inherent reasoning capabilities through Chain-of-Thought (CoT) into the UQ process.
 
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
 
 [**\[PDF\]**](https://arxiv.org/pdf/2502.17214) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/CoT-UQ) &nbsp;
@@ -150,17 +150,15 @@ My current research centers on developing **trustworthy** agentic and generative
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/cover.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;"></font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">What If the Input is Expanded in OOD Detection?</span>**
 
-**<font color=DarkSlateBlue style="font-size: 18px;">What If the Input is Expanded in OOD Detection?</font>**
+**\[<span style="color: #993333">Neural Information Processing Systems (NeurIPS), 2024</span>\]**
 
-**\[<font color="#993333">Neural Information Processing Systems (NeurIPS), 2024</font>\]**
+**Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du, and Bo Han
 
-**Boxuan Zhang\***, Jianing Zhu\*, Zengmao Wang, Tongliang Liu, Bo Du and Bo Han
+**<span style="color: SandyBrown">TL;DR:</span>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection.
 
-**<font color=SandyBrown>TL;DR:</font>** Propose a novel perspective to employ different common corruptions on the input space to expand the representation dimension for OOD detection.
-
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
 
 [**\[PDF\]**](https://proceedings.neurips.cc/paper_files/paper/2024/file/25cc3adf8c85f7c70989cb8a97a691a7-Paper-Conference.pdf) &nbsp; 
 [**\[Project Page\]**](https://confidence-average.github.io/) &nbsp; 
@@ -183,13 +181,13 @@ My current research centers on developing **trustworthy** agentic and generative
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">GRSL 2024</div><img src='images/ssod-at.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching</font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">Boosting Semisupervised Object Detection in Remote-Sensing Images With Active Teaching</span>**
 
-**\[<font color="#993333">IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</font>\]**
+**\[<span style="color: #993333">IEEE Geoscience and Remote Sensing Letters (GRSL), 2024</span>\]**
 
 **Boxuan Zhang**, Zengmao Wang and Bo Du
 
-**<font color=SandyBrown>TL;DR:</font>** Propose to boost semi-supervised object detection with active teaching (SSOD-AT) in remote sensing images, which helps to alleviate the dependency on limited labeled images in remote sensing scenarios.
+**<span style="color: SandyBrown">TL;DR:</span>** Propose to boost semi-supervised object detection with active teaching (SSOD-AT) in remote sensing images, which helps to alleviate the dependency on limited labeled images in remote sensing scenarios.
 
 [**\[PDF\]**](https://ieeexplore.ieee.org/document/10411936) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/SSOD-AT) &nbsp; 
@@ -213,15 +211,15 @@ My current research centers on developing **trustworthy** agentic and generative
 <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/matrix.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents</font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">Dive into the Agent Matrix: A Realistic Evaluation of Self-Replication Risk in LLM Agents</span>**
 
-**\[<font color="#993333">Preprint. Under Review</font>\]**
+**\[<span style="color: #993333">Preprint. Under Review</span>\]**
 
 **Boxuan Zhang\***, Yi Yu\*, Jiaxuan Guo, and Jing Shao
 
-**<font color=SandyBrown>TL;DR:</font>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks to enable scenario-driven assessment of agent behaviors.
+**<span style="color: SandyBrown">TL;DR:</span>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks to enable scenario-driven assessment of agent behaviors.
 
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
 
 [**\[PDF\]**](https://arxiv.org/pdf/2509.25302) &nbsp; 
 <!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
@@ -244,15 +242,15 @@ My current research centers on developing **trustworthy** agentic and generative
 <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/c2eval.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models</font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">What Shapes a Creative Machine Mind? Comprehensively Benchmarking Creativity in Foundation Models</span>**
 
-**\[<font color="#993333">Preprint. Under Review</font>\]**
+**\[<span style="color: #993333">Preprint. Under Review</span>\]**
 
 Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
 
-**<font color=SandyBrown>TL;DR:</font>** We introduce C2-Eval, a holistic benchmark for the unified assessment of creativity in foundation models. C2-Eval distinguishes between two complementary forms of Creativity (C2): convergent creativity, where tasks admit constrained solutions, and divergent creativity, where tasks are open-ended.
+**<span style="color: SandyBrown">TL;DR:</span>** We introduce C2-Eval, a holistic benchmark for the unified assessment of creativity in foundation models. C2-Eval distinguishes between two complementary forms of Creativity (C2): convergent creativity, where tasks admit constrained solutions, and divergent creativity, where tasks are open-ended.
 
-<!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
 
 [**\[PDF\]**](https://arxiv.org/pdf/2510.04009) &nbsp; 
 <!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
@@ -277,13 +275,13 @@ Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
 </div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report</span>**
 
-**\[<font color="#993333">Technical Report</font>\]**
+**\[<span style="color: #993333">Technical Report</span>\]**
 
 Shanghai AI Lab and Concordia AI, ..., **Boxuan Zhang**, [30+ authors]
 
-**<font color=SandyBrown>TL;DR:</font>** We identify critical frontier AI risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
+**<span style="color: SandyBrown">TL;DR:</span>** We identify critical frontier AI risks in seven areas: cyber offense, biological and chemical risks, persuasion and manipulation, uncontrolled autonomous AI R&D, strategic deception and scheming, **self-replication**, and collusion. 
 
 [**\[PDF\]**](https://arxiv.org/pdf/2507.16534) &nbsp; 
 [**\[Blog\]**](https://ai45.shlab.org.cn/research/posts/safework-f1/) &nbsp; 
@@ -305,13 +303,13 @@ Shanghai AI Lab and Concordia AI, ..., **Boxuan Zhang**, [30+ authors]
 <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/hcb.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<font color=DarkSlateBlue style="font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</font>**
+**<span style="color: DarkSlateBlue; font-size: 18px;">Shakespearean Sparks: The Dance of Hallucination and Creativity in LLMs’ Decoding Layers</span>**
 
-**\[<font color="#993333">Preprint. Under Review</font>\]**
+**\[<span style="color: #993333">Preprint. Under Review</span>\]**
 
 Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 
-**<font color=SandyBrown>TL;DR:</font>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
+**<span style="color: SandyBrown">TL;DR:</span>** Given the philosophical nature of creativity, we propose a narrow definition tailored to LLMs and introduce an evaluation framework, HCL, which quantifies Hallucination and Creativity across different Layers of LLMs during decoding.
 
 [**\[PDF\]**](https://arxiv.org/pdf/2503.02851) &nbsp; 
 [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp; 
@@ -341,19 +339,19 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 # 👨🏻‍💻 Research Experience
 <!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
 - *2024.11 - 2025.08*, **Research Assistant** <br>
-  Department of [Computer Science](https://cs.uic.edu/), University of Illinois Chicago([UIC](https://www.uic.edu/)) <br>
+  Department of [Computer Science](https://cs.uic.edu/), University of Illinois Chicago ([UIC](https://www.uic.edu/)) <br>
   Supervisor: [Prof. Lu Cheng](https://lcheng.org/) <br>
 - *2024.06 - 2025.02*, **Research Intern** <br>
   Department of [Computer Science](https://www.cs.purdue.edu/), [Purdue University](https://www.purdue.edu/) <br>
   Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/) <br>
 - *2023.11 - 2024.06*, **Research Intern** <br>
-  [TMLR Group](https://github.com/tmlr-group), HongKong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
+  [TMLR Group](https://github.com/tmlr-group), Hong Kong Baptist University ([HKBU](https://www.hkbu.edu.hk/en/index.html)) <br>
   Supervisor: [Prof. Bo Han](https://bhanml.github.io/) <br>
   Collaborate with: [Dr. Jianing Zhu](https://zfancy.github.io/) <br>
 <!-- - *2023.08 - 2023.10*, **Research Intern** <br>
   School of [Civil Engineering](https://civ.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br> -->
-- 2022.09 - 2024.06, **Research Assistant** <br>
+- *2022.09 - 2024.06*, **Research Assistant** <br>
   [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
   Supervisor: [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US) <br>
 
