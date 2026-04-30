@@ -44,13 +44,14 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 <span class='anchor' id='about-me'></span>
 
 # 🧐 About Me
-I am a 1st year CS PhD student at [Rutgers University](https://www.rutgers.edu/), supervised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm).
+I am a 1st year CS PhD student at [Rutgers University](https://www.rutgers.edu/), advised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US).
 
 Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/) in [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Dr. Jianing Zhu](https://zfancy.github.io/).<br>
 
 🧩 **Research Interests:** <br>
-My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
-Besides, I am also experienced in other fields of machine learning like **active learning** and **semi-supervised learning**, and their applications to **object detection** and **remote sensing**. <br>
+<!-- My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<font color=red>reliability</font>* and its applications to boost the *<font color=red>safety</font>* of **large language models** and address critical challenges in **healthcare**. 
+Besides, I am also experienced in other fields of machine learning like **active learning** and **semi-supervised learning**, and their applications to **object detection** and **remote sensing**. <br> -->
+My current research centers on developing **trustworthy** agentic and generative AI systems, especially *Agentic LLMs* and *Diffusion Models*, with a focus on *<font color=red>safety</font>*, *<font color=yellow>reliability</font>*, and *<font color=blue>robustness</font>*. I am also working on reliable detection for AI-generated visual content (e.g., images and videos), and interdisciplinary applications of machine learning methods in healthcare (e.g., Immunology, Cell Morphology).
 <!-- If you are intereted in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
 ## **<font color=FireBrick>If you share the same research interests with me and are intereted in these areas or my previous works, feel free to drop me an <a href="mailto:bz362@rutgers.edu"><font color=DarkSlateBlue>Email</font></a> or add my</font> [<font color=DarkSlateBlue>Wechat</font>](images/IMG_2944.JPG)** <font color=FireBrick>. I am always delighted for potential collaborations!</font>
 
@@ -76,10 +77,10 @@ Besides, I am also experienced in other fields of machine learning like **active
   <li><em>2024.05:</em> &nbsp;🎉🎉 Successfully defended my Master thesis!</li>
   <li><em>2024.04:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.purdue.edu/">CS@Purdue University</a> as a research intern in June 2024.</li>
   <li><em>2024.01:</em> &nbsp;🎉🎉 One paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859">GRSL 2024</a>.</li>
-  <li><em>2023.11:</em> &nbsp;🎉🎉 I will join <a href="https://github.com/tmlr-group">TMLR Group@ HKBU</a> as a research intern.</li>
+  <!-- <li><em>2023.11:</em> &nbsp;🎉🎉 I will join <a href="https://github.com/tmlr-group">TMLR Group@ HKBU</a> as a research intern.</li>
   <li><em>2023.10:</em> &nbsp;🎉🎉 Honored to receive <a href="http://www.csrme.com/Home/Content/show/id/4432.do">3rd Prize</a> @ TBM Machine Learning Competition.</li>
   <li><em>2023.10:</em> &nbsp;🎉🎉 Attend 2nd TBM Machine Learning Competition(held by <a href="http://www.csrme.com/">CSRME</a>) and present research work @ Shanghai.</li>
-  <li><em>2023.09:</em> &nbsp;🎉🎉 Start my second-year research & learning journey in WHU.</li>
+  <li><em>2023.09:</em> &nbsp;🎉🎉 Start my second-year research & learning journey in WHU.</li> -->
 </ul>
 </div>
 
@@ -88,7 +89,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 <div>
 <ul>
     <!-- <br> -->
-        <a href="files/MDMF-paper.pdf"><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
+        <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
         
 </ul>
 </div>
@@ -218,7 +219,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 **Boxuan Zhang\***, Yi Yu\*, Jiaxuan Guo, and Jing Shao
 
-**<font color=SandyBrown>TL;DR:</font>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks (e.g., dynamic load balancing) to enable scenario-driven assessment of agent behaviors.
+**<font color=SandyBrown>TL;DR:</font>** We present a comprehensive evaluation framework for quantifying self-replication risks. Our framework establishes authentic production environments and realistic tasks to enable scenario-driven assessment of agent behaviors.
 
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
@@ -249,7 +250,7 @@ Besides, I am also experienced in other fields of machine learning like **active
 
 Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
 
-**<font color=SandyBrown>TL;DR:</font>** We introduce \\C^2\\-Eval, a holistic benchmark for the unified assessment of creativity in FMs. \\C^2\\-Eval distinguishes between two complementary forms of Creativity (\\C^2\\): convergent creativity, where tasks admit constrained solutions (e.g., code generation), and divergent creativity, where tasks are open-ended (e.g., story telling).
+**<font color=SandyBrown>TL;DR:</font>** We introduce C2-Eval, a holistic benchmark for the unified assessment of creativity in foundation models. C2-Eval distinguishes between two complementary forms of Creativity (C2): convergent creativity, where tasks admit constrained solutions, and divergent creativity, where tasks are open-ended.
 
 <!-- **<font color=DarkSlateBlue>Neural Information Processing Systems (NeurIPS), 2024</font>** -->
 
@@ -354,7 +355,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
   Supervisor: [Prof. Xiaoping Zhang](https://civ.whu.edu.cn/info/1052/1155.htm) <br> -->
 - 2022.09 - 2024.06, **Research Assistant** <br>
   [SIGMA Lab](http://sigma.whu.edu.cn/), Wuhan University ([WHU](https://www.whu.edu.cn/)) <br>
-  Supervisor: [Prof. Zengmao Wang](https://jszy.whu.edu.cn/wangzengmao/zh_CN/more/1231604/jsjjgd/index.htm) and [Prof. Bo Du](https://cs.whu.edu.cn/info/1019/2892.htm) <br>
+  Supervisor: [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US) <br>
 
 # 💼 Work Experience
 - *2025.03 - 2025.07*, **Research Assistant** <br>
@@ -365,7 +366,7 @@ Zicong He\*, **Boxuan Zhang\***, and Lu Cheng
 - **Journal Reviewer:** 
   ISPRS Journal of Photogrammetry and Remote Sensing
 - **Conference Reviewer:** 
-  NeurIPS (2025) ICLR (2026) ICML (2026)
+  NeurIPS (2025, 2026) ICLR (2026) ICML (2026)
 
 <!-- # 🎖 Honors and Awards
 - *2023.10* Third Prize Winner of TBM Machine Learning Competition. -->
