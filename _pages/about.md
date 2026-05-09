@@ -86,27 +86,29 @@ My current research centers on building **trustworthy** agentic and generative A
 
 # 💻 Recent Projects
 (Coming soon...)
-<div>
+<!-- <div>
 <ul>
-    <!-- <br> -->
         <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
         
 </ul>
-</div>
+</div> -->
 (Click the images for more details)
 <div>
 <ul>
     <!-- <br> -->
-        <a href="https://arxiv.org/abs/2509.25302"><img src="./images/logo_matrix.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Matrix"></a>
+        <a href="https://zbox1005.github.io/agent-foresight/"><img src="./images/logo-AgentForesight.pdf" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Foresight"></a>
         &nbsp;&nbsp;
-        <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
+        <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
+        &nbsp;&nbsp;
+        <a href="https://arxiv.org/abs/2509.25302"><img src="./images/logo_matrix.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Matrix"></a>
         <!-- &nbsp;&nbsp; -->
         <br>
         <br>
-        <a href="https://github.com/ZicongHe2002/HCL-Spark"><img src="./images/logo-hcl.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="HCL-Spark"></a>
+        <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
         &nbsp;&nbsp;
         <a href="https://confidence-average.github.io/"><img src="./images/logo_cover.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
-        
+        &nbsp;&nbsp;
+        <a href="https://github.com/ZicongHe2002/HCL-Spark"><img src="./images/logo-hcl.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="HCL-Spark"></a>
 </ul>
 </div>
 <br>
