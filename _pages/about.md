@@ -85,18 +85,12 @@ My current research centers on building **trustworthy** agentic and generative A
 </div>
 
 # 💻 Recent Projects
-(Coming soon...)
-<!-- <div>
-<ul>
-        <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
-        
-</ul>
-</div> -->
+
 (Click the images for more details)
 <div>
 <ul>
     <!-- <br> -->
-        <a href="https://zbox1005.github.io/agent-foresight/"><img src="./images/logo-AgentForesight.pdf" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Foresight"></a>
+        <a href="https://zbox1005.github.io/agent-foresight/"><img src="./images/logo-AgentForesight.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Foresight"></a>
         &nbsp;&nbsp;
         <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
         &nbsp;&nbsp;
