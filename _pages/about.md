@@ -92,7 +92,7 @@ My current research centers on building **trustworthy** agentic and generative A
     <!-- <br> -->
         <a href="https://zbox1005.github.io/agent-foresight/"><img src="./images/logo-AgentForesight.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Foresight"></a>
         &nbsp;&nbsp;
-        <a href=""><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
+        <a href="https://zbox1005.github.io/MDMF-project/"><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
         &nbsp;&nbsp;
         <a href="https://arxiv.org/abs/2509.25302"><img src="./images/logo_matrix.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Matrix"></a>
         <!-- &nbsp;&nbsp; -->
