@@ -204,6 +204,67 @@ My current research centers on building **trustworthy** agentic and generative A
 ## Working Preprint
 
 <div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/agentforesight.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<span style="color: DarkSlateBlue; font-size: 18px;">AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems</span>**
+
+**\[<span style="color: #993333">Preprint. Under Review</span>\]**
+
+**Boxuan Zhang\***, Jianing Zhu\*, Zeru Shi, Dongfang Liu, and Ruixiang Tang
+
+**<span style="color: SandyBrown">TL;DR:</span>** We reframe agentic failure analysis from post-hoc attribution on completed trajectories to online auditing on unfolding prefixes, where an auditor commits a continue-or-alarm verdict at every step.
+
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2605.08715) &nbsp; 
+[**\[Code\]**](https://github.com/ZBox1005/AgentForesight) &nbsp; 
+[**\[Project Page\]**](https://zbox1005.github.io/agent-foresight/) &nbsp; 
+<a href="#" onclick="toggleBibtex('agent26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_agent26" class="bibtex noshow">
+    <pre>
+@article{zhang2026agentforesight,
+  title={AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems},
+  author={Zhang, Boxuan and Zhu, Jianing and Shi, Zeru and Liu, Dongfang and Tang, Ruixiang},
+  journal={arXiv preprint arXiv:2605.08715},
+  year={2026}
+} </pre>
+  </div>
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/mdmf.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<span style="color: DarkSlateBlue; font-size: 18px;">Micro-Defects Expose Macro-Fakes: Detecting AI-Generated Images via Local Distributional Shifts</span>**
+
+**\[<span style="color: #993333">Preprint. Under Review</span>\]**
+
+**Boxuan Zhang**, Jianing Zhu, Qifan Wang, Jiang Liu, and Ruixiang Tang
+
+**<span style="color: SandyBrown">TL;DR:</span>** We propose Micro-Defects expose Macro-Fakes (MDMF), a local distribution-aware detection framework that amplifies micro-scale statistical irregularities into macro-level distributional discrepancies.
+
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2605.09296) &nbsp; 
+[**\[Code\]**](https://github.com/ZBox1005/MDMF) &nbsp; 
+[**\[Project Page\]**](https://zbox1005.github.io/MDMF-project/) &nbsp; 
+<a href="#" onclick="toggleBibtex('mdmf26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_mdmf26" class="bibtex noshow">
+    <pre>
+@article{zhang2026mdmf,
+  title={Micro-Defects Expose Macro-Fakes: Detecting AI-Generated Images via Local Distributional Shifts},
+  author={Zhang, Boxuan and Zhu, Jianing and Wang, Qifan and Liu, Jiang and Tang, Ruixiang},
+  journal={arXiv preprint arXiv:2605.09296},
+  year={2026}
+} </pre>
+  </div>
+</div>
+</div>
+
+<div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/matrix.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -234,7 +295,7 @@ My current research centers on building **trustworthy** agentic and generative A
 </div>
 
 
-<div class='paper-box'>
+<!-- <div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/c2eval.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -246,10 +307,7 @@ Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
 
 **<span style="color: SandyBrown">TL;DR:</span>** We introduce C2-Eval, a holistic benchmark for the unified assessment of creativity in foundation models. C2-Eval distinguishes between two complementary forms of Creativity (C2): convergent creativity, where tasks admit constrained solutions, and divergent creativity, where tasks are open-ended.
 
-<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
-
 [**\[PDF\]**](https://arxiv.org/pdf/2510.04009) &nbsp; 
-<!-- [**\[Code\]**](https://github.com/ZicongHe2002/HCL-Spark) &nbsp;  -->
 <a href="#" onclick="toggleBibtex('what25'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_what25" class="bibtex noshow">
     <pre>
@@ -261,7 +319,7 @@ Zicong He\*, **Boxuan Zhang\***, Weihao Liu\*, Ruixiang Tang, and Lu Cheng
 } </pre>
   </div>
 </div>
-</div>
+</div> -->
 
 
 <!-- <div class='paper-box'>
