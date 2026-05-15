@@ -95,15 +95,16 @@ My current research centers on building **trustworthy** agentic and generative A
         &nbsp;&nbsp;
         <a href="https://zbox1005.github.io/MDMF-project/"><img src="./images/logo-MDMF.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MDMF"></a>
         &nbsp;&nbsp;
+        <a href="https://minghokwok.github.io/MemEye/"><img src="./images/logo_memeye.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="MemEye"></a>
+        <br>
+        <br>
         <a href="https://arxiv.org/abs/2509.25302"><img src="./images/logo_matrix.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="Agent-Matrix"></a>
-        <!-- &nbsp;&nbsp; -->
-        <br>
-        <br>
+        &nbsp;&nbsp;
         <a href="https://github.com/ZBox1005/CoT-UQ"><img src="./images/logo-cot-uq.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoT-UQ"></a>
         &nbsp;&nbsp;
         <a href="https://confidence-average.github.io/"><img src="./images/logo_cover.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="CoVer"></a>
-        &nbsp;&nbsp;
-        <a href="https://github.com/ZicongHe2002/HCL-Spark"><img src="./images/logo-hcl.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="HCL-Spark"></a>
+        <!-- &nbsp;&nbsp; -->
+        <!-- <a href="https://github.com/ZicongHe2002/HCL-Spark"><img src="./images/logo-hcl.jpg" width="300" style="box-shadow: 4px 4px 8px #888" alt="HCL-Spark"></a> -->
 </ul>
 </div>
 <br>
@@ -220,6 +221,7 @@ My current research centers on building **trustworthy** agentic and generative A
 
 [**\[PDF\]**](https://arxiv.org/pdf/2605.08715) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/AgentForesight) &nbsp; 
+[**\[Huggingface Page\]**](https://huggingface.co/papers/2605.08715) &nbsp; 
 [**\[Project Page\]**](https://zbox1005.github.io/agent-foresight/) &nbsp; 
 <a href="#" onclick="toggleBibtex('agent26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_agent26" class="bibtex noshow">
@@ -250,7 +252,8 @@ My current research centers on building **trustworthy** agentic and generative A
 <!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
 
 [**\[PDF\]**](https://arxiv.org/pdf/2605.09296) &nbsp; 
-[**\[Code\]**](https://github.com/ZBox1005/MDMF) &nbsp; 
+[**\[Code\]**](https://github.com/ZBox1005/MDMF) &nbsp;
+[**\[Huggingface Page\]**](https://huggingface.co/papers/2605.09296) &nbsp; 
 [**\[Project Page\]**](https://zbox1005.github.io/MDMF-project/) &nbsp; 
 <a href="#" onclick="toggleBibtex('mdmf26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_mdmf26" class="bibtex noshow">
@@ -290,6 +293,37 @@ My current research centers on building **trustworthy** agentic and generative A
   author={Zhang, Boxuan and Yu, Yi and Guo, Jiaxuan and Shao, Jing},
   journal={arXiv preprint arXiv:2509.25302},
   year={2025}
+} </pre>
+  </div>
+</div>
+</div>
+
+<div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/memeye.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<span style="color: DarkSlateBlue; font-size: 18px;">MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory</span>**
+
+**\[<span style="color: #993333">Preprint. Under Review</span>\]**
+
+Minghao Guo*, Qingyue Jiao*, Zeru Shi*, Yihao Quan, **Boxuan Zhang**, Danrui Li, Liwei Che, Wujiang Xu, Shilong Liu, Zirui Liu, Mubbasir Kapadia, Vladimir Pavlovic, Jiang Liu, Mengdi Wang, Yiyu Shi, Dimitris N. Metaxas, Ruixiang Tang
+
+**<span style="color: SandyBrown">TL;DR:</span>** MemEye is a vision-centric long-term memory benchmark that evaluates agents’ ability to remember, update, and reason over visual information across long-running, multi-session image-grounded interactions.
+
+<!-- **<span style="color: DarkSlateBlue">Neural Information Processing Systems (NeurIPS), 2024</span>** -->
+
+[**\[PDF\]**](https://arxiv.org/pdf/2605.15128) &nbsp; 
+[**\[Code\]**](https://github.com/MinghoKwok/MemEye) &nbsp;
+ [**\[Huggingface Page\]**](https://huggingface.co/papers/2605.15128) &nbsp;
+[**\[Project Page\]**](https://minghokwok.github.io/MemEye/) &nbsp; 
+<a href="#" onclick="toggleBibtex('memeye26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
+<div id="bib_memeye26" class="bibtex noshow">
+    <pre>
+@article{guo2026memeye,
+  title={MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory},
+  author={Guo, Minghao and Jiao, Qingyue and Shi, Zeru and Quan, Yihao and Zhang, Boxuan and Li, Danrui and Che, Liwei and Xu, Wujiang and Liu, Shilong and Liu, Zirui and Kapadia, Mubbasir and Pavlovic, Vladimir and Liu, Jiang and Wang, Mengdi and Shi, Yiyu and Metaxas, Dimitris N. and Tang, Ruixiang},
+  journal={arXiv preprint arXiv:2605.15128},
+  year={2026}
 } </pre>
   </div>
 </div>
