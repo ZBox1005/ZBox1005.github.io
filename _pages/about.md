@@ -46,12 +46,12 @@ div.bibtex pre { font-size: 60%; overflow: auto;  width: 100%; padding: 0em 0em;
 # 🧐 About Me
 I am a 1st year CS PhD student at [Rutgers University](https://www.rutgers.edu/), advised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/). I have completed my master’s degree at [Sensing IntelliGence and MAchine learning(SIGMA) Lab](http://sigma.whu.edu.cn/) in [Wuhan University](https://www.whu.edu.cn/), under the supervision of [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US).
 
-Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/), [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/) and [Dr. Jianing Zhu](https://zfancy.github.io/).<br>
+Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/), [Purdue University](https://www.purdue.edu/), advised by [Prof. Ruqi Zhang](https://ruqizhang.github.io/). I was also fortunate to work with [Prof. Lu Cheng](https://lcheng.org/), [Prof. Bo Han](https://bhanml.github.io/), and [Dr. Jianing Zhu](https://zfancy.github.io/).<br>
 
 🧩 **Research Interests:** <br>
 <!-- My current research focus is to develop methodologies for **trustworthy machine learning**, particularly in *<span style="color: red">reliability</span>* and its applications to boost the *<span style="color: red">safety</span>* of **large language models** and address critical challenges in **healthcare**. 
 Besides, I am also experienced in other fields of machine learning like **active learning** and **semi-supervised learning**, and their applications to **object detection** and **remote sensing**. <br> -->
-My current research centers on building **trustworthy** agentic and generative AI systems, with an emphasis on *Reinforcement Learning* methods for *Agentic LLMs* and *Diffusion Models*, focusing on *<span style="color: darkred">safety</span>*, *<span style="color: darkgoldenrod">reliability</span>*, and *<span style="color: darkblue">robustness</span>*. I am also working on reliable detection for AI-generated visual content (e.g., images, videos), and interdisciplinary applications of machine learning in healthcare (e.g., Immunology, Cell Morphology).
+My current research centers on building **trustworthy** agentic and generative AI systems, with an emphasis on *Reinforcement Learning* methods for *Agentic LLMs* and *Diffusion Models*, focusing on *<span style="color: darkred">safety</span>*, *<span style="color: darkgoldenrod">reliability</span>*, and *<span style="color: darkblue">robustness</span>*. I am also working on reliable detection of AI-generated visual content (e.g., images, videos), and interdisciplinary applications of machine learning in healthcare (e.g., Immunology, Cell Morphology).
 <!-- If you are interested in these areas or my previous works, feel free to reach out! I am always delighted for potential collaborations! -->
 ## **<span style="color: FireBrick">If you share the same research interests with me and are interested in these areas or my previous works, feel free to drop me an <a href="mailto:bz362@rutgers.edu"><span style="color: DarkSlateBlue">Email</span></a> or add my</span> [<span style="color: DarkSlateBlue">Wechat</span>](images/IMG_2944.JPG)** <span style="color: FireBrick">. I am always delighted for potential collaborations!</span>
 
@@ -67,14 +67,14 @@ My current research centers on building **trustworthy** agentic and generative A
 <ul>
   <li><em>2026.05:</em> &nbsp;🎉🎉 Honored to be awarded as ICML 2026 <strong><span style="color: goldenrod">Gold</span> Reviewer</strong>.</li>
   <li><em>2026.03:</em> &nbsp;🎉🎉 One paper has been accepted by <a href="https://2026.ieeeicme.org/">ICME 2026</a>.</li>
-  <li><em>2025.11:</em> &nbsp;🎉🎉 Excited to share our <a href="https://arxiv.org/abs/2509.25302">Agent Matrix</a> featured in several tech blogs, including <a href="https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee">From Chatbots to Clones</a> and <a href="https://ai.gopubby.com/ai-just-learned-to-clone-itself-not-out-of-malice-but-out-of-stress-2f9c9bc86b3b">AI Just Learned to Clone Itself</a>. Great to see growing attention to this emerging topic!</li>
+  <li><em>2025.11:</em> &nbsp;🎉🎉 Excited to share that our <a href="https://arxiv.org/abs/2509.25302">Agent Matrix</a> featured in several tech blogs, including <a href="https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee">From Chatbots to Clones</a> and <a href="https://ai.gopubby.com/ai-just-learned-to-clone-itself-not-out-of-malice-but-out-of-stress-2f9c9bc86b3b">AI Just Learned to Clone Itself</a>. Great to see growing attention to this emerging topic!</li>
   <li><em>2025.07:</em> &nbsp;🎉🎉 Our <a href="https://arxiv.org/abs/2507.16534">Frontier AI Risk Management Framework</a> has been released. I participated in exploring self-replication risks in LLM Agents.</li>
   <li><em>2025.05:</em> &nbsp;🎉🎉 <a href="https://arxiv.org/abs/2502.17214">CoT-UQ</a> has been accepted by <a href="https://2025.aclweb.org/">ACL 2025</a>.</li>
   <!-- <li><em>2025.04:</em> &nbsp;🎉🎉 I will serve as a reviewer for NeurIPS 2025.</li> -->
-  <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprint works regarding LLMs! One investigates <a href="https://arxiv.org/abs/2502.17214">Uncertainty Quantification in LLMs</a>, and the other explores <a href="https://arxiv.org/abs/2503.02851">Connections between Creativity and Hallucination in LLMs</a>.</li>
-  <li><em>2025.02:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.rutgers.edu/">CS@Rutgers University</a> as a PhD student in 2025 Fall, supervised by <a href="https://www.ruixiangtang.net/">Prof. Ryan Tang</a>!</li>
+  <li><em>2025.02:</em> &nbsp;🎉🎉 Check our two preprints regarding LLMs! One investigates <a href="https://arxiv.org/abs/2502.17214">Uncertainty Quantification in LLMs</a>, and the other explores <a href="https://arxiv.org/abs/2503.02851">Connections between Creativity and Hallucination in LLMs</a>.</li>
+  <li><em>2025.02:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.rutgers.edu/">CS@Rutgers University</a> as a PhD student in Fall 2025, supervised by <a href="https://www.ruixiangtang.net/">Prof. Ryan Tang</a>!</li>
   <li><em>2024.09:</em> &nbsp;🎉🎉 Our paper titled "What If the Input is Expanded in OOD Detection?" has been accepted by <a href="https://neurips.cc/">NeurIPS 2024</a>.</li>
-  <li><em>2024.06:</em> &nbsp;🎉🎉 Start my remote research internship in <a href="https://www.cs.purdue.edu/">CS@Purdue University</a>, collaborating with <a href="https://ruqizhang.github.io/">Dr. Ruqi Zhang</a>.</li>
+  <li><em>2024.06:</em> &nbsp;🎉🎉 Start my remote research internship at <a href="https://www.cs.purdue.edu/">CS@Purdue University</a>, collaborating with <a href="https://ruqizhang.github.io/">Dr. Ruqi Zhang</a>.</li>
   <li><em>2024.05:</em> &nbsp;🎉🎉 Successfully defended my Master thesis!</li>
   <li><em>2024.04:</em> &nbsp;🎉🎉 I will join <a href="https://www.cs.purdue.edu/">CS@Purdue University</a> as a research intern in June 2024.</li>
   <li><em>2024.01:</em> &nbsp;🎉🎉 One paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8859">GRSL 2024</a>.</li>
@@ -221,7 +221,7 @@ My current research centers on building **trustworthy** agentic and generative A
 
 [**\[PDF\]**](https://arxiv.org/pdf/2605.08715) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/AgentForesight) &nbsp; 
-[**\[Huggingface Page\]**](https://huggingface.co/papers/2605.08715) &nbsp; 
+[**\[Hugging Face Page\]**](https://huggingface.co/papers/2605.08715) &nbsp; 
 [**\[Project Page\]**](https://zbox1005.github.io/agent-foresight/) &nbsp; 
 <a href="#" onclick="toggleBibtex('agent26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_agent26" class="bibtex noshow">
@@ -253,7 +253,7 @@ My current research centers on building **trustworthy** agentic and generative A
 
 [**\[PDF\]**](https://arxiv.org/pdf/2605.09296) &nbsp; 
 [**\[Code\]**](https://github.com/ZBox1005/MDMF) &nbsp;
-[**\[Huggingface Page\]**](https://huggingface.co/papers/2605.09296) &nbsp; 
+[**\[Hugging Face Page\]**](https://huggingface.co/papers/2605.09296) &nbsp; 
 [**\[Project Page\]**](https://zbox1005.github.io/MDMF-project/) &nbsp; 
 <a href="#" onclick="toggleBibtex('mdmf26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_mdmf26" class="bibtex noshow">
@@ -306,7 +306,7 @@ My current research centers on building **trustworthy** agentic and generative A
 
 **\[<span style="color: #993333">Preprint. Under Review</span>\]**
 
-Minghao Guo*, Qingyue Jiao*, Zeru Shi*, Yihao Quan, **Boxuan Zhang**, Danrui Li, Liwei Che, Wujiang Xu, Shilong Liu, Zirui Liu, Mubbasir Kapadia, Vladimir Pavlovic, Jiang Liu, Mengdi Wang, Yiyu Shi, Dimitris N. Metaxas, Ruixiang Tang
+Minghao Guo\*, Qingyue Jiao\*, Zeru Shi\*, Yihao Quan, **Boxuan Zhang**, Danrui Li, Liwei Che, Wujiang Xu, Shilong Liu, Zirui Liu, Mubbasir Kapadia, Vladimir Pavlovic, Jiang Liu, Mengdi Wang, Yiyu Shi, Dimitris N. Metaxas, Ruixiang Tang
 
 **<span style="color: SandyBrown">TL;DR:</span>** MemEye is a vision-centric long-term memory benchmark that evaluates agents’ ability to remember, update, and reason over visual information across long-running, multi-session image-grounded interactions.
 
@@ -314,7 +314,7 @@ Minghao Guo*, Qingyue Jiao*, Zeru Shi*, Yihao Quan, **Boxuan Zhang**, Danrui Li,
 
 [**\[PDF\]**](https://arxiv.org/pdf/2605.15128) &nbsp; 
 [**\[Code\]**](https://github.com/MinghoKwok/MemEye) &nbsp;
- [**\[Huggingface Page\]**](https://huggingface.co/papers/2605.15128) &nbsp;
+[**\[Hugging Face Page\]**](https://huggingface.co/papers/2605.15128) &nbsp;
 [**\[Project Page\]**](https://minghokwok.github.io/MemEye/) &nbsp; 
 <a href="#" onclick="toggleBibtex('memeye26'); event.preventDefault();"><strong>[BibTeX]</strong></a>
 <div id="bib_memeye26" class="bibtex noshow">
