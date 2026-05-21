@@ -65,7 +65,7 @@ My current research centers on building **trustworthy** agentic and generative A
 - **2023.11:** &nbsp;🎉🎉 I will join [TMLR Group@ HKBU](https://github.com/tmlr-group) as a research intern. -->
 <div style="max-height: 200px; overflow-y: auto;">
 <ul>
-  <li><em>2026.05:</em> &nbsp;🎉🎉 Honored to be awarded as ICML 2026 <a href="https://icml.cc/Conferences/2026/ProgramCommittee#gold" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;"><strong><span style="color: goldenrod">Gold</span> Reviewer</strong></a>.</li>
+  <li><em>2026.05:</em> &nbsp;🎉🎉 Honored to be selected as an ICML 2026 <a href="https://icml.cc/Conferences/2026/ProgramCommittee#gold" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;"><strong><span style="color: goldenrod">Gold</span> Reviewer</strong></a>.</li>
   <li><em>2026.03:</em> &nbsp;🎉🎉 One paper has been accepted by <a href="https://2026.ieeeicme.org/">ICME 2026</a>.</li>
   <li><em>2025.11:</em> &nbsp;🎉🎉 Excited to share that our <a href="https://arxiv.org/abs/2509.25302">Agent Matrix</a> featured in several tech blogs, including <a href="https://ai.gopubby.com/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee">From Chatbots to Clones</a> and <a href="https://ai.gopubby.com/ai-just-learned-to-clone-itself-not-out-of-malice-but-out-of-stress-2f9c9bc86b3b">AI Just Learned to Clone Itself</a>. Great to see growing attention to this emerging topic!</li>
   <li><em>2025.07:</em> &nbsp;🎉🎉 Our <a href="https://arxiv.org/abs/2507.16534">Frontier AI Risk Management Framework</a> has been released. I participated in exploring self-replication risks in LLM Agents.</li>
