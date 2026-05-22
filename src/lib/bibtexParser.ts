@@ -95,7 +95,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       award: cleanBibTeXString(tags.award) || undefined,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project', 'award']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project', 'award', 'url', 'month']),
     };
 
     // Clean up undefined fields
@@ -278,7 +278,7 @@ function reconstructBibTeX(entry: { entryType: string; citationKey: string; entr
         cleanValue = value.replace(/[#*]/g, '');
       }
 
-      bibtex += `  ${key} = {${cleanValue}},\n`;
+      bibtex += `  ${key}={${cleanValue}},\n`;
     }
   });
 
