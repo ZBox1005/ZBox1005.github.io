@@ -1,0 +1,51 @@
+type = "card"
+title = "Experience"
+description = "Research and industry experience."
+
+[[items]]
+title = "Research Scientist Intern"
+subtitle = "Advanced Micro Devices"
+date = "2026.05 – present"
+image = "/logos/amd.png"
+content = "[AMD GenAI Team](https://amdgenai.github.io/team/). Mentor: [Dr. Jiang Liu](https://joellliu.github.io/)."
+tags = ["Industry"]
+
+[[items]]
+title = "Research Assistant"
+subtitle = "Shanghai AI Laboratory"
+date = "2025.03 – 2025.07"
+image = "/logos/shai.png"
+content = "[Center for Safe & Trustworthy AI](https://ai45.shlab.org.cn/). Mentors: [Dr. Yi Yu](https://eveyuyi.github.io/) and [Dr. Dongrui Liu](https://shenqildr.github.io/)."
+tags = ["Industry"]
+
+[[items]]
+title = "Research Assistant"
+subtitle = "University of Illinois Chicago"
+date = "2024.11 – 2025.08"
+image = "/logos/uic.png"
+content = "Department of [Computer Science](https://cs.uic.edu/). Supervisor: [Prof. Lu Cheng](https://lcheng.org/)."
+tags = ["Research"]
+
+[[items]]
+title = "Research Intern"
+subtitle = "Purdue University"
+date = "2024.06 – 2025.02"
+image = "/logos/purdue.png"
+content = "[RZ-Lab](https://ruqizhang.github.io/). Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/)."
+tags = ["Research"]
+
+[[items]]
+title = "Research Intern"
+subtitle = "Hong Kong Baptist University"
+date = "2023.11 – 2024.06"
+image = "/logos/hkbu.png"
+content = "[TMLR Group](https://github.com/tmlr-group). Supervisor: [Prof. Bo Han](https://bhanml.github.io/). Collaborator: [Dr. Jianing Zhu](https://zfancy.github.io/)."
+tags = ["Research"]
+
+[[items]]
+title = "Research Assistant"
+subtitle = "Wuhan University"
+date = "2022.09 – 2024.06"
+image = "/logos/whu.png"
+content = "[SIGMA Lab](http://sigma.whu.edu.cn/). Supervisors: [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US)."
+tags = ["Research"]

@@ -1,0 +1,4 @@
+type = "publication"
+title = "Publications"
+description = "A collection of my research work. Full list can be found at my [Google Scholar](https://scholar.google.com/citations?user=aPQaEz8AAAAJ)."
+source = "publications.bib"

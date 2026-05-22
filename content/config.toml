@@ -1,0 +1,76 @@
+[site]
+title = "Boxuan Zhang"
+description = "Personal website of Boxuan Zhang, PhD student at Rutgers University."
+favicon = "/favicon.png"
+last_updated = "May 21, 2026"
+
+[author]
+name = "Boxuan Zhang"
+title = "PhD Student"
+institution = "Rutgers University"
+avatar = "/bio.jpg"
+
+[social]
+email = "bz362@scarletmail.rutgers.edu"
+location = "Piscataway, NJ"
+location_url = "https://maps.google.com/?q=Hill+Center+Rutgers+Piscataway+NJ"
+location_details = [
+  "Hill Center, 110 Frelinghuysen Rd,",
+  "Piscataway, NJ 08854, USA"
+]
+google_scholar = "https://scholar.google.com/citations?user=aPQaEz8AAAAJ"
+github = "https://github.com/ZBox1005"
+linkedin = "https://www.linkedin.com/in/boxuan-zhang-ab54442a1"
+x = "https://x.com/BoxuanZhang1005"
+
+[features]
+enable_likes = true
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications/"
+
+[[navigation]]
+title = "Education"
+type = "page"
+target = "education"
+href = "/education/"
+
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience/"
+
+[[navigation]]
+title = "Services"
+type = "page"
+target = "services"
+href = "/services/"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv/"

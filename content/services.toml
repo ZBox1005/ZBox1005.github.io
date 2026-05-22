@@ -1,0 +1,33 @@
+type = "card"
+title = "Academic Service"
+description = "Reviewing, teaching, and mentoring activities."
+
+[[items]]
+title = "Conference Reviewer"
+subtitle = "NeurIPS · ICLR · ICML"
+date = "2025 – 2026"
+content = "NeurIPS (2025, 2026); ICLR (2026); ICML (2026, **[Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold)**)."
+tags = ["Reviewer"]
+
+[[items]]
+title = "Journal Reviewer"
+subtitle = "ISPRS Journal of Photogrammetry and Remote Sensing"
+date = "2024 –"
+content = "Reviewed manuscripts on remote sensing and machine learning."
+tags = ["Reviewer"]
+
+[[items]]
+title = "Teaching Assistant"
+subtitle = "Rutgers University"
+date = "2025.09 – present"
+image = "/logos/rutgers.png"
+content = "- CS 344: Design and Analysis of Computer Algorithms\n- CS 439: Introduction to Data Science"
+tags = ["Teaching"]
+
+[[items]]
+title = "Undergraduate Student Mentor"
+subtitle = "Wuhan University"
+date = "2022.09 – 2023.06"
+image = "/logos/whu.png"
+content = "Facilitated freshmen's transition to university life at School of Computer Science."
+tags = ["Mentoring"]

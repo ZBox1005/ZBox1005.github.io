@@ -1,0 +1,27 @@
+type = "card"
+title = "Education"
+description = "Academic background."
+
+[[items]]
+title = "Ph.D. in Computer Science"
+subtitle = "Rutgers University, United States"
+date = "2025.09 – present"
+image = "/logos/rutgers.png"
+content = "Department of Computer Science. Advised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/)."
+tags = ["Ph.D."]
+
+[[items]]
+title = "M.S. in Computer Science"
+subtitle = "Wuhan University, China"
+date = "2022.09 – 2024.06"
+image = "/logos/whu.png"
+content = "School of Computer Science, [SIGMA Lab](http://sigma.whu.edu.cn/). Advised by [Prof. Zengmao Wang](https://scholar.google.com/citations?user=tTqiJpQAAAAJ&hl=en-US) and [Prof. Bo Du](https://scholar.google.com/citations?user=Shy1gnMAAAAJ&hl=en-US)."
+tags = ["M.S."]
+
+[[items]]
+title = "B.Eng. in Computer Science"
+subtitle = "Wuhan University, China"
+date = "2018.09 – 2022.06"
+image = "/logos/whu.png"
+content = "School of Computer Science."
+tags = ["B.Eng."]
