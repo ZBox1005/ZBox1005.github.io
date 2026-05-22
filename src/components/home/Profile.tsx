@@ -12,8 +12,7 @@ import { MapPinIcon as MapPinSolidIcon, EnvelopeIcon as EnvelopeSolidIcon } from
 import { Github, Linkedin, Pin } from 'lucide-react';
 import type { SiteConfig } from '@/lib/config';
 import { useMessages } from '@/lib/i18n/useMessages';
-// ClustrMaps disabled until the new domain is registered with their service.
-// import ClustrMaps from '@/components/ui/ClustrMaps';
+import ClustrMaps from '@/components/ui/ClustrMaps';
 import { XIcon } from '@/components/ui/Icons';
 
 // Custom ORCID icon component
@@ -295,8 +294,8 @@ export default function Profile({ author, social }: ProfileProps) {
                 </div>
             )} */}
 
-            {/* Visitors Globe — re-enable once deployed to the registered domain */}
-            {/* <ClustrMaps dataId="8P_6aH7IpLsujkyx87NuC0JYbr6UylUmiy6k3vT0RGQ" /> */}
+            {/* Visitors Globe */}
+            <ClustrMaps dataId="8P_6aH7IpLsujkyx87NuC0JYbr6UylUmiy6k3vT0RGQ" />
         </motion.div>
     );
 }
