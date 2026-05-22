@@ -63,9 +63,8 @@ export default function PublicationsList({ config, publications, embedded = fals
 
     return (
         <motion.div
-            initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            className="animate-fade-up"
+            style={{ animationDelay: '0.4s' }}
         >
             <div className="mb-8">
                 <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
@@ -210,10 +209,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                     filteredPublications.map((pub, index) => (
                         <motion.div
                             key={pub.id}
-                            initial={false}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: 0.1 * index }}
-                            className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+                            className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200 animate-fade-up"
+                            style={{ animationDelay: `${0.1 * index}s` }}
                         >
                             <div className="flex flex-col md:flex-row md:items-center gap-6">
                                 {pub.preview && (

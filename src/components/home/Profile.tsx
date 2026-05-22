@@ -85,10 +85,7 @@ export default function Profile({ author, social }: ProfileProps) {
 
     return (
         <motion.div
-            initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="sticky top-8"
+            className="sticky top-8 animate-fade-up"
         >
             {/* Profile Image */}
             <div className="w-64 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">

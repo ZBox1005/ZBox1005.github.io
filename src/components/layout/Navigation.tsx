@@ -162,11 +162,8 @@ export default function Navigation({
       {({ open }) => (
         <>
           <motion.div
-            initial={false}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.6 }}
             className={cn(
-              'transition-all duration-300 ease-out',
+              'animate-slide-down transition-all duration-300 ease-out',
               scrolled
                 ? 'bg-background/80 backdrop-blur-xl border-b border-neutral-200/50 shadow-lg'
                 : 'bg-transparent'

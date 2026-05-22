@@ -38,9 +38,8 @@ export default function News({ items, title, delay = 0.3 }: NewsProps) {
 
     return (
         <motion.section
-            initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay }}
+            className="animate-fade-up"
+            style={{ animationDelay: `${delay}s` }}
         >
             <h2 className="text-2xl font-serif font-bold text-primary mb-4">{resolvedTitle}</h2>
             <div className="max-h-[208px] overflow-y-auto pr-1 space-y-3">
