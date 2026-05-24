@@ -19,7 +19,7 @@ content = "[Center for Safe & Trustworthy AI](https://ai45.shlab.org.cn/). Mento
 tags = ["Industry"]
 
 [[items]]
-title = "Research Assistant"
+title = "Research Intern"
 subtitle = "University of Illinois Chicago"
 date = "2024.11 – 2025.08"
 image = "/logos/uic.png"
@@ -31,7 +31,7 @@ title = "Research Intern"
 subtitle = "Purdue University"
 date = "2024.06 – 2025.02"
 image = "/logos/purdue.png"
-content = "[RZ-Lab](https://ruqizhang.github.io/). Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/)."
+content = "Department of [Computer Science](https://cs.purdue.edu/). Supervisor: [Prof. Ruqi Zhang](https://ruqizhang.github.io/)."
 tags = ["Research"]
 
 [[items]]
@@ -39,7 +39,7 @@ title = "Research Intern"
 subtitle = "Hong Kong Baptist University"
 date = "2023.11 – 2024.06"
 image = "/logos/hkbu.png"
-content = "[TMLR Group](https://github.com/tmlr-group). Supervisor: [Prof. Bo Han](https://bhanml.github.io/). Collaborator: [Dr. Jianing Zhu](https://zfancy.github.io/)."
+content = "[TMLR Group](https://github.com/tmlr-group). Supervisor: [Prof. Bo Han](https://bhanml.github.io/) and [Dr. Jianing Zhu](https://zfancy.github.io/)."
 tags = ["Research"]
 
 [[items]]

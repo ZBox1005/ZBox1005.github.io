@@ -5,14 +5,14 @@ description = "Reviewing, teaching, and mentoring activities."
 [[items]]
 title = "Conference Reviewer"
 subtitle = "NeurIPS · ICLR · ICML"
-date = "2025 – 2026"
+date = "2025 – present"
 content = "NeurIPS (2025, 2026); ICLR (2026); ICML (2026, **[Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold)**)."
 tags = ["Reviewer"]
 
 [[items]]
 title = "Journal Reviewer"
 subtitle = "ISPRS Journal of Photogrammetry and Remote Sensing"
-date = "2024 –"
+date = "2024 – present"
 content = "Reviewed manuscripts on remote sensing and machine learning."
 tags = ["Reviewer"]
 
