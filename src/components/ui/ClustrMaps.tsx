@@ -13,17 +13,10 @@ export default function ClustrMaps({ dataId }: ClustrMapsProps) {
         const container = containerRef.current;
         if (!container) return;
 
-        // Reset to a clean container — on SPA back-navigation the same component
-        // re-mounts with stale DOM that globe.js will not redraw on top of.
-        container.innerHTML = '';
-
-        // Cache-bust the script URL so re-mounts trigger a fresh execution.
-        // Without this, the browser may skip re-running an already-loaded script
-        // and globe.js never injects the widget into the new container.
         const script = document.createElement('script');
         script.id = 'clstr_globe';
         script.type = 'text/javascript';
-        script.src = `https://clustrmaps.com/globe.js?d=${dataId}&_t=${Date.now()}`;
+        script.src = `//clustrmaps.com/globe.js?d=${dataId}`;
         container.appendChild(script);
 
         return () => {
