@@ -4,4 +4,6 @@ Previously, I was a research intern at [RZ-Lab](https://ruqizhang.github.io/), [
 
 My current research centers on building **trustworthy** agentic and generative AI systems, with an emphasis on *RL* for *Agentic LLMs* and *Diffusion Models*, focusing on **safety**, **reliability**, and **robustness**. I also work on reliable detection of AI-generated visual content (e.g., images, videos) and interdisciplinary applications of ML in healthcare (Immunology, Cell Morphology).
 
-🔥 **If you share these research interests or have feedback on my previous work, feel free to drop me an [email](mailto:bz362@scarletmail.rutgers.edu) or add my [WeChat](/wechat.jpg) — I am always delighted to discuss potential collaborations!**
+🔥 **If you share these research interests or have feedback on my previous work, feel free to drop me an [email](mailto:bz362@scarletmail.rutgers.edu) — I am always delighted to discuss potential collaborations!**
+
+<!-- or add my [WeChat](/wechat.jpg) -->
