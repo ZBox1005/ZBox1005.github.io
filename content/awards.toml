@@ -1,0 +1,25 @@
+type = "card"
+title = "Awards & Honors"
+description = "Selected awards and academic recognition."
+
+[[items]]
+title = "2025–2026 Excellent TA Award"
+subtitle = "Rutgers University · Department of Computer Science"
+date = "2026.06"
+image = "/logos/ru.png"
+content = "Recognized for excellence in teaching by [CS@Rutgers University](https://www.cs.rutgers.edu/news-events/highlights/highlight-item/the-2025-2026-excellent-ta-ptl-grader-awards)."
+tags = ["Teaching Award"]
+
+[[items]]
+title = "ICML 2026 Gold Reviewer"
+subtitle = "International Conference on Machine Learning"
+date = "2026.05"
+content = "Selected as an [ICML 2026 Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold) in recognition of outstanding reviewing contributions."
+tags = ["Reviewer Recognition"]
+
+[[items]]
+title = "Best Paper Award Candidate"
+subtitle = "IEEE ICME 2026"
+date = "2026.03"
+content = "Our paper, [*Shifting Uncertainty to Critical Moments*](https://arxiv.org/abs/2603.18342), was selected as a Best Paper Award candidate."
+tags = ["Paper Recognition"]

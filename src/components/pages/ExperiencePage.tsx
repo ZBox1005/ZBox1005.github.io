@@ -8,6 +8,7 @@ import {
     BriefcaseBusiness,
     GraduationCap,
     Handshake,
+    Trophy,
     type LucideIcon,
 } from 'lucide-react';
 import type { ExperiencePageConfig } from '@/types/page';
@@ -21,6 +22,7 @@ const groupIcons: Record<string, LucideIcon> = {
     research: BriefcaseBusiness,
     academic: GraduationCap,
     service: Handshake,
+    awards: Trophy,
 };
 
 const markdownComponents = {
@@ -88,7 +90,7 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
             </header>
 
             <div className="relative z-10 mb-7 rounded-2xl border border-neutral-200/90 bg-neutral-50/85 p-1.5 shadow-[0_8px_28px_-20px_rgba(15,23,42,0.3)] backdrop-blur-xl dark:border-white/10 dark:bg-neutral-900/85">
-                <div className="grid grid-cols-3 gap-1" role="tablist" aria-label="Experience categories">
+                <div className="grid grid-cols-4 gap-1" role="tablist" aria-label="Experience categories">
                     {config.groups.map((group) => {
                         const isActive = group.id === activeGroup.id;
                         const GroupIcon = groupIcons[group.id] || BriefcaseBusiness;
@@ -100,7 +102,7 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                                 role="tab"
                                 aria-selected={isActive}
                                 onClick={() => setActiveGroupId(group.id)}
-                                className={`group/tab relative min-w-0 overflow-hidden rounded-xl px-2 py-3 text-left transition-colors duration-200 sm:px-4 ${
+                                className={`group/tab relative min-w-0 overflow-hidden rounded-xl px-1 py-2.5 text-center transition-colors duration-200 sm:px-2 sm:py-3 ${
                                     isActive
                                         ? 'text-primary'
                                         : 'text-neutral-500 hover:bg-white/60 hover:text-primary dark:text-neutral-400 dark:hover:bg-white/[0.04]'
@@ -113,7 +115,7 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                                         transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                                     />
                                 )}
-                                <span className="relative flex items-center gap-2 sm:gap-3">
+                                <span className="relative flex flex-col items-center gap-1.5">
                                     <span className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg transition-colors ${
                                         isActive
                                             ? 'bg-accent/12 text-accent-dark dark:text-accent'
@@ -121,11 +123,11 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                                     }`}>
                                         <GroupIcon className="h-4 w-4" />
                                     </span>
-                                    <span className="min-w-0 flex-1">
-                                        <span className="block truncate text-xs font-semibold sm:hidden">
+                                    <span className="w-full min-w-0">
+                                        <span className="block truncate text-xs font-semibold sm:text-sm md:hidden">
                                             {group.id === 'research' ? 'Research' : group.tab_label}
                                         </span>
-                                        <span className="hidden truncate text-base font-semibold sm:block">
+                                        <span className="hidden truncate text-base font-semibold md:block">
                                             {group.tab_label}
                                         </span>
                                     </span>

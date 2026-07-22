@@ -1,6 +1,6 @@
 type = "experience"
 title = "Experience"
-description = "Academic background, research and industry appointments, and academic service."
+description = "Academic background, research and industry appointments, service, and honors."
 default_group = "academic"
 
 [[groups]]
@@ -23,3 +23,10 @@ tab_label = "Service"
 title = "Service Experience"
 description = "Reviewing, teaching, and mentoring activities."
 source = "services"
+
+[[groups]]
+id = "awards"
+tab_label = "Awards"
+title = "Awards & Honors"
+description = "Selected awards and academic recognition."
+source = "awards"
