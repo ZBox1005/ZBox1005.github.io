@@ -36,7 +36,13 @@ interface ProfileProps {
     sectionLinks?: PageSectionLink[];
 }
 
-export default function Profile({ author, social, currentRoles = [], sectionLinks = [] }: ProfileProps) {
+export default function Profile({
+    author,
+    social,
+    researchInterests = [],
+    currentRoles = [],
+    sectionLinks = [],
+}: ProfileProps) {
     const messages = useMessages();
 
     const [showAddress, setShowAddress] = useState(false);
@@ -140,21 +146,50 @@ export default function Profile({ author, social, currentRoles = [], sectionLink
                 />
             </div>
 
-            {/* Name and Title */}
-            <div className="text-center mb-6">
-                <h1 className="text-3xl font-serif font-bold text-primary mb-2">
+            {/* Name */}
+            <div className="text-center mb-4">
+                <h1 className="text-3xl font-serif font-bold text-primary">
                     {author.name}
                 </h1>
-                <p className="text-lg text-accent font-medium mb-1">
-                    {author.title}
-                </p>
-                <p className="text-neutral-600 mb-2">
-                    {author.institution}
-                </p>
             </div>
 
+            {/* Research signature */}
+            {researchInterests.length > 0 && (
+                <div className="mx-auto mb-4 w-full max-w-[18rem]">
+                    <div className="mb-2.5 flex items-center justify-center gap-2.5">
+                        <span className="h-px w-7 bg-gradient-to-r from-transparent to-accent/45" />
+                        <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
+                            {messages.profile.researchInterests}
+                        </h2>
+                        <span className="h-px w-7 bg-gradient-to-l from-transparent to-accent/45" />
+                    </div>
+                    <div className="grid grid-cols-2 gap-1.5">
+                        {researchInterests.map((interest, index) => (
+                            <motion.div
+                                key={interest}
+                                whileHover={{ y: -2, scale: 1.015 }}
+                                transition={{ type: 'spring', stiffness: 360, damping: 24 }}
+                                className="group/focus relative flex min-h-10 items-center gap-2 overflow-hidden rounded-lg border border-neutral-200/80 bg-neutral-50/70 px-2.5 py-2 text-left shadow-[0_3px_12px_-8px_rgba(15,23,42,0.22)] transition-colors duration-200 hover:border-accent/30 hover:bg-accent/[0.06] dark:border-white/10 dark:bg-neutral-900/65"
+                            >
+                                <span className="pointer-events-none absolute -right-3 -top-3 h-8 w-8 rounded-full bg-accent/0 blur-xl transition-colors duration-300 group-hover/focus:bg-accent/20" />
+                                <span className="relative flex h-2 w-2 flex-shrink-0 items-center justify-center">
+                                    <span className="absolute h-2 w-2 rounded-full bg-accent/20 transition-transform duration-300 group-hover/focus:scale-[1.8]" />
+                                    <span className="relative h-1 w-1 rounded-full bg-accent shadow-[0_0_6px_var(--accent)]" />
+                                </span>
+                                <span className="relative text-[10px] font-medium leading-[1.3] text-neutral-600 dark:text-neutral-500">
+                                    {interest}
+                                </span>
+                                <span className="pointer-events-none absolute right-1.5 top-1 text-[8px] font-medium tabular-nums text-neutral-300 opacity-0 transition-opacity group-hover/focus:opacity-100 dark:text-neutral-600">
+                                    {String(index + 1).padStart(2, '0')}
+                                </span>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
             {/* Contact Links */}
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-6 relative px-2">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-5 relative px-2">
                 {socialLinks.map((link) => {
                     const IconComponent = link.icon;
                     if (link.isLocation) {

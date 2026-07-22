@@ -4,9 +4,9 @@ description = "Academic background."
 
 [[items]]
 title = "Ph.D. in Computer Science"
-subtitle = "Rutgers University, United States"
+subtitle = "Rutgers University"
 date = "2025.09 – present"
-image = "/logos/rutgers.png"
+image = "/logos/ru.png"
 content = "Department of Computer Science. Advised by [Prof. Ruixiang (Ryan) Tang](https://www.ruixiangtang.net/)."
 tags = ["Ph.D."]
 
