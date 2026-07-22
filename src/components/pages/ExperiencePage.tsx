@@ -122,14 +122,11 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                                         <GroupIcon className="h-4 w-4" />
                                     </span>
                                     <span className="min-w-0 flex-1">
-                                        <span className="block truncate text-[11px] font-semibold sm:hidden">
+                                        <span className="block truncate text-xs font-semibold sm:hidden">
                                             {group.id === 'research' ? 'Research' : group.tab_label}
                                         </span>
-                                        <span className="hidden truncate text-sm font-semibold sm:block">
+                                        <span className="hidden truncate text-base font-semibold sm:block">
                                             {group.tab_label}
-                                        </span>
-                                        <span className="mt-0.5 block text-[9px] font-medium tabular-nums text-neutral-400 sm:text-[10px]">
-                                            {String(group.items?.length || 0).padStart(2, '0')} entries
                                         </span>
                                     </span>
                                 </span>
@@ -150,12 +147,6 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                 >
                     <div className="mb-4 flex items-end justify-between gap-4">
                         <div>
-                            <div className="mb-1.5 flex items-center gap-2">
-                                <ActiveGroupIcon className="h-4 w-4 text-accent" />
-                                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-neutral-400">
-                                    {String(config.groups.findIndex((group) => group.id === activeGroup.id) + 1).padStart(2, '0')}
-                                </span>
-                            </div>
                             <h2 id={`experience-${activeGroup.id}`} className="text-2xl font-serif font-bold text-primary">
                                 {activeGroup.title}
                             </h2>

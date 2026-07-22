@@ -1,7 +1,14 @@
 type = "experience"
 title = "Experience"
 description = "Academic background, research and industry appointments, and academic service."
-default_group = "research"
+default_group = "academic"
+
+[[groups]]
+id = "academic"
+tab_label = "Education"
+title = "Academic Experience"
+description = "Education and academic training."
+source = "education"
 
 [[groups]]
 id = "research"
@@ -9,13 +16,6 @@ tab_label = "Research & Industry"
 title = "Research & Industry Experience"
 description = "Research appointments across industry and academia."
 source = "research-experience"
-
-[[groups]]
-id = "academic"
-tab_label = "Academic"
-title = "Academic Experience"
-description = "Education and academic training."
-source = "education"
 
 [[groups]]
 id = "service"
