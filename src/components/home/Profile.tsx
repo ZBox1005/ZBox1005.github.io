@@ -352,6 +352,59 @@ export default function Profile({
                 })}
             </div>
 
+            {currentRoles.length > 0 && (
+                <motion.aside
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mx-auto mb-7 w-full max-w-[18rem] overflow-hidden rounded-2xl border border-neutral-200/80 bg-white/80 shadow-[0_10px_30px_-20px_rgba(15,23,42,0.3)] backdrop-blur-xl lg:hidden dark:border-white/10 dark:bg-neutral-900/80"
+                    aria-label={messages.profile.currently}
+                >
+                    <div className="h-px bg-gradient-to-r from-transparent via-accent/75 to-transparent" />
+                    <div className="p-3.5">
+                        <div className="mb-2.5 flex items-center justify-between px-1">
+                            <h2 className="text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+                                {messages.profile.currently}
+                            </h2>
+                            <span className="flex items-center gap-1.5 text-[9px] font-medium text-emerald-600 dark:text-emerald-400">
+                                <span className="relative flex h-1.5 w-1.5">
+                                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+                                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                                </span>
+                                {messages.profile.active}
+                            </span>
+                        </div>
+                        <div className="space-y-1.5">
+                            {currentRoles.map((role) => (
+                                <div
+                                    key={`mobile-${role.title}-${role.subtitle}`}
+                                    className="flex items-center gap-3 rounded-xl px-2 py-2"
+                                >
+                                    {role.image && (
+                                        <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-black/[0.06] dark:ring-white/10">
+                                            <Image
+                                                src={role.image}
+                                                alt=""
+                                                width={28}
+                                                height={28}
+                                                className="h-full w-full object-contain"
+                                            />
+                                        </span>
+                                    )}
+                                    <span className="min-w-0 flex-1">
+                                        <span className="block truncate text-[12px] font-semibold leading-tight text-primary">
+                                            {role.title}
+                                        </span>
+                                        <span className="mt-1 block truncate text-[10px] text-neutral-500 dark:text-neutral-400">
+                                            {role.subtitle}
+                                        </span>
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </motion.aside>
+            )}
+
             {(currentRoles.length > 0 || sectionLinks.length > 0) && (
                 <motion.aside
                     whileHover={{ y: -3 }}

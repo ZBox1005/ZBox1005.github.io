@@ -1,5 +1,8 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowUp } from 'lucide-react';
 import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
@@ -52,8 +55,16 @@ interface HomePageClientProps {
 
 export default function HomePageClient({ dataByLocale, defaultLocale }: HomePageClientProps) {
   const locale = useLocaleStore((state) => state.locale);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const fallback = dataByLocale[defaultLocale] || Object.values(dataByLocale)[0];
   const data = dataByLocale[locale] || fallback;
+
+  useEffect(() => {
+    const updateVisibility = () => setShowBackToTop(window.scrollY > 700);
+    updateVisibility();
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    return () => window.removeEventListener('scroll', updateVisibility);
+  }, []);
 
   if (!data) {
     return null;
@@ -158,6 +169,23 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
           ))}
         </div>
       </div>
+
+      <AnimatePresence>
+        {showBackToTop && (
+          <motion.button
+            type="button"
+            initial={{ opacity: 0, y: 12, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 12, scale: 0.9 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="fixed bottom-5 right-4 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-neutral-200/80 bg-background/90 text-neutral-600 shadow-lg backdrop-blur-xl transition-colors hover:border-accent/40 hover:text-accent lg:hidden dark:border-white/10 dark:text-neutral-400"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <ArrowUp className="h-4 w-4" />
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

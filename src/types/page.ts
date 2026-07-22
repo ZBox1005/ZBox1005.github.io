@@ -13,6 +13,7 @@ export interface TextPageConfig extends BasePageConfig {
     type: 'text';
     source: string;
     pdf?: string;
+    updated?: string;
 }
 
 export interface CardItem {

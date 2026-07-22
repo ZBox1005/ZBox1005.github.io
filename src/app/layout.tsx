@@ -121,6 +121,10 @@ export default function RootLayout({
   const config = getConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const targetLocales = runtimeI18n.enabled ? runtimeI18n.locales : [runtimeI18n.defaultLocale];
+  const buildDate = new Intl.DateTimeFormat(
+    runtimeI18n.defaultLocale === 'zh' ? 'zh-CN' : 'en-US',
+    { year: 'numeric', month: 'long', day: 'numeric' }
+  ).format(new Date());
 
   const {
     navigationByLocale,
@@ -173,7 +177,7 @@ export default function RootLayout({
               {children}
             </main>
             <Footer
-              lastUpdated={config.site.last_updated}
+              lastUpdated={config.site.last_updated || buildDate}
               lastUpdatedByLocale={lastUpdatedByLocale}
               defaultLocale={runtimeI18n.defaultLocale}
             />
