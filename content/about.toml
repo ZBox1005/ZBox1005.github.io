@@ -23,8 +23,8 @@ source = "news.toml"
 
 [[sections]]
 id = "projects"
-type = "markdown"
-source = "projects.md"
+type = "projects"
+source = "projects.toml"
 title = "Recent Projects"
 
 [[sections]]

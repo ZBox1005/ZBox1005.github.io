@@ -34,3 +34,12 @@ export interface PageSectionLink {
     id: string;
     label: string;
 }
+
+export interface ProjectItem {
+    title: string;
+    subtitle: string;
+    category: string;
+    year: string;
+    image: string;
+    href: string;
+}

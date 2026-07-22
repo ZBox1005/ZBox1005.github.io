@@ -1,0 +1,47 @@
+[[projects]]
+title = "AgentForesight"
+subtitle = "Online Auditing for Multi-Agent Systems"
+category = "Agentic AI"
+year = "2026"
+image = "/projects/agent-foresight.jpg"
+href = "https://zbox1005.github.io/agent-foresight/"
+
+[[projects]]
+title = "MDMF"
+subtitle = "Micro-Defects Expose Macro-Fakes"
+category = "AI-Generated Content Detection"
+year = "2026"
+image = "/projects/mdmf.jpg"
+href = "https://zbox1005.github.io/MDMF-project/"
+
+[[projects]]
+title = "MemEye"
+subtitle = "Visual-Centric Evaluation for Multimodal Agent Memory"
+category = "Multimodal Agents"
+year = "2026"
+image = "/projects/memeye.jpg"
+href = "https://minghokwok.github.io/MemEye/"
+
+[[projects]]
+title = "Agent Matrix"
+subtitle = "Evaluating Self-Replication Risk in LLM Agents"
+category = "AI Safety"
+year = "2025"
+image = "/projects/agent-matrix.jpg"
+href = "https://arxiv.org/abs/2509.25302"
+
+[[projects]]
+title = "CoT-UQ"
+subtitle = "Uncertainty Quantification with Chain-of-Thought"
+category = "LLM Reliability"
+year = "2025"
+image = "/projects/cot-uq.jpg"
+href = "https://github.com/ZBox1005/CoT-UQ"
+
+[[projects]]
+title = "CoVer"
+subtitle = "Input Expansion for Out-of-Distribution Detection"
+category = "Trustworthy ML"
+year = "2024"
+image = "/projects/cover.jpg"
+href = "https://confidence-average.github.io/"

@@ -4,17 +4,18 @@ import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
 import News, { NewsItem } from '@/components/home/News';
+import ProjectShowcase from '@/components/home/ProjectShowcase';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardItem, CardPageConfig, PageSectionLink, PublicationPageConfig, TextPageConfig } from '@/types/page';
+import { CardItem, CardPageConfig, PageSectionLink, ProjectItem, PublicationPageConfig, TextPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'publications' | 'list' | 'projects';
   title?: string;
   source?: string;
   filter?: string;
@@ -22,6 +23,7 @@ interface SectionConfig {
   content?: string;
   publications?: Publication[];
   items?: NewsItem[];
+  projects?: ProjectItem[];
 }
 
 type PageData =
@@ -105,6 +107,16 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                       <div key={section.id} id={section.id} className="scroll-mt-24">
                         <News
                           items={section.items || []}
+                          title={section.title}
+                          delay={delay}
+                        />
+                      </div>
+                    );
+                  case 'projects':
+                    return (
+                      <div key={section.id} id={section.id} className="scroll-mt-24">
+                        <ProjectShowcase
+                          projects={section.projects || []}
                           title={section.title}
                           delay={delay}
                         />

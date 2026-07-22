@@ -3,12 +3,12 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem, ProjectItem } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'publications' | 'list' | 'projects';
   title?: string;
   source?: string;
   filter?: string;
@@ -16,6 +16,7 @@ interface SectionConfig {
   content?: string;
   publications?: Publication[];
   items?: NewsItem[];
+  projects?: ProjectItem[];
 }
 
 interface NewsItem {
@@ -53,6 +54,15 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
         return {
           ...section,
           items: newsData?.news || [],
+        };
+      }
+      case 'projects': {
+        const projectData = section.source
+          ? getTomlContent<{ projects: ProjectItem[] }>(section.source, locale)
+          : null;
+        return {
+          ...section,
+          projects: projectData?.projects || [],
         };
       }
       default:
