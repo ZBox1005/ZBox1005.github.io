@@ -155,7 +155,7 @@ export default function Profile({
 
             {/* Research signature */}
             {researchInterests.length > 0 && (
-                <div className="mx-auto mb-4 w-full max-w-[18rem]">
+                <div className="mx-auto mb-4 w-full max-w-64">
                     <div className="mb-2.5 flex items-center justify-center gap-2.5">
                         <span className="h-px w-7 bg-gradient-to-r from-transparent to-accent/45" />
                         <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
@@ -163,20 +163,20 @@ export default function Profile({
                         </h2>
                         <span className="h-px w-7 bg-gradient-to-l from-transparent to-accent/45" />
                     </div>
-                    <div className="flex flex-wrap justify-center gap-1.5">
+                    <div className="grid w-full grid-cols-2 gap-1.5">
                         {researchInterests.map((interest) => (
                             <motion.div
                                 key={interest}
                                 whileHover={{ y: -2, scale: 1.015 }}
                                 transition={{ type: 'spring', stiffness: 360, damping: 24 }}
-                                className="group/focus relative flex items-center gap-2 overflow-hidden rounded-full border border-neutral-200/80 bg-neutral-50/70 px-3 py-2 text-left shadow-[0_3px_12px_-8px_rgba(15,23,42,0.22)] transition-colors duration-200 hover:border-accent/30 hover:bg-accent/[0.06] dark:border-white/10 dark:bg-neutral-900/65"
+                                className="group/focus relative flex min-h-10 min-w-0 items-center gap-1.5 overflow-hidden rounded-xl border border-neutral-200/80 bg-neutral-50/70 px-2 py-2 text-left shadow-[0_3px_12px_-8px_rgba(15,23,42,0.22)] transition-colors duration-200 hover:border-accent/30 hover:bg-accent/[0.06] dark:border-white/10 dark:bg-neutral-900/65"
                             >
                                 <span className="pointer-events-none absolute -right-3 -top-3 h-8 w-8 rounded-full bg-accent/0 blur-xl transition-colors duration-300 group-hover/focus:bg-accent/20" />
                                 <span className="relative flex h-2 w-2 flex-shrink-0 items-center justify-center">
                                     <span className="absolute h-2 w-2 rounded-full bg-accent/20 transition-transform duration-300 group-hover/focus:scale-[1.8]" />
                                     <span className="relative h-1 w-1 rounded-full bg-accent shadow-[0_0_6px_var(--accent)]" />
                                 </span>
-                                <span className="relative text-[10px] font-medium leading-[1.3] text-neutral-600 dark:text-neutral-500">
+                                <span className="relative min-w-0 whitespace-nowrap text-[9px] font-medium leading-none text-neutral-600 dark:text-neutral-500">
                                     {interest}
                                 </span>
                             </motion.div>
