@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import {
@@ -9,10 +9,10 @@ import {
     MapPinIcon
 } from '@heroicons/react/24/outline';
 import { MapPinIcon as MapPinSolidIcon, EnvelopeIcon as EnvelopeSolidIcon } from '@heroicons/react/24/solid';
-import { Github, Linkedin, Pin } from 'lucide-react';
+import { ChevronRight, Github, Linkedin, Pin } from 'lucide-react';
 import type { SiteConfig } from '@/lib/config';
+import type { CardItem, PageSectionLink } from '@/types/page';
 import { useMessages } from '@/lib/i18n/useMessages';
-import ClustrMaps from '@/components/ui/ClustrMaps';
 import { XIcon } from '@/components/ui/Icons';
 
 // Custom ORCID icon component
@@ -32,9 +32,11 @@ interface ProfileProps {
     social: SiteConfig['social'];
     features: SiteConfig['features'];
     researchInterests?: string[];
+    currentRoles?: CardItem[];
+    sectionLinks?: PageSectionLink[];
 }
 
-export default function Profile({ author, social }: ProfileProps) {
+export default function Profile({ author, social, currentRoles = [], sectionLinks = [] }: ProfileProps) {
     const messages = useMessages();
 
     const [showAddress, setShowAddress] = useState(false);
@@ -42,6 +44,45 @@ export default function Profile({ author, social }: ProfileProps) {
     const [showEmail, setShowEmail] = useState(false);
     const [isEmailPinned, setIsEmailPinned] = useState(false);
     const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
+    const [activeSection, setActiveSection] = useState(sectionLinks[0]?.id || '');
+
+    useEffect(() => {
+        if (sectionLinks.length === 0) return;
+
+        let animationFrame = 0;
+        const updateActiveSection = () => {
+            const marker = window.scrollY + Math.min(220, window.innerHeight * 0.3);
+            let nextActive = sectionLinks[0].id;
+
+            sectionLinks.forEach((section) => {
+                const element = document.getElementById(section.id);
+                if (element && element.offsetTop <= marker) {
+                    nextActive = section.id;
+                }
+            });
+
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
+                nextActive = sectionLinks[sectionLinks.length - 1].id;
+            }
+
+            setActiveSection(nextActive);
+        };
+
+        const handleScroll = () => {
+            cancelAnimationFrame(animationFrame);
+            animationFrame = requestAnimationFrame(updateActiveSection);
+        };
+
+        updateActiveSection();
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', handleScroll);
+
+        return () => {
+            cancelAnimationFrame(animationFrame);
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
+        };
+    }, [sectionLinks]);
 
     const socialLinks = [
         ...(social.email ? [{
@@ -279,20 +320,117 @@ export default function Profile({ author, social }: ProfileProps) {
                 })}
             </div>
 
-            {/* Research Interests — hidden for now */}
-            {/* {researchInterests && researchInterests.length > 0 && (
-                <div className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-4 mb-6 hover:shadow-lg transition-all duration-200 hover:scale-[1.02]">
-                    <h3 className="font-semibold text-primary mb-3">{messages.profile.researchInterests}</h3>
-                    <div className="space-y-2 text-sm text-neutral-700 dark:text-neutral-500">
-                        {researchInterests.map((interest, index) => (
-                            <div key={index}>{interest}</div>
-                        ))}
-                    </div>
-                </div>
-            )} */}
+            {(currentRoles.length > 0 || sectionLinks.length > 0) && (
+                <motion.aside
+                    whileHover={{ y: -3 }}
+                    transition={{ type: 'spring', stiffness: 320, damping: 24 }}
+                    className="group relative hidden lg:block w-full max-w-[18rem] mx-auto overflow-hidden rounded-2xl border border-neutral-200/80 dark:border-white/10 bg-white/85 dark:bg-neutral-900/85 shadow-[0_10px_35px_-18px_rgba(15,23,42,0.28)] dark:shadow-[0_14px_40px_-20px_rgba(0,0,0,0.75)] backdrop-blur-xl"
+                >
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/80 to-transparent" />
+                    <div className="pointer-events-none absolute -right-12 -top-12 h-28 w-28 rounded-full bg-accent/10 blur-2xl transition-colors duration-300 group-hover:bg-accent/20" />
+                    <div className="pointer-events-none absolute -bottom-16 -left-12 h-32 w-32 rounded-full bg-primary/5 blur-3xl dark:bg-accent/5" />
 
-            {/* Visitors Globe */}
-            <ClustrMaps dataId="8P_6aH7IpLsujkyx87NuC0JYbr6UylUmiy6k3vT0RGQ" />
+                    <div className="relative p-4">
+                        {currentRoles.length > 0 && (
+                            <div>
+                                <div className="mb-3 flex items-center justify-between">
+                                    <h2 className="text-[11px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+                                        {messages.profile.currently}
+                                    </h2>
+                                    <span className="flex items-center gap-1.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400">
+                                        <span className="relative flex h-2 w-2">
+                                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+                                            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                                        </span>
+                                        {messages.profile.active}
+                                    </span>
+                                </div>
+
+                                <div className="space-y-2">
+                                    {currentRoles.map((role) => (
+                                        <div
+                                            key={`${role.title}-${role.subtitle}`}
+                                            className="flex items-center gap-3 rounded-xl border border-transparent px-2 py-2 transition-all duration-200 hover:border-accent/20 hover:bg-accent/[0.06]"
+                                        >
+                                            {role.image && (
+                                                <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-white p-1.5 shadow-sm ring-1 ring-black/[0.06] dark:ring-white/10">
+                                                    <Image
+                                                        src={role.image}
+                                                        alt=""
+                                                        width={32}
+                                                        height={32}
+                                                        className="h-full w-full object-contain"
+                                                    />
+                                                </span>
+                                            )}
+                                            <span className="min-w-0 flex-1">
+                                                <span className="block truncate text-[13px] font-semibold leading-tight text-primary">
+                                                    {role.title}
+                                                </span>
+                                                <span className="mt-1 block truncate text-[11px] text-neutral-500 dark:text-neutral-400">
+                                                    {role.subtitle}
+                                                </span>
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        {currentRoles.length > 0 && sectionLinks.length > 0 && (
+                            <div className="my-4 h-px bg-gradient-to-r from-transparent via-neutral-200 to-transparent dark:via-white/10" />
+                        )}
+
+                        {sectionLinks.length > 0 && (
+                            <nav aria-label={messages.profile.onThisPage}>
+                                <h2 className="mb-2 px-2 text-[11px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+                                    {messages.profile.onThisPage}
+                                </h2>
+                                <div className="space-y-0.5">
+                                    {sectionLinks.map((section, index) => {
+                                        const isActive = activeSection === section.id;
+                                        return (
+                                            <a
+                                                key={section.id}
+                                                href={`#${section.id}`}
+                                                onClick={() => setActiveSection(section.id)}
+                                                aria-current={isActive ? 'location' : undefined}
+                                                className={`relative flex items-center justify-between overflow-hidden rounded-lg px-2.5 py-2 text-[12px] font-medium transition-colors duration-200 ${
+                                                    isActive
+                                                        ? 'text-primary'
+                                                        : 'text-neutral-500 hover:text-primary dark:text-neutral-400'
+                                                }`}
+                                            >
+                                                {isActive && (
+                                                    <motion.span
+                                                        layoutId="profile-active-section"
+                                                        className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/15 to-accent/[0.04] ring-1 ring-inset ring-accent/15"
+                                                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                                                    />
+                                                )}
+                                                <span className="relative flex min-w-0 items-center gap-2.5">
+                                                    <span className={`h-1.5 w-1.5 flex-shrink-0 rounded-full transition-all duration-200 ${
+                                                        isActive ? 'bg-accent shadow-[0_0_8px_var(--accent)]' : 'bg-neutral-300 dark:bg-neutral-600'
+                                                    }`} />
+                                                    <span className="truncate">{section.label}</span>
+                                                </span>
+                                                <span className="relative flex items-center gap-1">
+                                                    <span className={`text-[9px] tabular-nums transition-opacity ${isActive ? 'opacity-50' : 'opacity-0'}`}>
+                                                        {String(index + 1).padStart(2, '0')}
+                                                    </span>
+                                                    <ChevronRight className={`h-3.5 w-3.5 transition-all duration-200 ${
+                                                        isActive ? 'translate-x-0 text-accent opacity-100' : '-translate-x-1 opacity-0'
+                                                    }`} />
+                                                </span>
+                                            </a>
+                                        );
+                                    })}
+                                </div>
+                            </nav>
+                        )}
+                    </div>
+                </motion.aside>
+            )}
         </motion.div>
     );
 }

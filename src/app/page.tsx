@@ -3,7 +3,7 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 
 interface SectionConfig {
@@ -61,12 +61,29 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
   });
 }
 
+function loadCurrentRoles(locale?: string): CardItem[] {
+  const currentDatePattern = /\bpresent\b|\bcurrent\b|\bnow\b|至今|当前/i;
+  const sources = ['experience', 'education'];
+
+  return sources
+    .flatMap((source) => {
+      const config = getPageConfig<CardPageConfig>(source, locale);
+      return config?.type === 'card' ? config.items : [];
+    })
+    .filter((item) => item.date && currentDatePattern.test(item.date))
+    .slice(0, 2);
+}
+
 function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
   const localeConfig = getConfig(locale);
   const enableOnePageMode = localeConfig.features.enable_one_page_mode;
 
   const aboutConfig = getPageConfig<{ profile?: { research_interests?: string[] }; sections?: SectionConfig[] }>('about', locale);
   const researchInterests = aboutConfig?.profile?.research_interests;
+  const sectionLinks = (aboutConfig?.sections || []).map((section) => ({
+    id: section.id,
+    label: section.title || section.id,
+  }));
 
   let pagesToShow: PageData[] = [];
 
@@ -133,6 +150,8 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
     features: localeConfig.features,
     enableOnePageMode,
     researchInterests,
+    currentRoles: loadCurrentRoles(locale),
+    sectionLinks,
     pagesToShow,
   };
 }

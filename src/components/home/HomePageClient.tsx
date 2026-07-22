@@ -9,7 +9,7 @@ import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardPageConfig, PublicationPageConfig, TextPageConfig } from '@/types/page';
+import { CardItem, CardPageConfig, PageSectionLink, PublicationPageConfig, TextPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
@@ -36,6 +36,8 @@ export interface HomePageLocaleData {
   features: SiteConfig['features'];
   enableOnePageMode?: boolean;
   researchInterests?: string[];
+  currentRoles: CardItem[];
+  sectionLinks: PageSectionLink[];
   pagesToShow: PageData[];
 }
 
@@ -62,42 +64,51 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
             social={data.social}
             features={data.features}
             researchInterests={data.researchInterests}
+            currentRoles={data.currentRoles}
+            sectionLinks={data.sectionLinks}
           />
         </div>
 
         <div className="lg:col-span-2 space-y-8">
           {data.pagesToShow.map((page) => (
-            <section key={page.id} id={page.id} className="scroll-mt-24 space-y-8">
+            <section
+              key={page.id}
+              id={page.type === 'about' && page.sections.some((section) => section.id === page.id) ? undefined : page.id}
+              className="scroll-mt-24 space-y-8"
+            >
               {page.type === 'about' && page.sections.map((section: SectionConfig, index: number) => {
                 const delay = 0.2 + 0.1 * index;
                 switch (section.type) {
                   case 'markdown':
                     return (
-                      <About
-                        key={section.id}
-                        content={section.content || ''}
-                        title={section.title}
-                        delay={delay}
-                      />
+                      <div key={section.id} id={section.id} className="scroll-mt-24">
+                        <About
+                          content={section.content || ''}
+                          title={section.title}
+                          delay={delay}
+                        />
+                      </div>
                     );
                   case 'publications':
                     return (
-                      <SelectedPublications
-                        key={section.id}
-                        publications={section.publications || []}
-                        title={section.title}
-                        enableOnePageMode={data.enableOnePageMode}
-                        delay={delay}
-                      />
+                      <div key={section.id} id={section.id} className="scroll-mt-24">
+                        <SelectedPublications
+                          publications={section.publications || []}
+                          title={section.title}
+                          enableOnePageMode={data.enableOnePageMode}
+                          delay={delay}
+                        />
+                      </div>
                     );
                   case 'list':
                     return (
-                      <News
-                        key={section.id}
-                        items={section.items || []}
-                        title={section.title}
-                        delay={delay}
-                      />
+                      <div key={section.id} id={section.id} className="scroll-mt-24">
+                        <News
+                          items={section.items || []}
+                          title={section.title}
+                          delay={delay}
+                        />
+                      </div>
                     );
                   default:
                     return null;

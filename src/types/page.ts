@@ -29,3 +29,8 @@ export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     items: CardItem[];
 }
+
+export interface PageSectionLink {
+    id: string;
+    label: string;
+}
