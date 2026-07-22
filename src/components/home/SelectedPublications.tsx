@@ -18,6 +18,29 @@ interface SelectedPublicationsProps {
     delay?: number;
 }
 
+function getCompactVenue(publication: Publication): { label: string; full: string } {
+    const full = publication.journal || publication.conference || '';
+
+    if (/fagen/i.test(full)) {
+        return { label: 'FAGEN @ ICML', full };
+    }
+
+    if (/arxiv/i.test(full)) {
+        return { label: 'arXiv', full };
+    }
+
+    const parentheticalLabels = Array.from(full.matchAll(/\(([^)]+)\)/g))
+        .map((match) => match[1].trim())
+        .filter((label) => label.length <= 18);
+
+    if (parentheticalLabels.length > 0) {
+        return { label: parentheticalLabels[parentheticalLabels.length - 1], full };
+    }
+
+    const knownVenue = full.match(/\b(NeurIPS|ICML|ICLR|ACL|CVPR|ICCV|ECCV|ICME|AAAI|IJCAI|KDD|WWW)\b/i)?.[0];
+    return { label: knownVenue || full, full };
+}
+
 export default function SelectedPublications({ publications, title, enableOnePageMode = false, delay = 0.4 }: SelectedPublicationsProps) {
     const messages = useMessages();
     const resolvedTitle = title || messages.home.selectedPublications;
@@ -39,27 +62,56 @@ export default function SelectedPublications({ publications, title, enableOnePag
                 </Link>
             </div>
             <div className="space-y-4">
-                {publications.map((pub, index) => (
-                    <motion.div
-                        key={pub.id}
-                        className="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-lg shadow-sm border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] hover:shadow-lg transition-all duration-200 animate-fade-up"
-                        style={{ animationDelay: `${0.1 * index}s` }}
-                    >
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                            {pub.preview && (
-                                <div className="w-full sm:w-52 flex-shrink-0">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img
-                                        src={`/papers/${pub.preview}`}
-                                        alt={pub.title}
-                                        className="block w-full h-auto rounded-md"
-                                    />
-                                </div>
-                            )}
-                            <div className="flex-grow min-w-0">
-                                <h3 className="font-semibold text-primary mb-1 leading-tight">
-                                    <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
-                                </h3>
+                {publications.map((pub, index) => {
+                    const venue = getCompactVenue(pub);
+
+                    return (
+                        <motion.article
+                            key={pub.id}
+                            className="group/publication relative overflow-hidden rounded-xl border border-neutral-200/90 bg-gradient-to-br from-white via-white to-neutral-50/75 p-4 shadow-[0_5px_22px_-15px_rgba(15,23,42,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-accent/35 hover:shadow-[0_18px_45px_-20px_rgba(15,23,42,0.35)] dark:border-[rgba(148,163,184,0.22)] dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800/80 animate-fade-up"
+                            style={{ animationDelay: `${0.1 * index}s` }}
+                        >
+                            <span className="pointer-events-none absolute inset-y-3 left-0 w-0.5 origin-center scale-y-0 rounded-r-full bg-gradient-to-b from-transparent via-accent to-transparent transition-transform duration-300 group-hover/publication:scale-y-100" />
+                            <span className="pointer-events-none absolute -right-10 -top-12 h-28 w-28 rounded-full bg-accent/0 blur-2xl transition-colors duration-500 group-hover/publication:bg-accent/10" />
+
+                            <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center">
+                                {pub.preview && (
+                                    <div className="relative w-full flex-shrink-0 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/[0.05] sm:w-52 dark:ring-white/10">
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img
+                                            src={`/papers/${pub.preview}`}
+                                            alt={pub.title}
+                                            className="block h-auto w-full transition-transform duration-500 ease-out group-hover/publication:scale-[1.025]"
+                                        />
+                                        <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/5 opacity-0 transition-opacity duration-300 group-hover/publication:opacity-100" />
+                                    </div>
+                                )}
+                                <div className="min-w-0 flex-grow">
+                                    <div className="mb-2.5 flex flex-wrap items-center gap-2 pr-12">
+                                        <span
+                                            title={venue.full}
+                                            className="inline-flex max-w-full items-center rounded-full bg-accent/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.1em] text-accent-dark ring-1 ring-inset ring-accent/10 dark:text-accent"
+                                        >
+                                            <span className="mr-1.5 h-1 w-1 rounded-full bg-accent shadow-[0_0_5px_var(--accent)]" />
+                                            <span className="truncate">{venue.label}</span>
+                                        </span>
+                                        <span className="text-[11px] font-semibold tabular-nums text-neutral-400 dark:text-neutral-500">
+                                            {pub.year}
+                                        </span>
+                                        {pub.award && (
+                                            <span className="inline-flex items-center rounded-full bg-amber-50 px-2 py-1 text-[10px] font-semibold text-amber-700 ring-1 ring-inset ring-amber-200/60 dark:bg-amber-400/10 dark:text-amber-400 dark:ring-amber-400/15">
+                                                🏆 {pub.award}
+                                            </span>
+                                        )}
+                                    </div>
+
+                                    <span className="absolute right-1 top-0 font-serif text-3xl font-bold tabular-nums text-neutral-200/80 transition-colors duration-300 group-hover/publication:text-accent/25 dark:text-neutral-700/60">
+                                        {String(index + 1).padStart(2, '0')}
+                                    </span>
+
+                                    <h3 className="mb-1.5 font-semibold leading-tight text-primary transition-colors duration-200 group-hover/publication:text-accent-dark dark:group-hover/publication:text-accent">
+                                        <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
+                                    </h3>
                                 <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-1">
                                     {pub.authors.map((author, idx) => (
                                         <span key={idx}>
@@ -76,16 +128,8 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                         </span>
                                     ))}
                                 </p>
-                                <p className="text-sm font-medium text-neutral-700 dark:text-neutral-400 mb-2">
-                                    {pub.journal || pub.conference} {pub.year}
-                                    {pub.award && (
-                                        <span className="ml-2 inline-flex items-center text-xs font-semibold text-amber-700 dark:text-amber-400">
-                                            🏆 {pub.award}
-                                        </span>
-                                    )}
-                                </p>
                                 {pub.description && (
-                                    <p className="text-sm text-neutral-500 dark:text-neutral-500 mb-3 line-clamp-3">
+                                    <p className="mb-3 line-clamp-2 text-sm leading-relaxed text-neutral-500">
                                         {pub.description}
                                     </p>
                                 )}
@@ -163,9 +207,10 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                     ) : null}
                                 </AnimatePresence>
                             </div>
-                        </div>
-                    </motion.div>
-                ))}
+                            </div>
+                        </motion.article>
+                    );
+                })}
             </div>
         </motion.section>
     );
