@@ -4,9 +4,9 @@ description = "Reviewing, teaching, and mentoring activities."
 
 [[items]]
 title = "Conference Reviewer"
-subtitle = "NeurIPS · ICLR · ICML"
+subtitle = "NeurIPS · ICLR · ICML · AAAI"
 date = "2025 – present"
-content = "NeurIPS (2025, 2026); ICLR (2026); ICML (2026, **[Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold)**)."
+content = "NeurIPS (2025, 2026); ICLR (2026); ICML (2026, **[Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold)**); AAAI (2027)."
 tags = ["Reviewer"]
 
 [[items]]
@@ -20,7 +20,7 @@ tags = ["Reviewer"]
 title = "Teaching Assistant"
 subtitle = "Rutgers University"
 date = "2025.09 – present"
-image = "/logos/rutgers.png"
+image = "/logos/ru.png"
 content = "- CS 344: Design and Analysis of Computer Algorithms\n- CS 439: Introduction to Data Science"
 tags = ["Teaching"]
 

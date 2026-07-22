@@ -3,8 +3,9 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem, ProjectItem } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem, ProjectItem, ExperiencePageConfig } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
+import { resolveExperiencePage } from '@/lib/experience';
 
 interface SectionConfig {
   id: string;
@@ -28,7 +29,8 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig }
+  | { type: 'experience'; id: string; config: ExperiencePageConfig };
 
 function processSections(sections: SectionConfig[], locale?: string): SectionConfig[] {
   return sections.map((section: SectionConfig) => {
@@ -73,7 +75,7 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
 
 function loadCurrentRoles(locale?: string): CardItem[] {
   const currentDatePattern = /\bpresent\b|\bcurrent\b|\bnow\b|至今|当前/i;
-  const sources = ['experience', 'education'];
+  const sources = ['research-experience', 'education'];
 
   return sources
     .flatMap((source) => {
@@ -140,6 +142,14 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
             type: 'card',
             id: item.target,
             config: pageConfig as CardPageConfig,
+          } as PageData;
+        }
+
+        if (pageConfig.type === 'experience') {
+          return {
+            type: 'experience',
+            id: item.target,
+            config: resolveExperiencePage(pageConfig as ExperiencePageConfig, locale),
           } as PageData;
         }
 

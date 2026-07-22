@@ -8,10 +8,12 @@ import {
   PublicationPageConfig,
   TextPageConfig,
   CardPageConfig,
+  ExperiencePageConfig,
 } from '@/types/page';
 
 import { Metadata } from 'next';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
+import { resolveExperiencePage } from '@/lib/experience';
 
 function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleData | null {
   const pageConfig = getPageConfig(slug, locale) as BasePageConfig | null;
@@ -44,6 +46,13 @@ function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleDa
     return {
       type: 'card',
       config: pageConfig as CardPageConfig,
+    };
+  }
+
+  if (pageConfig.type === 'experience') {
+    return {
+      type: 'experience',
+      config: resolveExperiencePage(pageConfig as ExperiencePageConfig, locale),
     };
   }
 

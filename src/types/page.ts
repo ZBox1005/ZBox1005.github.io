@@ -1,5 +1,5 @@
 export interface BasePageConfig {
-    type: 'about' | 'publication' | 'card' | 'text';
+    type: 'about' | 'publication' | 'card' | 'text' | 'experience';
     title: string;
     description?: string;
 }
@@ -28,6 +28,21 @@ export interface CardItem {
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     items: CardItem[];
+}
+
+export interface ExperienceGroupConfig {
+    id: string;
+    tab_label: string;
+    title: string;
+    description?: string;
+    source: string;
+    items?: CardItem[];
+}
+
+export interface ExperiencePageConfig extends BasePageConfig {
+    type: 'experience';
+    default_group?: string;
+    groups: ExperienceGroupConfig[];
 }
 
 export interface PageSectionLink {

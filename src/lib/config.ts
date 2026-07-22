@@ -39,7 +39,7 @@ export interface SiteConfig {
   }>;
   sections?: Array<{
     id: string;
-    type: 'markdown' | 'publications' | 'list' | 'cards' | 'projects';
+    type: 'markdown' | 'publications' | 'list' | 'cards' | 'projects' | 'experience';
     source?: string;
     title?: string;
     filter?: string;

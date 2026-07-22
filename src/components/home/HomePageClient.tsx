@@ -8,9 +8,10 @@ import ProjectShowcase from '@/components/home/ProjectShowcase';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
+import ExperiencePage from '@/components/pages/ExperiencePage';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardItem, CardPageConfig, PageSectionLink, ProjectItem, PublicationPageConfig, TextPageConfig } from '@/types/page';
+import { CardItem, CardPageConfig, ExperiencePageConfig, PageSectionLink, ProjectItem, PublicationPageConfig, TextPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
@@ -30,7 +31,8 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig }
+  | { type: 'experience'; id: string; config: ExperiencePageConfig };
 
 export interface HomePageLocaleData {
   author: SiteConfig['author'];
@@ -142,6 +144,12 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
               )}
               {page.type === 'card' && (
                 <CardPage
+                  config={page.config}
+                  embedded={true}
+                />
+              )}
+              {page.type === 'experience' && (
+                <ExperiencePage
                   config={page.config}
                   embedded={true}
                 />

@@ -52,22 +52,10 @@ target = "publications"
 href = "/publications/"
 
 [[navigation]]
-title = "Education"
-type = "page"
-target = "education"
-href = "/education/"
-
-[[navigation]]
 title = "Experience"
 type = "page"
 target = "experience"
 href = "/experience/"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services/"
 
 [[navigation]]
 title = "CV"
