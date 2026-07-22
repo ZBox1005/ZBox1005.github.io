@@ -4,7 +4,8 @@ title = "About"
 [profile]
 research_interests = [
   "Trustworthy Agentic AI",
-  "Agentic LLMs & Flow Matching",
+  "LLM Post-Training",
+  "Flow Matching",
   "AI Content Detection",
   "ML for Healthcare"
 ]
