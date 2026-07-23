@@ -11,8 +11,8 @@ content = "Recognized for excellence in teaching by [CS@Rutgers University](http
 tags = ["Teaching Award"]
 
 [[items]]
-title = "ICML 2026 Gold Reviewer"
-subtitle = "International Conference on Machine Learning"
+title = "Gold Reviewer"
+subtitle = "International Conference on Machine Learning (ICML 2026)"
 date = "2026.05"
 image = "/logos/ICML.png"
 content = "Selected as an [ICML 2026 Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold) in recognition of outstanding reviewing contributions."
@@ -20,7 +20,7 @@ tags = ["Reviewer Recognition"]
 
 [[items]]
 title = "Best Paper Award Candidate"
-subtitle = "IEEE International Conference on Multimedia and Expo (ICME)"
+subtitle = "IEEE International Conference on Multimedia and Expo (ICME 2026)"
 date = "2026.03"
 image = "/logos/ICME.png"
 content = "Our paper, [*Shifting Uncertainty to Critical Moments*](https://arxiv.org/abs/2603.18342), was selected as a Best Paper Award candidate."
