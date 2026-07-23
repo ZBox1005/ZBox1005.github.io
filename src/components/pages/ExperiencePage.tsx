@@ -172,7 +172,7 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                                 >
                                     <span className="absolute inset-y-2 left-0 w-0.5 origin-center scale-y-0 rounded-r-full bg-accent transition-transform duration-300 group-hover/item:scale-y-100" />
 
-                                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white p-1.5 shadow-sm ring-1 ring-black/[0.06] sm:h-12 sm:w-12 dark:ring-white/10">
+                                    <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-white p-1.5 shadow-sm ring-1 ring-black/[0.06] sm:h-12 sm:w-12 dark:ring-white/10">
                                         {item.image ? (
                                             <Image
                                                 src={item.image}
@@ -180,6 +180,7 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
                                                 width={40}
                                                 height={40}
                                                 className="h-full w-full object-contain"
+                                                style={item.image_scale ? { transform: `scale(${item.image_scale})` } : undefined}
                                             />
                                         ) : (
                                             <ActiveGroupIcon className="h-5 w-5 text-accent" />

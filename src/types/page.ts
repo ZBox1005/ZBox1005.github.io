@@ -24,6 +24,7 @@ export interface CardItem {
     tags?: string[];
     link?: string;
     image?: string;
+    image_scale?: number;
 }
 
 export interface CardPageConfig extends BasePageConfig {

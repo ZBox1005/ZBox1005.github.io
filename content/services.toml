@@ -6,6 +6,8 @@ description = "Reviewing, teaching, and mentoring activities."
 title = "Conference Reviewer"
 subtitle = "NeurIPS · ICLR · ICML · AAAI"
 date = "2025 – present"
+image = "/logos/conference.png"
+image_scale = 1.3
 content = "NeurIPS (2025, 2026); ICLR (2026); ICML (2026, **[Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold)**); AAAI (2027)."
 tags = ["Reviewer"]
 
@@ -13,6 +15,8 @@ tags = ["Reviewer"]
 title = "Journal Reviewer"
 subtitle = "ISPRS Journal of Photogrammetry and Remote Sensing"
 date = "2024 – present"
+image = "/logos/journal.png"
+image_scale = 1.3
 content = "Reviewed manuscripts on remote sensing and machine learning."
 tags = ["Reviewer"]
 
