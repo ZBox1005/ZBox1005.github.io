@@ -14,12 +14,14 @@ tags = ["Teaching Award"]
 title = "ICML 2026 Gold Reviewer"
 subtitle = "International Conference on Machine Learning"
 date = "2026.05"
+image = "/logos/ICML.png"
 content = "Selected as an [ICML 2026 Gold Reviewer](https://icml.cc/Conferences/2026/ProgramCommittee#gold) in recognition of outstanding reviewing contributions."
 tags = ["Reviewer Recognition"]
 
 [[items]]
 title = "Best Paper Award Candidate"
-subtitle = "IEEE ICME 2026"
+subtitle = "IEEE International Conference on Multimedia and Expo (ICME)"
 date = "2026.03"
+image = "/logos/ICME.png"
 content = "Our paper, [*Shifting Uncertainty to Critical Moments*](https://arxiv.org/abs/2603.18342), was selected as a Best Paper Award candidate."
 tags = ["Paper Recognition"]
