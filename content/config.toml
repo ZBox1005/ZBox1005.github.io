@@ -57,6 +57,12 @@ target = "experience"
 href = "/experience/"
 
 [[navigation]]
+title = "Travel"
+type = "page"
+target = "travel"
+href = "/travel/"
+
+[[navigation]]
 title = "CV"
 type = "page"
 target = "cv"

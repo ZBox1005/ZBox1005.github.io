@@ -9,6 +9,7 @@ import {
   TextPageConfig,
   CardPageConfig,
   ExperiencePageConfig,
+  TravelPageConfig,
 } from '@/types/page';
 
 import { Metadata } from 'next';
@@ -53,6 +54,13 @@ function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleDa
     return {
       type: 'experience',
       config: resolveExperiencePage(pageConfig as ExperiencePageConfig, locale),
+    };
+  }
+
+  if (pageConfig.type === 'travel') {
+    return {
+      type: 'travel',
+      config: pageConfig as TravelPageConfig,
     };
   }
 

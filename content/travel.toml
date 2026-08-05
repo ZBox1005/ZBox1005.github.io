@@ -1,0 +1,174 @@
+type = "travel"
+title = "Travel"
+description = "Places the work has taken me, measured from one fixed point."
+eyebrow = "Field Register"
+headline = "Distances from a Fixed Point"
+standfirst = """
+Every measurement on this page is taken from a desk in Piscataway, New Jersey.
+The globe turns as you read, and the shadow on it is the shadow that was
+actually there — same date, same hour.
+"""
+
+# ═══════════════════════════════════════════════════════════════════════════
+#  HOW TO EDIT
+#
+#  · Places, coordinates, dates and times are real. The PROSE IS PLACEHOLDER —
+#    rewrite every `text` / `note` in your own words.
+#  · Two densities. An entry with [[entries.blocks]] renders as a full
+#    dispatch; an entry with just `note` renders as a short register note.
+#    Both print the same computed dateline, so a two-line entry is not a
+#    lesser entry.
+#  · You never write: the light label, distance from home, bearing, or the
+#    "NEXT" rule. Those are computed from coord + date + local_time.
+#  · `utc_offset` is authored with DST already applied (a static site has no
+#    timezone database).
+#  · Photos go in public/travel/<entry-id>/. Missing files degrade to a
+#    labelled plate rather than a broken image, so you can add them later.
+#  · Entries are sorted by date automatically — order here doesn't matter.
+# ═══════════════════════════════════════════════════════════════════════════
+
+[home]
+label = "Piscataway"
+region = "New Jersey"
+coord = [-74.4632, 40.5223]
+
+[globe]
+initial = [-40.0, 25.0]
+drift_deg_per_sec = 1.2
+graticule_step = 15
+
+# ────────────────────────────────────────────────────────────────────── 1
+[[entries]]
+id = "wuhan-2018"
+place = "Wuhan"
+region = "China"
+coord = [114.3626, 30.5388]
+date = "2018-09-01"
+local_time = "07:30"
+utc_offset = "+08:00"
+headline = "The Hill You Walk Up Anyway"
+note = """
+Six years began here, and for most of them the walk to the lab was the same
+walk: up the hill, past the construction that never finished, into a building
+where nearly everything I know about starting a research project got taught to
+me by people who never framed it as teaching.
+"""
+
+# ────────────────────────────────────────────────────────────────────── 2
+[[entries]]
+id = "hongkong-2024"
+place = "Hong Kong"
+region = "SAR, China"
+coord = [114.1694, 22.3193]
+date = "2024-03-15"
+local_time = "20:30"
+utc_offset = "+08:00"
+headline = "A Whiteboard With No Window"
+note = """
+A remote collaboration became a real one in the space of four days. Kowloon was
+humid and vertical and extremely loud, and I remember almost none of it,
+because the part that mattered happened at a whiteboard in a room with no
+window at all.
+"""
+
+# ────────────────────────────────────────────────────────────────────── 3
+[[entries]]
+id = "vancouver-2024"
+place = "Vancouver"
+region = "British Columbia, Canada"
+coord = [-123.1207, 49.2827]
+date = "2024-12-11"
+local_time = "16:20"
+utc_offset = "-08:00"
+headline = "Four O'Clock and Already Dark"
+
+  [[entries.blocks]]
+  kind = "prose"
+  lede = true
+  text = """
+The thing nobody tells you about a December conference at forty-nine degrees
+north is that the day ends while you are still standing at your poster. I came
+out of the hall at twenty past four into what my body insisted was evening and
+the clock insisted was afternoon, and the mountains behind the convention
+centre had already gone the colour of wet slate. Three hours of talking had
+cost me my voice and I would have done another three.
+"""
+
+  [[entries.blocks]]
+  kind = "figure"
+  layout = "full"
+  ratio = "3:2"
+  images = ["/travel/vancouver-2024/poster.jpg"]
+  alt = "A conference poster hall, mid-session"
+  caption = "NeurIPS 2024 — Three hours at the board, and the one question that mattered came in the last ten minutes."
+
+  [[entries.blocks]]
+  kind = "prose"
+  text = """
+Someone stopped near the end of the session and named a failure mode we had
+not tested. He was right, and he was friendly about being right, which is a
+rarer combination than it should be. That conversation is the reason the next
+project exists.
+"""
+
+  [[entries.blocks]]
+  kind = "quote"
+  text = "A poster session gives you four minutes. Occasionally one of them is the only four minutes that counted."
+
+# ────────────────────────────────────────────────────────────────────── 4
+[[entries]]
+id = "shanghai-2025"
+place = "Shanghai"
+region = "China"
+coord = [121.4737, 31.2304]
+date = "2025-03-03"
+local_time = "06:20"
+utc_offset = "+08:00"
+headline = "Watching a Model Copy Itself"
+note = """
+Five months in Xuhui, with a view of cranes that never seemed to finish
+anything. This was the stretch where agent safety stopped being a benchmark
+number to me. Watching a model spin up a working copy of itself inside a
+sandbox is a different kind of convincing than reading the eval table
+afterwards.
+"""
+
+# ────────────────────────────────────────────────────────────────────── 5
+[[entries]]
+id = "vienna-2025"
+place = "Vienna"
+region = "Austria"
+coord = [16.3738, 48.2082]
+date = "2025-07-29"
+local_time = "21:05"
+utc_offset = "+02:00"
+headline = "The Coffeehouse Rule"
+
+  [[entries.blocks]]
+  kind = "prose"
+  lede = true
+  text = """
+The Viennese coffeehouse has a rule, unwritten and absolute: one coffee buys
+you the table for as long as you want it. Nobody explains this. You learn it by
+watching a man work through a newspaper he clearly brought with him, entirely
+unbothered, while a waiter declines three separate opportunities to bring him
+the bill. It is the opposite of every optimisation I had been trained to admire.
+"""
+
+  [[entries.blocks]]
+  kind = "figure"
+  layout = "wide"
+  ratio = "16:9"
+  images = ["/travel/vienna-2025/ring.jpg"]
+  alt = "Dusk over the Ringstrasse"
+  caption = "Ringstrasse, 21:05 — civil twilight, with another ninety minutes of it still to come."
+
+  [[entries.blocks]]
+  kind = "prose"
+  text = """
+So we sat. A postdoc took my draft apart with a pencil, the objection stopped
+being an objection somewhere in the third hour and turned into a plan, and
+nobody once suggested we should be somewhere else. I walked back along the Ring
+at ten past nine and the sky was still the colour of weak tea. July this far
+north simply refuses to end.
+"""

@@ -4,12 +4,14 @@ import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
 import ExperiencePage from '@/components/pages/ExperiencePage';
+import TravelPage from '@/components/pages/TravelPage';
 import { Publication } from '@/types/publication';
 import {
   PublicationPageConfig,
   TextPageConfig,
   CardPageConfig,
   ExperiencePageConfig,
+  TravelPageConfig,
 } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
@@ -17,7 +19,8 @@ export type DynamicPageLocaleData =
   | { type: 'publication'; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; config: TextPageConfig; content: string }
   | { type: 'card'; config: CardPageConfig }
-  | { type: 'experience'; config: ExperiencePageConfig };
+  | { type: 'experience'; config: ExperiencePageConfig }
+  | { type: 'travel'; config: TravelPageConfig };
 
 interface DynamicPageClientProps {
   dataByLocale: Record<string, DynamicPageLocaleData>;
@@ -31,6 +34,12 @@ export default function DynamicPageClient({ dataByLocale, defaultLocale }: Dynam
 
   if (!pageData) {
     return null;
+  }
+
+  // The travel page owns its own container so the masthead's census rule can
+  // run the full width of the measure.
+  if (pageData.type === 'travel') {
+    return <TravelPage config={pageData.config} />;
   }
 
   return (

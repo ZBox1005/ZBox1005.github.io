@@ -15,9 +15,19 @@
 }
 .animate-fade-up   { animation: fade-up 0.6s ease-out both; }
 .animate-slide-down { animation: slide-down 0.6s ease-out both; }
+
+/* Photographs fade up as they decode rather than snapping in. */
+.travel-figure {
+  opacity: 0;
+  transform: scale(1.012);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.travel-figure.is-loaded { opacity: 1; transform: none; }
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-slide-down { animation: none; }
+  .travel-figure { opacity: 1; transform: none; transition: none; }
 }
 
 /* Default to light theme colors - no system preference detection */
