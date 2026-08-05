@@ -9,7 +9,6 @@ export interface DerivedEntry extends TravelEntry {
     moment: Date;
     elevation: number;
     light: string;
-    isDay: boolean;
     kmFromHome: number;
     bearingFromHome: number;
     next: { km: number; compass: string; place: string } | null;
@@ -54,7 +53,6 @@ export function deriveEntries(config: TravelPageConfig): DerivedEntry[] {
             time: moment.getTime(),
             elevation,
             light: lightLabel(elevation),
-            isDay: elevation > 0,
             kmFromHome: greatCircleKm(home, entry.coord),
             bearingFromHome: initialBearing(home, entry.coord),
             next: nextEntry

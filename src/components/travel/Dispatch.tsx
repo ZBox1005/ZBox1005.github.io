@@ -40,10 +40,9 @@ export default function Dispatch({ entry, home, isLast, registerRef }: DispatchP
         >
             <div className="flex gap-4">
                 {/* The sticky instrument has no room on narrow screens, so each
-                    entry carries its own frozen stamp of that day's light. */}
+                    entry carries a small globe frozen on its own coordinates. */}
                 <GlobeSeal
                     coord={entry.coord}
-                    moment={entry.moment}
                     home={home}
                     size={72}
                     className="mt-0.5 flex-shrink-0 lg:hidden"

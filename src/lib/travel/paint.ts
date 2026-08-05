@@ -1,7 +1,6 @@
 import { geoPath, geoDistance, type GeoProjection } from 'd3-geo';
 import type { FeatureCollection, Geometry } from 'geojson';
 import { graticule, greatCirclePoints, type LngLat } from './globe';
-import { nightCapsAt } from './solar';
 
 export interface Palette {
     ocean: string;
@@ -9,8 +8,6 @@ export interface Palette {
     landEdge: string;
     graticule: string;
     limb: string;
-    nightOuter: string;
-    nightInner: string;
     markerDim: string;
     markerHot: string;
     arc: string;
@@ -18,9 +15,8 @@ export interface Palette {
 }
 
 /**
- * Hard-coded rather than read from CSS custom properties: `--primary` and
- * `--background` invert between themes, which would render night brighter
- * than day.
+ * Hard-coded rather than read from CSS custom properties, which invert between
+ * themes — the globe needs its own light/dark pair, not the page's.
  */
 export const LIGHT: Palette = {
     ocean: '#eaf0f6',
@@ -28,8 +24,6 @@ export const LIGHT: Palette = {
     landEdge: 'rgba(100,116,139,0.50)',
     graticule: 'rgba(100,116,139,0.14)',
     limb: 'rgba(30,41,59,0.25)',
-    nightOuter: 'rgba(15,23,42,0.13)',
-    nightInner: 'rgba(15,23,42,0.30)',
     markerDim: '#94a3b8',
     markerHot: '#b8914d',
     arc: '#b8914d',
@@ -42,8 +36,6 @@ export const DARK: Palette = {
     landEdge: 'rgba(148,163,184,0.35)',
     graticule: 'rgba(148,163,184,0.12)',
     limb: 'rgba(148,163,184,0.28)',
-    nightOuter: 'rgba(2,6,18,0.20)',
-    nightInner: 'rgba(2,6,18,0.46)',
     markerDim: '#64748b',
     markerHot: '#e4b976',
     arc: '#e4b976',
@@ -53,8 +45,6 @@ export const DARK: Palette = {
 export interface PaintMarker {
     coord: LngLat;
     label: string;
-    /** Daylight at this entry's own moment — not the active one. */
-    isDay: boolean;
 }
 
 export interface PaintState {
@@ -67,15 +57,6 @@ export interface PaintState {
     /** Index into `markers`, or -1 before the first entry is active. */
     activeIndex: number;
     hoverIndex: number;
-    /**
-     * Where the sun stands, as a coordinate rather than an instant.
-     *
-     * Interpolating the *moment* between two entries would spin the terminator
-     * once per day of separation — years apart means thousands of revolutions.
-     * Moving the sun's position along a great circle instead travels at most
-     * half a turn, however far apart the dates are.
-     */
-    subsolar: LngLat | null;
     /** 0–1 progressive draw of the active arc. */
     arcReveal: number;
     /** Highest entry index reached so far; earlier arcs linger as ghosts. */
@@ -113,7 +94,7 @@ function visible(projection: GeoProjection, coord: LngLat): { x: number; y: numb
 export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
     const {
         projection, palette, width, height, land, markers,
-        activeIndex, hoverIndex, subsolar, arcReveal, seenMax,
+        activeIndex, hoverIndex, arcReveal, seenMax,
         home, homeLabel, dragging, promote, ping, graticuleStep, showLabels,
     } = state;
 
@@ -147,22 +128,7 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
         ctx.stroke();
     }
 
-    /* 4 — night, as two concentric caps whose alphas compound at the core */
-    if (subsolar) {
-        const [outer, inner] = nightCapsAt(subsolar, dragging ? 4 : 2);
-
-        ctx.beginPath();
-        path(outer);
-        ctx.fillStyle = palette.nightOuter;
-        ctx.fill();
-
-        ctx.beginPath();
-        path(inner);
-        ctx.fillStyle = palette.nightInner;
-        ctx.fill();
-    }
-
-    /* 5 — ghost arcs: everywhere already read, faint */
+    /* 4 — ghost arcs: everywhere already read, faint */
     if (home && seenMax >= 0) {
         ctx.save();
         ctx.setLineDash([2, 5]);
@@ -180,7 +146,7 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
         ctx.restore();
     }
 
-    /* 6 — the active arc, drawing itself out of the home tick */
+    /* 5 — the active arc, drawing itself out of the home tick */
     if (home && activeIndex >= 0 && markers[activeIndex] && arcReveal > 0) {
         const points = greatCirclePoints(home, markers[activeIndex].coord, 64, arcReveal);
 
@@ -195,14 +161,14 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
         ctx.restore();
     }
 
-    /* 7 — limb */
+    /* 6 — limb */
     ctx.beginPath();
     path({ type: 'Sphere' });
     ctx.strokeStyle = palette.limb;
     ctx.lineWidth = 1;
     ctx.stroke();
 
-    /* 8 — markers */
+    /* 7 — markers */
     markers.forEach((marker, index) => {
         const point = visible(projection, marker.coord);
         if (!point) return;
@@ -262,25 +228,17 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
         } else {
             const r = isHover ? 4.4 : 3.4;
 
-            if (marker.isDay) {
-                // Hollow ring — the sun was up when this was taken
-                ctx.beginPath();
-                ctx.arc(0, 0, r, 0, Math.PI * 2);
-                ctx.strokeStyle = palette.markerDim;
-                ctx.lineWidth = 1.2;
-                ctx.stroke();
-            } else {
-                ctx.beginPath();
-                ctx.arc(0, 0, r, 0, Math.PI * 2);
-                ctx.fillStyle = palette.markerHot;
-                ctx.fill();
-            }
+            ctx.beginPath();
+            ctx.arc(0, 0, r, 0, Math.PI * 2);
+            ctx.strokeStyle = isHover ? palette.markerHot : palette.markerDim;
+            ctx.lineWidth = 1.2;
+            ctx.stroke();
         }
 
         ctx.restore();
     });
 
-    /* 9 — active label, flipping side before it runs off the disc */
+    /* 8 — active label, flipping side before it runs off the disc */
     if (showLabels && activeIndex >= 0 && markers[activeIndex]) {
         const point = visible(projection, markers[activeIndex].coord);
         if (point) {
@@ -301,7 +259,7 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
         }
     }
 
-    /* 10 — home tick */
+    /* 9 — home tick */
     if (home) {
         const point = visible(projection, home);
         if (point) {

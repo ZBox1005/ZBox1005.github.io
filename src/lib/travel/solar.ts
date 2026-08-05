@@ -1,4 +1,3 @@
-import { geoCircle } from 'd3-geo';
 import type { LngLat } from './globe';
 
 const RAD = Math.PI / 180;
@@ -51,10 +50,6 @@ export function solarElevation([lng, lat]: LngLat, date: Date): number {
     return Math.asin(Math.max(-1, Math.min(1, cosZenith))) * DEG;
 }
 
-export function isDaylight(coord: LngLat, date: Date): boolean {
-    return solarElevation(coord, date) > 0;
-}
-
 /** Standard twilight bands, as printed on the dateline. */
 export function lightLabel(elevation: number): string {
     if (elevation > 6) return 'DAYLIGHT';
@@ -65,20 +60,3 @@ export function lightLabel(elevation: number): string {
     return 'NIGHT';
 }
 
-/**
- * Two concentric caps centred on the antisolar point: the outer one covers
- * civil twilight, the inner one true night. Painted in order their alphas
- * compound, giving a soft terminator without a canvas blur.
- */
-export function nightCapsAt(subsolar: LngLat, precision = 2) {
-    const centre: LngLat = [subsolar[0] + 180, -subsolar[1]];
-
-    const cap = (radius: number) =>
-        geoCircle().center(centre).radius(radius).precision(precision)();
-
-    return [cap(96), cap(90)] as const;
-}
-
-export function nightCaps(date: Date, precision = 2) {
-    return nightCapsAt(subsolarPoint(date), precision);
-}

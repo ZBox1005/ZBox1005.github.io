@@ -32,7 +32,6 @@ export default function TravelPage({ config }: TravelPageProps) {
             entries.map((entry) => ({
                 coord: entry.coord,
                 label: entry.place,
-                isDay: entry.isDay,
             })),
         [entries]
     );
@@ -64,7 +63,6 @@ export default function TravelPage({ config }: TravelPageProps) {
             activeIndex={activeIndex}
             home={home}
             homeLabel={(config.home?.label || 'HOME').toUpperCase()}
-            moment={active ? active.moment : null}
             onSelect={handleGlobeSelect}
             initialRotation={config.globe?.initial ?? [-40, 25]}
             driftDegPerSec={config.globe?.drift_deg_per_sec ?? 1.2}

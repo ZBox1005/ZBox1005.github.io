@@ -5,11 +5,9 @@ import type { FeatureCollection, Geometry } from 'geojson';
 import { createProjection, rotationFor, type LngLat } from '@/lib/travel/globe';
 import { loadLand } from '@/lib/travel/land';
 import { DARK, LIGHT, paint, type PaintMarker } from '@/lib/travel/paint';
-import { subsolarPoint } from '@/lib/travel/solar';
 
 interface GlobeSealProps {
     coord: LngLat;
-    moment: Date;
     home?: LngLat | null;
     size?: number;
     className?: string;
@@ -18,12 +16,10 @@ interface GlobeSealProps {
 /**
  * A small, frozen globe stamped beside an entry on narrow screens, where the
  * sticky instrument has no room. Same painter, called once — no rAF, no
- * observers. Because the light is real, the seals visibly change season as you
- * scroll down the page.
+ * observers.
  */
 export default function GlobeSeal({
     coord,
-    moment,
     home = null,
     size = 72,
     className = '',
@@ -58,7 +54,7 @@ export default function GlobeSeal({
         canvas.height = size * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-        const markers: PaintMarker[] = [{ coord, label: '', isDay: true }];
+        const markers: PaintMarker[] = [{ coord, label: '' }];
 
         paint(ctx, {
             projection: createProjection({ width: size, height: size, rotation: rotationFor(coord) }),
@@ -69,7 +65,6 @@ export default function GlobeSeal({
             markers,
             activeIndex: 0,
             hoverIndex: -1,
-            subsolar: subsolarPoint(moment),
             arcReveal: 1,
             seenMax: -1,
             home,
@@ -80,7 +75,7 @@ export default function GlobeSeal({
             graticuleStep: 30,
             showLabels: false,
         });
-    }, [coord, moment, home, size, land, isDark]);
+    }, [coord, home, size, land, isDark]);
 
     return (
         <canvas
