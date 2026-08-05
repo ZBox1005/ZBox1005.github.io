@@ -70,12 +70,15 @@ export function lightLabel(elevation: number): string {
  * civil twilight, the inner one true night. Painted in order their alphas
  * compound, giving a soft terminator without a canvas blur.
  */
-export function nightCaps(date: Date, precision = 2) {
-    const [lng, lat] = subsolarPoint(date);
-    const centre: LngLat = [lng + 180, -lat];
+export function nightCapsAt(subsolar: LngLat, precision = 2) {
+    const centre: LngLat = [subsolar[0] + 180, -subsolar[1]];
 
     const cap = (radius: number) =>
         geoCircle().center(centre).radius(radius).precision(precision)();
 
     return [cap(96), cap(90)] as const;
+}
+
+export function nightCaps(date: Date, precision = 2) {
+    return nightCapsAt(subsolarPoint(date), precision);
 }

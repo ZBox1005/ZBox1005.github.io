@@ -1,7 +1,7 @@
 import { geoPath, geoDistance, type GeoProjection } from 'd3-geo';
 import type { FeatureCollection, Geometry } from 'geojson';
 import { graticule, greatCirclePoints, type LngLat } from './globe';
-import { nightCaps } from './solar';
+import { nightCapsAt } from './solar';
 
 export interface Palette {
     ocean: string;
@@ -67,8 +67,15 @@ export interface PaintState {
     /** Index into `markers`, or -1 before the first entry is active. */
     activeIndex: number;
     hoverIndex: number;
-    /** Instant the terminator is solved for — interpolated during a flight. */
-    moment: Date | null;
+    /**
+     * Where the sun stands, as a coordinate rather than an instant.
+     *
+     * Interpolating the *moment* between two entries would spin the terminator
+     * once per day of separation — years apart means thousands of revolutions.
+     * Moving the sun's position along a great circle instead travels at most
+     * half a turn, however far apart the dates are.
+     */
+    subsolar: LngLat | null;
     /** 0–1 progressive draw of the active arc. */
     arcReveal: number;
     /** Highest entry index reached so far; earlier arcs linger as ghosts. */
@@ -106,7 +113,7 @@ function visible(projection: GeoProjection, coord: LngLat): { x: number; y: numb
 export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
     const {
         projection, palette, width, height, land, markers,
-        activeIndex, hoverIndex, moment, arcReveal, seenMax,
+        activeIndex, hoverIndex, subsolar, arcReveal, seenMax,
         home, homeLabel, dragging, promote, ping, graticuleStep, showLabels,
     } = state;
 
@@ -141,8 +148,8 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
     }
 
     /* 4 — night, as two concentric caps whose alphas compound at the core */
-    if (moment) {
-        const [outer, inner] = nightCaps(moment, dragging ? 4 : 2);
+    if (subsolar) {
+        const [outer, inner] = nightCapsAt(subsolar, dragging ? 4 : 2);
 
         ctx.beginPath();
         path(outer);

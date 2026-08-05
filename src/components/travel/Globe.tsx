@@ -19,6 +19,7 @@ import {
 } from '@/lib/travel/globe';
 import { loadLand } from '@/lib/travel/land';
 import { DARK, LIGHT, paint, type PaintMarker } from '@/lib/travel/paint';
+import { subsolarPoint } from '@/lib/travel/solar';
 
 interface GlobeProps {
     markers: PaintMarker[];
@@ -48,8 +49,9 @@ const HIT_RADIUS = 14;
 interface Flight {
     from: LngLat;
     to: LngLat;
-    fromMoment: number;
-    toMoment: number;
+    /** Sun position at each end — interpolated along a great circle. */
+    fromSun: LngLat;
+    toSun: LngLat;
     start: number;
     duration: number;
 }
@@ -81,7 +83,7 @@ export default function Globe({
 
     /* Everything animated lives in refs — the rAF loop never touches React. */
     const rotationRef = useRef<Rotation>(initialRotation);
-    const momentRef = useRef<Date | null>(moment);
+    const subsolarRef = useRef<LngLat | null>(moment ? subsolarPoint(moment) : null);
     const flightRef = useRef<Flight | null>(null);
     const arcRevealRef = useRef(0);
     const promoteRef = useRef(0);
@@ -181,7 +183,7 @@ export default function Globe({
             markers: s.markers,
             activeIndex: s.activeIndex,
             hoverIndex: s.hoverIndex,
-            moment: momentRef.current,
+            subsolar: subsolarRef.current,
             arcReveal: arcRevealRef.current,
             seenMax: seenMaxRef.current,
             home: s.home,
@@ -210,9 +212,7 @@ export default function Globe({
 
             const point = geoInterpolate(flight.from, flight.to)(eased) as LngLat;
             rotationRef.current = rotationFor(point);
-            momentRef.current = new Date(
-                flight.fromMoment + (flight.toMoment - flight.fromMoment) * eased
-            );
+            subsolarRef.current = geoInterpolate(flight.fromSun, flight.toSun)(eased) as LngLat;
             arcRevealRef.current = clamp((elapsed - ARC_DELAY_MS) / ARC_MS, 0, 1);
 
             if (t >= 1) {
@@ -302,11 +302,11 @@ export default function Globe({
         const target = markers[activeIndex].coord;
         const rotate = rotationRef.current;
         const current: LngLat = [-rotate[0], -rotate[1]];
-        const targetMoment = moment ? moment.getTime() : Date.now();
+        const targetSun = moment ? subsolarPoint(moment) : null;
 
         if (reduceMotion) {
             rotationRef.current = rotationFor(target);
-            momentRef.current = moment;
+            subsolarRef.current = targetSun;
             arcRevealRef.current = 1;
             promoteRef.current = 1;
             flightRef.current = null;
@@ -319,8 +319,8 @@ export default function Globe({
         flightRef.current = {
             from: current,
             to: target,
-            fromMoment: momentRef.current ? momentRef.current.getTime() : targetMoment,
-            toMoment: targetMoment,
+            fromSun: subsolarRef.current ?? targetSun ?? [0, 0],
+            toSun: targetSun ?? subsolarRef.current ?? [0, 0],
             start: performance.now(),
             duration: flightDuration(greatCircleKm(current, target)),
         };

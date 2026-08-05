@@ -5,6 +5,7 @@ import type { FeatureCollection, Geometry } from 'geojson';
 import { createProjection, rotationFor, type LngLat } from '@/lib/travel/globe';
 import { loadLand } from '@/lib/travel/land';
 import { DARK, LIGHT, paint, type PaintMarker } from '@/lib/travel/paint';
+import { subsolarPoint } from '@/lib/travel/solar';
 
 interface GlobeSealProps {
     coord: LngLat;
@@ -68,7 +69,7 @@ export default function GlobeSeal({
             markers,
             activeIndex: 0,
             hoverIndex: -1,
-            moment,
+            subsolar: subsolarPoint(moment),
             arcReveal: 1,
             seenMax: -1,
             home,
