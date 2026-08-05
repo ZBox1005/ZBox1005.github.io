@@ -38,7 +38,6 @@ interface GlobeProps {
     ariaLabel?: string;
 }
 
-const DRAG_DWELL_MS = 2500;
 const RETURN_MS = 900;
 const PROMOTE_MS = 260;
 const PING_MS = 700;
@@ -78,6 +77,7 @@ export default function Globe({
     const [reduceMotion, setReduceMotion] = useState(false);
     const [land, setLand] = useState<FeatureCollection<Geometry> | null>(null);
     const [hoverIndex, setHoverIndex] = useState(-1);
+    const [isDragging, setIsDragging] = useState(false);
 
     /* Everything animated lives in refs — the rAF loop never touches React. */
     const rotationRef = useRef<Rotation>(initialRotation);
@@ -92,12 +92,10 @@ export default function Globe({
     const draggingRef = useRef(false);
     const dragOriginRef = useRef<{ x: number; y: number; rotation: Rotation } | null>(null);
     const movedRef = useRef(false);
-    const dwellRef = useRef<number | null>(null);
     const returnRef = useRef<{ from: Rotation; to: Rotation; start: number } | null>(null);
-    const pendingDragRef = useRef<{ dx: number; dy: number } | null>(null);
 
     const rafRef = useRef(0);
-    const runningRef = useRef(false);
+    const dragFrameRef = useRef(0);
     const lastFrameRef = useRef(0);
 
     const palette = isDark ? DARK : LIGHT;
@@ -198,22 +196,11 @@ export default function Globe({
 
     /* ---------------------------------------------------------------- loop */
     const frame = useCallback((now: number) => {
+      try {
         const s = stateRef.current;
         const dt = Math.min(now - lastFrameRef.current, 64);
         lastFrameRef.current = now;
         let busy = false;
-
-        // Coalesced drag — applied once per frame regardless of pointer rate
-        const pending = pendingDragRef.current;
-        if (pending && dragOriginRef.current) {
-            const k = 75 / (s.radius || 1);
-            rotationRef.current = [
-                dragOriginRef.current.rotation[0] + pending.dx * k,
-                clamp(dragOriginRef.current.rotation[1] - pending.dy * k, -MAX_PITCH, MAX_PITCH),
-            ];
-            pendingDragRef.current = null;
-            busy = true;
-        }
 
         const flight = flightRef.current;
         if (flight) {
@@ -277,16 +264,20 @@ export default function Globe({
 
         render();
 
-        if (busy || draggingRef.current) {
-            rafRef.current = requestAnimationFrame(frame);
-        } else {
-            runningRef.current = false;
-        }
+        // Dragging is painted on its own schedule, so the loop can park during it.
+        if (busy) rafRef.current = requestAnimationFrame(frame);
+      } catch (error) {
+        console.error('[travel] globe frame failed', error);
+      }
     }, [render]);
 
+    /**
+     * Idempotent: always cancels any pending frame before scheduling a new one.
+     * An earlier version guarded with an `isRunning` flag, which could wedge
+     * permanently if a frame ever threw — leaving the globe unresponsive.
+     */
     const wake = useCallback(() => {
-        if (runningRef.current) return;
-        runningRef.current = true;
+        cancelAnimationFrame(rafRef.current);
         lastFrameRef.current = performance.now();
         rafRef.current = requestAnimationFrame(frame);
     }, [frame]);
@@ -382,10 +373,10 @@ export default function Globe({
         (event.currentTarget as HTMLElement).setPointerCapture(event.pointerId);
 
         draggingRef.current = true;
+        setIsDragging(true);
         movedRef.current = false;
         flightRef.current = null;
         returnRef.current = null;
-        if (dwellRef.current) { window.clearTimeout(dwellRef.current); dwellRef.current = null; }
 
         dragOriginRef.current = {
             x: event.clientX,
@@ -411,9 +402,21 @@ export default function Globe({
         const dy = event.clientY - origin.y;
         if (Math.abs(dx) > 4 || Math.abs(dy) > 4) movedRef.current = true;
 
-        pendingDragRef.current = { dx, dy };
-        wake();
-    }, [interactive, hitTest, wake]);
+        // Direct manipulation: apply immediately and repaint on our own frame,
+        // rather than handing the gesture to the animation loop.
+        const k = 75 / (stateRef.current.radius || 1);
+        rotationRef.current = [
+            origin.rotation[0] + dx * k,
+            clamp(origin.rotation[1] - dy * k, -MAX_PITCH, MAX_PITCH),
+        ];
+
+        if (!dragFrameRef.current) {
+            dragFrameRef.current = requestAnimationFrame(() => {
+                dragFrameRef.current = 0;
+                render();
+            });
+        }
+    }, [interactive, hitTest, render]);
 
     const endDrag = useCallback((event: React.PointerEvent) => {
         if (!interactive) return;
@@ -424,31 +427,18 @@ export default function Globe({
         }
         draggingRef.current = false;
         dragOriginRef.current = null;
-        pendingDragRef.current = null;
+        setIsDragging(false);
 
         if (!movedRef.current) {
             const hit = hitTest(event.clientX, event.clientY);
             if (hit >= 0) { onSelect?.(hit); return; }
         }
 
-        // The instrument returns to true after a pause.
-        const s = stateRef.current;
-        if (s.activeIndex >= 0 && s.markers[s.activeIndex]) {
-            dwellRef.current = window.setTimeout(() => {
-                returnRef.current = {
-                    from: rotationRef.current,
-                    to: rotationFor(s.markers[s.activeIndex].coord),
-                    start: performance.now(),
-                };
-                wake();
-            }, DRAG_DWELL_MS);
-        }
+        // Where the reader leaves the globe is where it stays. Scrolling to the
+        // next entry re-centres it anyway, so an auto-return here would just
+        // feel like the drag being undone.
         wake();
     }, [interactive, hitTest, onSelect, wake]);
-
-    useEffect(() => () => {
-        if (dwellRef.current) window.clearTimeout(dwellRef.current);
-    }, []);
 
     const label =
         ariaLabel ||
@@ -461,7 +451,9 @@ export default function Globe({
             className={`relative select-none ${interactive ? '' : 'pointer-events-none'} ${className}`}
             style={{
                 touchAction: 'pan-y',
-                cursor: interactive ? (hoverIndex >= 0 ? 'pointer' : 'grab') : 'default',
+                cursor: interactive
+                    ? isDragging ? 'grabbing' : hoverIndex >= 0 ? 'pointer' : 'grab'
+                    : 'default',
             }}
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
