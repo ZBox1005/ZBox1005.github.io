@@ -30,6 +30,12 @@ export function formatDate(iso: string): string {
     return `${Number(day)} ${MONTHS_SHORT[Number(month) - 1]} ${year}`;
 }
 
+/** "JUL 2025" — useful when an entry represents a multi-day journey. */
+export function formatMonthYear(iso: string): string {
+    const [year, month] = iso.split('-');
+    return `${MONTHS_SHORT[Number(month) - 1]} ${year}`;
+}
+
 /** "6,836 KM" */
 export function formatKm(km: number): string {
     return `${Math.round(km).toLocaleString('en-US')} KM`;

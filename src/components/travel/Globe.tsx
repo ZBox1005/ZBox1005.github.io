@@ -27,6 +27,7 @@ interface GlobeProps {
     home?: LngLat | null;
     homeLabel?: string;
     onSelect?: (index: number) => void;
+    onHoverChange?: (index: number) => void;
     initialRotation?: Rotation;
     driftDegPerSec?: number;
     graticuleStep?: number;
@@ -41,7 +42,10 @@ const PROMOTE_MS = 260;
 const PING_MS = 700;
 const ARC_DELAY_MS = 180;
 const ARC_MS = 800;
-const HIT_RADIUS = 14;
+// The painted marker is intentionally compact, but the interaction target is
+// forgiving. A 24 px radius keeps hover previews stable without making nearby
+// destinations visually oversized.
+const HIT_RADIUS = 24;
 
 interface Flight {
     from: LngLat;
@@ -56,6 +60,7 @@ export default function Globe({
     home = null,
     homeLabel = 'HOME',
     onSelect,
+    onHoverChange,
     initialRotation = [-40, 25],
     driftDegPerSec = 1.2,
     graticuleStep = 15,
@@ -283,7 +288,15 @@ export default function Globe({
 
     /* ------------------------------------------------------------- fly-to */
     useEffect(() => {
-        if (activeIndex < 0 || !markers[activeIndex]) return;
+        if (activeIndex < 0 || !markers[activeIndex]) {
+            driftingRef.current = true;
+            flightRef.current = null;
+            arcRevealRef.current = 0;
+            promoteRef.current = 0;
+            render();
+            wake();
+            return;
+        }
 
         driftingRef.current = false;
         seenMaxRef.current = Math.max(seenMaxRef.current, activeIndex);
@@ -357,6 +370,8 @@ export default function Globe({
         if (!interactive) return;
         (event.currentTarget as HTMLElement).setPointerCapture(event.pointerId);
 
+        setHoverIndex(-1);
+        onHoverChange?.(-1);
         draggingRef.current = true;
         setIsDragging(true);
         movedRef.current = false;
@@ -369,14 +384,22 @@ export default function Globe({
             rotation: rotationRef.current,
         };
         wake();
-    }, [interactive, wake]);
+    }, [interactive, onHoverChange, wake]);
 
     const handlePointerMove = useCallback((event: React.PointerEvent) => {
         if (!interactive) return;
 
         if (!draggingRef.current) {
             const hit = hitTest(event.clientX, event.clientY);
-            if (hit !== stateRef.current.hoverIndex) setHoverIndex(hit);
+            if (hit !== stateRef.current.hoverIndex) {
+                if (hit >= 0) driftingRef.current = false;
+                else if (stateRef.current.activeIndex < 0) {
+                    driftingRef.current = true;
+                    wake();
+                }
+                setHoverIndex(hit);
+                onHoverChange?.(hit);
+            }
             return;
         }
 
@@ -401,7 +424,7 @@ export default function Globe({
                 render();
             });
         }
-    }, [interactive, hitTest, render]);
+    }, [interactive, hitTest, onHoverChange, render, wake]);
 
     const endDrag = useCallback((event: React.PointerEvent) => {
         if (!interactive) return;
@@ -444,7 +467,14 @@ export default function Globe({
             onPointerMove={handlePointerMove}
             onPointerUp={endDrag}
             onPointerCancel={endDrag}
-            onPointerLeave={() => setHoverIndex(-1)}
+            onPointerLeave={() => {
+                setHoverIndex(-1);
+                onHoverChange?.(-1);
+                if (stateRef.current.activeIndex < 0) {
+                    driftingRef.current = true;
+                    wake();
+                }
+            }}
         >
             <canvas
                 ref={canvasRef}

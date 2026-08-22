@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+/.local/travel-originals/
+public/travel/**/*.heic
 
 # debug
 npm-debug.log*

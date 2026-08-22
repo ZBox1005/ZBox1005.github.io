@@ -1,174 +1,196 @@
 type = "travel"
 title = "Travel"
-description = "Places the work has taken me, measured from one fixed point."
-eyebrow = "Field Register"
-headline = "Distances from a Fixed Point"
-standfirst = """
-Every measurement on this page is taken from a desk in Piscataway, New Jersey.
-The globe turns as you read, and the shadow on it is the shadow that was
-actually there — same date, same hour.
-"""
+description = "A visual archive of places I have been."
+eyebrow = "Places I've Been"
+headline = "Travel Gallery"
 
-# ═══════════════════════════════════════════════════════════════════════════
-#  HOW TO EDIT
-#
-#  · Places, coordinates, dates and times are real. The PROSE IS PLACEHOLDER —
-#    rewrite every `text` / `note` in your own words.
-#  · Two densities. An entry with [[entries.blocks]] renders as a full
-#    dispatch; an entry with just `note` renders as a short register note.
-#    Both print the same computed dateline, so a two-line entry is not a
-#    lesser entry.
-#  · You never write: the light label, distance from home, bearing, or the
-#    "NEXT" rule. Those are computed from coord + date + local_time.
-#  · `utc_offset` is authored with DST already applied (a static site has no
-#    timezone database).
-#  · Photos go in public/travel/<entry-id>/. Missing files degrade to a
-#    labelled plate rather than a broken image, so you can add them later.
-#  · Entries are sorted by date automatically — order here doesn't matter.
-# ═══════════════════════════════════════════════════════════════════════════
+# Add one [[entries]] section per destination. Entries are sorted by date.
+# Camera originals may opt out of the normal image budget by placing an
+# `.original-quality` marker in their photograph directory.
 
 [home]
-label = "Piscataway"
+label = "New Jersey"
 region = "New Jersey"
 coord = [-74.4632, 40.5223]
 
 [globe]
-initial = [-40.0, 25.0]
+initial = [-100.0, -30.0]
 drift_deg_per_sec = 1.2
 graticule_step = 15
 
-# ────────────────────────────────────────────────────────────────────── 1
 [[entries]]
-id = "wuhan-2018"
-place = "Wuhan"
-region = "China"
-coord = [114.3626, 30.5388]
-date = "2018-09-01"
-local_time = "07:30"
-utc_offset = "+08:00"
-headline = "The Hill You Walk Up Anyway"
-note = """
-Six years began here, and for most of them the walk to the lab was the same
-walk: up the hill, past the construction that never finished, into a building
-where nearly everything I know about starting a research project got taught to
-me by people who never framed it as teaching.
-"""
-
-# ────────────────────────────────────────────────────────────────────── 2
-[[entries]]
-id = "hongkong-2024"
-place = "Hong Kong"
-region = "SAR, China"
-coord = [114.1694, 22.3193]
-date = "2024-03-15"
-local_time = "20:30"
-utc_offset = "+08:00"
-headline = "A Whiteboard With No Window"
-note = """
-A remote collaboration became a real one in the space of four days. Kowloon was
-humid and vertical and extremely loud, and I remember almost none of it,
-because the part that mattered happened at a whiteboard in a room with no
-window at all.
-"""
-
-# ────────────────────────────────────────────────────────────────────── 3
-[[entries]]
-id = "vancouver-2024"
-place = "Vancouver"
-region = "British Columbia, Canada"
-coord = [-123.1207, 49.2827]
-date = "2024-12-11"
-local_time = "16:20"
-utc_offset = "-08:00"
-headline = "Four O'Clock and Already Dark"
+id = "japan-2025"
+place = "Japan"
+region = "Tokyo · Osaka · Kyoto"
+coord = [139.6917, 35.6895]
+date = "2025-07-30"
+local_time = "20:41"
+utc_offset = "+09:00"
+headline = "Japan, Together"
+photo = { src = "/travel/Japan_2/713207BD-31E7-4696-B4BB-54F277A3A41A_1_201_a.jpeg", ratio = "3:2", alt = "Mount Fuji framed by green foliage beneath a clear summer sky" }
 
   [[entries.blocks]]
-  kind = "prose"
-  lede = true
-  text = """
-The thing nobody tells you about a December conference at forty-nine degrees
-north is that the day ends while you are still standing at your poster. I came
-out of the hall at twenty past four into what my body insisted was evening and
-the clock insisted was afternoon, and the mountains behind the convention
-centre had already gone the colour of wet slate. Three hours of talking had
-cost me my voice and I would have done another three.
-"""
-
-  [[entries.blocks]]
-  kind = "figure"
-  layout = "full"
-  ratio = "3:2"
-  images = ["/travel/vancouver-2024/poster.jpg"]
-  alt = "A conference poster hall, mid-session"
-  caption = "NeurIPS 2024 — Three hours at the board, and the one question that mattered came in the last ten minutes."
+  kind = "gallery"
+  images = [
+    "/travel/Japan_2/713207BD-31E7-4696-B4BB-54F277A3A41A_1_201_a.jpeg",
+    "/travel/Japan_2/4608DA9B-2CB8-4D56-A070-2B2FE7A5607E_1_201_a.jpeg",
+    "/travel/Japan_2/D8880312-FCD2-44A1-90A2-AA7A97B5A788_1_201_a.jpeg",
+    "/travel/Japan_2/4C796963-9E17-49E8-8963-8E5ECD3BEB55_1_201_a.jpeg",
+    "/travel/Japan_2/C627D12F-9B91-444F-9438-D437C1390F35_1_201_a.jpeg",
+    "/travel/Japan_2/060A39C3-9DBB-4040-A22C-83D3E7D3854B_1_201_a.jpeg",
+    "/travel/Japan_2/D7A8A79F-4293-4A3E-BE27-D5A1EA28DCFD_1_201_a.jpeg",
+    "/travel/Japan_2/948D494F-FD13-4C16-BB01-7D9751BD73B6_1_201_a.jpeg",
+    "/travel/Japan_2/3C91689C-0D5B-4525-9942-BB12FF0D609F_1_201_a.jpeg",
+    "/travel/Japan_2/CC77D858-DC06-4271-B573-9A6F6DC3C0DE_1_201_a.jpeg",
+  ]
+  ratios = [
+    "5568:3712",
+    "5351:3673",
+    "3712:4656",
+    "5568:3712",
+    "5224:3712",
+    "5568:3712",
+    "5568:3712",
+    "5568:3712",
+    "4540:3650",
+    "5299:3366",
+  ]
+  alts = [
+    "Mount Fuji framed by green foliage beneath a clear summer sky",
+    "The vermilion torii gates of Fushimi Inari",
+    "Yasaka Pagoda rising above a traditional street in Kyoto",
+    "The red lanterns of Senso-ji in Tokyo",
+    "Festival lanterns glowing at dusk in Kyoto",
+    "The illuminated entrance to Kabukicho in Tokyo at night",
+    "The Universal Studios globe illuminated at night",
+    "Super Nintendo World in Osaka",
+    "Tea cups and a brass pot arranged on warm wooden shelves",
+    "Super Mario-themed burgers and a glowing Super Mushroom at Kinopio's Cafe",
+  ]
 
   [[entries.blocks]]
   kind = "prose"
   text = """
-Someone stopped near the end of the session and named a failure mode we had
-not tested. He was right, and he was friendly about being right, which is a
-rarer combination than it should be. That conversation is the reason the next
-project exists.
+Tokyo, Osaka, and Kyoto marked the beginning of our seventh year together.
+Between crowded summer streets, quiet shrines, and the small surprises of
+traveling side by side, Japan became less a checklist of places than a
+collection of shared moments—our favorite way to begin another year together.
 """
 
-  [[entries.blocks]]
-  kind = "quote"
-  text = "A poster session gives you four minutes. Occasionally one of them is the only four minutes that counted."
-
-# ────────────────────────────────────────────────────────────────────── 4
 [[entries]]
-id = "shanghai-2025"
-place = "Shanghai"
-region = "China"
-coord = [121.4737, 31.2304]
-date = "2025-03-03"
-local_time = "06:20"
-utc_offset = "+08:00"
-headline = "Watching a Model Copy Itself"
-note = """
-Five months in Xuhui, with a view of cranes that never seemed to finish
-anything. This was the stretch where agent safety stopped being a benchmark
-number to me. Watching a model spin up a working copy of itself inside a
-sandbox is a different kind of convincing than reading the eval table
-afterwards.
-"""
-
-# ────────────────────────────────────────────────────────────────────── 5
-[[entries]]
-id = "vienna-2025"
-place = "Vienna"
-region = "Austria"
-coord = [16.3738, 48.2082]
-date = "2025-07-29"
-local_time = "21:05"
-utc_offset = "+02:00"
-headline = "The Coffeehouse Rule"
+id = "turkiye-2025"
+place = "Türkiye"
+region = "Istanbul"
+coord = [28.9784, 41.0082]
+date = "2025-08-14"
+local_time = "19:28"
+utc_offset = "+03:00"
+headline = "Between Stone and Sea"
+photo = { src = "/travel/Istanbul/651D8399-0F48-4D38-830F-90092358C532_1_201_a copy.jpeg", ratio = "3:2", alt = "Galata Tower and waterfront buildings beneath evening clouds" }
 
   [[entries.blocks]]
-  kind = "prose"
-  lede = true
-  text = """
-The Viennese coffeehouse has a rule, unwritten and absolute: one coffee buys
-you the table for as long as you want it. Nobody explains this. You learn it by
-watching a man work through a newspaper he clearly brought with him, entirely
-unbothered, while a waiter declines three separate opportunities to bring him
-the bill. It is the opposite of every optimisation I had been trained to admire.
-"""
-
-  [[entries.blocks]]
-  kind = "figure"
-  layout = "wide"
-  ratio = "16:9"
-  images = ["/travel/vienna-2025/ring.jpg"]
-  alt = "Dusk over the Ringstrasse"
-  caption = "Ringstrasse, 21:05 — civil twilight, with another ninety minutes of it still to come."
+  kind = "gallery"
+  images = [
+    "/travel/Istanbul/651D8399-0F48-4D38-830F-90092358C532_1_201_a copy.jpeg",
+    "/travel/Istanbul/E56D061B-086D-42C2-9011-4176DD489B55_1_201_a copy.jpeg",
+    "/travel/Istanbul/5A4F6881-3EFF-4B5F-979E-6A5E81A9D978_1_201_a.jpeg",
+    "/travel/Istanbul/24693402-5B9D-417D-986E-1CFABD3064DD_1_201_a.jpeg",
+    "/travel/Istanbul/4E2572A0-0C6F-4CE4-AB71-CDD4F1E35B3B_1_201_a.jpeg",
+    "/travel/Istanbul/30B793EE-7076-4EA9-BC4A-C3816513A5FF_1_201_a.jpeg",
+    "/travel/Istanbul/B2723F60-067A-49EC-A787-620CA40CF242_1_201_a.jpeg",
+    "/travel/Istanbul/23E54038-971A-4071-88D1-994E00977069_1_201_a.jpeg",
+    "/travel/Istanbul/415174FA-C0A7-48DF-A569-3564B4DA4EF2_1_201_a.jpeg",
+    "/travel/Istanbul/29B9EC22-A2A9-4C29-8DAE-957DD98A34FE_1_201_a.jpeg",
+  ]
+  ratios = [
+    "5035:3511",
+    "4817:3712",
+    "5568:3306",
+    "1642:866",
+    "3339:4281",
+    "3679:4770",
+    "4988:3610",
+    "4774:3373",
+    "4420:3257",
+    "5240:3311",
+  ]
+  alts = [
+    "Galata Tower and waterfront buildings beneath evening clouds",
+    "The Blue Mosque rising behind sunlit fountains and palm trees",
+    "A cargo ship crossing the Bosphorus at sunset",
+    "Galata Tower and Istanbul's illuminated waterfront at night",
+    "Galata Tower framed against a bright blue summer sky",
+    "A steep, colorful street descending through Istanbul",
+    "A colorful art and music shop near Galata",
+    "An Istanbul street cat resting beside a window full of cat pillows",
+    "A Salt Bae souvenir display set into an old stone wall",
+    "Two cones of Turkish ice cream outside Mado",
+  ]
 
   [[entries.blocks]]
   kind = "prose"
   text = """
-So we sat. A postdoc took my draft apart with a pencil, the objection stopped
-being an objection somewhere in the third hour and turned into a plan, and
-nobody once suggested we should be somewhere else. I walked back along the Ring
-at ten past nine and the sky was still the colour of weak tea. July this far
-north simply refuses to end.
+On my way to begin my Ph.D. in the United States, a long layover became one day
+in Istanbul. I wandered from the Bosphorus into steep streets, past towers,
+mosques, and cats in every corner. Brief as it was, the city made the journey
+itself feel like a destination.
+"""
+
+[[entries]]
+id = "florida-2026"
+place = "Florida"
+region = "Orlando · Miami"
+coord = [-80.1918, 25.7617]
+date = "2026-08-14"
+local_time = "19:12"
+utc_offset = "-04:00"
+headline = "A State in Full Color"
+photo = { src = "/travel/Florida/D823839D-4320-45F5-BF15-D851684FEA98_1_201_a.jpeg", ratio = "3:2", alt = "A Welcome to Little Havana sign framed by palm leaves" }
+
+  [[entries.blocks]]
+  kind = "gallery"
+  images = [
+    "/travel/Florida/D823839D-4320-45F5-BF15-D851684FEA98_1_201_a.jpeg",
+    "/travel/Florida/75C949C0-A1C3-4AAE-9027-A5D7E7D08880_1_201_a.jpeg",
+    "/travel/Florida/D65D6772-6612-410E-A1EE-DB30E1C68E22_1_201_a.jpeg",
+    "/travel/Florida/03AE2EA1-2D93-48A8-A13E-2A967EA29561_1_201_a.jpeg",
+    "/travel/Florida/5EF9D6B3-946E-4889-9A35-7D1C103F4E7A_1_201_a.jpeg",
+    "/travel/Florida/4F83C8E7-F18C-4861-A8B0-FEBEF48A9BC6_1_201_a.jpeg",
+    "/travel/Florida/9B7101FA-6286-4099-A420-50F94B79B62E_1_201_a.jpeg",
+    "/travel/Florida/5F415632-ED06-4098-B7FC-7CF26E5ACBCD_1_201_a.jpeg",
+    "/travel/Florida/7A19CD6F-AD25-4FD9-960F-45588436927B_1_201_a.jpeg",
+    "/travel/Florida/2F351645-B526-44A2-8E08-A2EBC25DB9E7_1_201_a.jpeg",
+  ]
+  ratios = [
+    "3024:3242",
+    "5451:3693",
+    "5368:3677",
+    "3769:2397",
+    "3667:5365",
+    "3633:4900",
+    "4799:3702",
+    "4835:3466",
+    "5142:3507",
+    "2782:3674",
+  ]
+  alts = [
+    "A Welcome to Little Havana sign framed by palm leaves",
+    "The Tree of Life rising above the landscape at Disney's Animal Kingdom",
+    "A motorboat crossing the water beneath a palm-lined Florida sunset",
+    "Miami's skyline and bridge in late-afternoon light",
+    "Brickell's colorful towers and streets after dark",
+    "A classical statue beneath a glass-roofed tropical courtyard",
+    "Colorful storefronts and an ice cream mural in Little Havana",
+    "Palm trees and the N 17th Avenue sign in Little Havana",
+    "White orchids and tropical leaves in a shaded Miami courtyard",
+    "A candlelit dinner surrounded by tropical flowers",
+  ]
+
+  [[entries.blocks]]
+  kind = "prose"
+  text = """
+My girlfriend's first visit to see me in the United States became a trip
+through two sides of Florida: Disney's imaginative worlds in Orlando, then
+Miami's palms, ocean air, and vivid Latin energy. Hot, bright, and unhurried,
+it felt like a small vacation inside a much bigger reunion.
 """

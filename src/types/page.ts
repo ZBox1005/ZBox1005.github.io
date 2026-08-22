@@ -61,6 +61,13 @@ export interface TravelPhoto {
 export type TravelBlock =
     | { kind: 'prose'; text: string; lede?: boolean }
     | {
+      kind: 'gallery';
+      images: string[];
+      alts?: string[];
+      /** Intrinsic image ratios, kept parallel to `images` for stable lazy layout. */
+      ratios?: string[];
+  }
+    | {
           kind: 'figure';
           layout?: 'full' | 'wide' | 'pair';
           ratio: string;

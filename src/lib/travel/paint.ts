@@ -175,7 +175,7 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
 
         const isActive = index === activeIndex;
         const isHover = index === hoverIndex && !isActive;
-        const alpha = isActive ? 1 : isHover ? 1 : 0.25 + point.facing * 0.55;
+        const alpha = isActive ? 1 : isHover ? 1 : 0.62 + point.facing * 0.32;
 
         ctx.save();
         ctx.globalAlpha = alpha;
@@ -226,12 +226,33 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
                 ctx.stroke();
             }
         } else {
-            const r = isHover ? 4.4 : 3.4;
+            const r = isHover ? 4.8 : 3.8;
+
+            // An unselected destination should still read as interactive. The
+            // soft halo increases visual prominence while the compact core
+            // preserves the globe's cartographic feel.
+            ctx.globalAlpha = (isHover ? 0.24 : 0.13) * alpha;
+            ctx.beginPath();
+            ctx.arc(0, 0, isHover ? 10 : 8, 0, Math.PI * 2);
+            ctx.fillStyle = palette.markerHot;
+            ctx.fill();
+
+            ctx.globalAlpha = 0.92 * alpha;
+            ctx.beginPath();
+            ctx.arc(0, 0, r + 1.5, 0, Math.PI * 2);
+            ctx.fillStyle = palette.ocean;
+            ctx.fill();
 
             ctx.beginPath();
             ctx.arc(0, 0, r, 0, Math.PI * 2);
-            ctx.strokeStyle = isHover ? palette.markerHot : palette.markerDim;
-            ctx.lineWidth = 1.2;
+            ctx.fillStyle = palette.markerHot;
+            ctx.fill();
+
+            ctx.globalAlpha = (isHover ? 0.9 : 0.62) * alpha;
+            ctx.beginPath();
+            ctx.arc(0, 0, isHover ? 8 : 6.5, 0, Math.PI * 2);
+            ctx.strokeStyle = palette.markerHot;
+            ctx.lineWidth = 1;
             ctx.stroke();
         }
 
@@ -239,8 +260,9 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
     });
 
     /* 8 — active label, flipping side before it runs off the disc */
-    if (showLabels && activeIndex >= 0 && markers[activeIndex]) {
-        const point = visible(projection, markers[activeIndex].coord);
+    const labelIndex = activeIndex >= 0 ? activeIndex : hoverIndex;
+    if (showLabels && labelIndex >= 0 && markers[labelIndex]) {
+        const point = visible(projection, markers[labelIndex].coord);
         if (point) {
             const flip = point.x > width * 0.62;
 
@@ -251,7 +273,7 @@ export function paint(ctx: CanvasRenderingContext2D, state: PaintState): void {
             ctx.textBaseline = 'middle';
             ctx.textAlign = flip ? 'right' : 'left';
             ctx.fillText(
-                markers[activeIndex].label.toUpperCase(),
+                markers[labelIndex].label.toUpperCase(),
                 point.x + (flip ? -16 : 16),
                 point.y
             );
