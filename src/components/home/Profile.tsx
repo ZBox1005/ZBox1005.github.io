@@ -108,12 +108,6 @@ export default function Profile({
             icon: EnvelopeIcon,
             isEmail: true,
         }] : []),
-        ...(social.wechat && onOpenWeChat ? [{
-            name: messages.profile.wechat,
-            href: '#wechat',
-            icon: WeChatIcon,
-            isWechat: true,
-        }] : []),
         ...(social.location || social.location_details ? [{
             name: messages.profile.location,
             href: social.location_url || '#',
@@ -144,6 +138,12 @@ export default function Profile({
             name: 'X',
             href: social.x as string,
             icon: XIcon,
+        }] : []),
+        ...(social.wechat && onOpenWeChat ? [{
+            name: messages.profile.wechat,
+            href: '#wechat',
+            icon: WeChatIcon,
+            isWechat: true,
         }] : []),
     ];
 
