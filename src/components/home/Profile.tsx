@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ComponentType } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import {
@@ -13,7 +13,7 @@ import { ChevronRight, Github, Linkedin, Pin } from 'lucide-react';
 import type { SiteConfig } from '@/lib/config';
 import type { CardItem, PageSectionLink } from '@/types/page';
 import { useMessages } from '@/lib/i18n/useMessages';
-import { XIcon } from '@/components/ui/Icons';
+import { WeChatIcon, XIcon } from '@/components/ui/Icons';
 
 // Custom ORCID icon component
 const OrcidIcon = ({ className }: { className?: string }) => (
@@ -34,6 +34,16 @@ interface ProfileProps {
     researchInterests?: string[];
     currentRoles?: CardItem[];
     sectionLinks?: PageSectionLink[];
+    onOpenWeChat?: () => void;
+}
+
+interface SocialLink {
+    name: string;
+    href: string;
+    icon: ComponentType<{ className?: string }>;
+    isEmail?: boolean;
+    isLocation?: boolean;
+    isWechat?: boolean;
 }
 
 export default function Profile({
@@ -42,6 +52,7 @@ export default function Profile({
     researchInterests = [],
     currentRoles = [],
     sectionLinks = [],
+    onOpenWeChat,
 }: ProfileProps) {
     const messages = useMessages();
 
@@ -90,12 +101,18 @@ export default function Profile({
         };
     }, [sectionLinks]);
 
-    const socialLinks = [
+    const socialLinks: SocialLink[] = [
         ...(social.email ? [{
             name: messages.profile.email,
             href: `mailto:${social.email}`,
             icon: EnvelopeIcon,
             isEmail: true,
+        }] : []),
+        ...(social.wechat && onOpenWeChat ? [{
+            name: messages.profile.wechat,
+            href: '#wechat',
+            icon: WeChatIcon,
+            isWechat: true,
         }] : []),
         ...(social.location || social.location_details ? [{
             name: messages.profile.location,
@@ -189,6 +206,20 @@ export default function Profile({
             <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-5 relative px-2">
                 {socialLinks.map((link) => {
                     const IconComponent = link.icon;
+                    if (link.isWechat) {
+                        return (
+                            <button
+                                key={link.name}
+                                type="button"
+                                onClick={onOpenWeChat}
+                                className="p-2 text-neutral-600 transition-colors duration-200 hover:text-emerald-500 dark:text-neutral-400 dark:hover:text-emerald-400 sm:p-2"
+                                aria-label={link.name}
+                                aria-haspopup="dialog"
+                            >
+                                <IconComponent className="h-5 w-5" />
+                            </button>
+                        );
+                    }
                     if (link.isLocation) {
                         return (
                             <div key={link.name} className="relative">

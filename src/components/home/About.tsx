@@ -31,9 +31,10 @@ interface AboutProps {
     content: string;
     title?: string;
     delay?: number;
+    onOpenWeChat?: () => void;
 }
 
-export default function About({ content, title, delay = 0.2 }: AboutProps) {
+export default function About({ content, title, delay = 0.2, onOpenWeChat }: AboutProps) {
     const messages = useMessages();
     const resolvedTitle = title || messages.home.about;
 
@@ -59,6 +60,7 @@ export default function About({ content, title, delay = 0.2 }: AboutProps) {
                             const astNode = node as HastNode | undefined;
                             const onlyChild = (astNode?.children || []).find((c) => !(c.type === 'text' && (c.value || '').trim() === ''));
                             const wrapsImage = onlyChild?.type === 'element' && onlyChild.tagName === 'img';
+                            const opensWeChat = props.href === '#wechat' && onOpenWeChat;
                             if (wrapsImage) {
                                 return (
                                     <a
@@ -69,6 +71,22 @@ export default function About({ content, title, delay = 0.2 }: AboutProps) {
                                     >
                                         {children}
                                         <span aria-hidden className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    </a>
+                                );
+                            }
+                            if (opensWeChat) {
+                                return (
+                                    <a
+                                        {...props}
+                                        href="#wechat"
+                                        aria-haspopup="dialog"
+                                        onClick={(event) => {
+                                            event.preventDefault();
+                                            onOpenWeChat();
+                                        }}
+                                        className="rounded font-medium text-accent transition-all duration-200 hover:bg-accent/10 hover:shadow-sm"
+                                    >
+                                        {children}
                                     </a>
                                 );
                             }

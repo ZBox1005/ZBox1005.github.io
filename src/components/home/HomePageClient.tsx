@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 import Profile from '@/components/home/Profile';
@@ -8,6 +8,7 @@ import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
 import News, { NewsItem } from '@/components/home/News';
 import ProjectShowcase from '@/components/home/ProjectShowcase';
+import WeChatModal from '@/components/home/WeChatModal';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
@@ -56,8 +57,11 @@ interface HomePageClientProps {
 export default function HomePageClient({ dataByLocale, defaultLocale }: HomePageClientProps) {
   const locale = useLocaleStore((state) => state.locale);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [wechatOpen, setWechatOpen] = useState(false);
   const fallback = dataByLocale[defaultLocale] || Object.values(dataByLocale)[0];
   const data = dataByLocale[locale] || fallback;
+  const openWeChat = useCallback(() => setWechatOpen(true), []);
+  const closeWeChat = useCallback(() => setWechatOpen(false), []);
 
   useEffect(() => {
     const updateVisibility = () => setShowBackToTop(window.scrollY > 700);
@@ -71,6 +75,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
   }
 
   return (
+    <>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-1">
@@ -81,6 +86,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
             researchInterests={data.researchInterests}
             currentRoles={data.currentRoles}
             sectionLinks={data.sectionLinks}
+            onOpenWeChat={openWeChat}
           />
         </div>
 
@@ -101,6 +107,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                           content={section.content || ''}
                           title={section.title}
                           delay={delay}
+                          onOpenWeChat={openWeChat}
                         />
                       </div>
                     );
@@ -187,5 +194,13 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
         )}
       </AnimatePresence>
     </div>
+    {typeof data.social.wechat === 'string' && (
+      <WeChatModal
+        open={wechatOpen}
+        qrSrc={data.social.wechat}
+        onClose={closeWeChat}
+      />
+    )}
+    </>
   );
 }

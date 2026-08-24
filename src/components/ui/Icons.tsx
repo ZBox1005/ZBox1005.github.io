@@ -15,6 +15,30 @@ export function XIcon(props: SVGProps<SVGSVGElement>) {
     );
 }
 
+export function WeChatIcon(props: SVGProps<SVGSVGElement>) {
+    return (
+        <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-label="WeChat"
+            {...props}
+        >
+            <path d="M14.2 10.2c0 3.25-2.82 5.88-6.3 5.88-.72 0-1.42-.12-2.06-.32L3 17.15l.82-2.47A5.65 5.65 0 0 1 1.6 10.2c0-3.25 2.82-5.88 6.3-5.88s6.3 2.63 6.3 5.88Z" />
+            <path d="M10.1 15.77c.94 2.28 3.3 3.91 6.08 3.91.75 0 1.47-.12 2.14-.34L21 20.66l-.76-2.3a5.5 5.5 0 0 0 2.16-4.35c0-3.14-2.78-5.69-6.22-5.69-.75 0-1.46.12-2.12.34" />
+            <circle cx="5.7" cy="9.3" r=".55" fill="currentColor" stroke="none" />
+            <circle cx="10.1" cy="9.3" r=".55" fill="currentColor" stroke="none" />
+            <circle cx="14.15" cy="13.18" r=".55" fill="currentColor" stroke="none" />
+            <circle cx="18.35" cy="13.18" r=".55" fill="currentColor" stroke="none" />
+        </svg>
+    );
+}
+
 export function ArxivIcon(props: SVGProps<SVGSVGElement>) {
     return (
         <svg

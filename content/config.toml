@@ -11,6 +11,7 @@ avatar = "/bio.jpg"
 
 [social]
 email = "bz362@scarletmail.rutgers.edu"
+wechat = "/wechat.jpg"
 location = "Piscataway, NJ"
 location_url = "https://maps.google.com/?q=Hill+Center+Rutgers+Piscataway+NJ"
 location_details = [

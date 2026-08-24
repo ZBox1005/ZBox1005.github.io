@@ -21,6 +21,11 @@ export interface LocaleMessages {
     googleMap: string;
     send: string;
     sendEmail: string;
+    wechat: string;
+    wechatTitle: string;
+    wechatHint: string;
+    wechatQrAlt: string;
+    closeWechat: string;
     researchInterests: string;
     currently: string;
     active: string;
@@ -74,6 +79,11 @@ const en: LocaleMessages = {
     googleMap: 'Google Map',
     send: 'Send',
     sendEmail: 'Send Email',
+    wechat: 'WeChat',
+    wechatTitle: 'Connect on WeChat',
+    wechatHint: 'Open WeChat and scan this code.',
+    wechatQrAlt: 'WeChat QR code for Boxuan Zhang',
+    closeWechat: 'Close WeChat QR code',
     researchInterests: 'Research Focus',
     currently: 'Currently',
     active: 'Active',
@@ -127,6 +137,11 @@ const zh: LocaleMessages = {
     googleMap: '谷歌地图',
     send: '发送',
     sendEmail: '发送邮件',
+    wechat: '微信',
+    wechatTitle: '添加我的微信',
+    wechatHint: '打开微信，扫描二维码添加好友。',
+    wechatQrAlt: '张博轩的微信二维码',
+    closeWechat: '关闭微信二维码',
     researchInterests: '研究方向',
     currently: '当前身份',
     active: '进行中',
