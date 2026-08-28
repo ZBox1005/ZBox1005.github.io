@@ -137,6 +137,62 @@ itself feel like a destination.
 """
 
 [[entries]]
+id = "san-diego-2026"
+place = "San Diego"
+region = "Balboa Park · La Jolla · San Diego Bay"
+coord = [-117.1611, 32.7157]
+date = "2026-07-04"
+local_time = "20:30"
+utc_offset = "-07:00"
+headline = "Between Sessions and Sea"
+photo = { src = "/travel/San_diego/657AA501-5F3B-42D3-BC6A-3389111EB210_1_201_a.jpeg", ratio = "4032:2775", alt = "Spanish Colonial Revival architecture and a reflecting pool in Balboa Park" }
+
+  [[entries.blocks]]
+  kind = "gallery"
+  images = [
+    "/travel/San_diego/657AA501-5F3B-42D3-BC6A-3389111EB210_1_201_a.jpeg",
+    "/travel/San_diego/D338A900-302B-4904-B470-346D6B879A62_1_201_a.jpeg",
+    "/travel/San_diego/D2816336-5FD6-4BF6-870F-410EDD892C0B_1_201_a.jpeg",
+    "/travel/San_diego/C44D9E59-E554-41D6-B095-9492AAF39BEA_1_201_a.jpeg",
+    "/travel/San_diego/FF07FD96-02A2-478E-80C9-AF8AABA8FE21_1_201_a.jpeg",
+    "/travel/San_diego/CF569BA5-B018-4286-AFD3-2116C31BD39D_1_201_a.jpeg",
+    "/travel/San_diego/1058B8DC-93FF-47F6-9DB5-A4E8FFFDD6BF_1_201_a.jpeg",
+    "/travel/San_diego/F3972891-9681-4992-871C-F035885DB26F_1_201_a.jpeg",
+    "/travel/San_diego/F2D40DC9-43F5-4C14-9F7B-668200FB7CBE_1_201_a.jpeg",
+  ]
+  ratios = [
+    "4032:2775",
+    "3773:2600",
+    "5568:3712",
+    "2175:1320",
+    "4032:3024",
+    "3599:2694",
+    "3642:5464",
+    "5195:3712",
+    "5487:3641",
+  ]
+  alts = [
+    "Spanish Colonial Revival architecture and a reflecting pool in Balboa Park",
+    "Downtown San Diego skyline across the blue waters of the bay",
+    "Evening clouds breaking over the Pacific coast near San Diego",
+    "Fourth of July fireworks reflected across San Diego Bay",
+    "The white spires of the San Diego California Temple illuminated at night",
+    "A palm-lined street in San Diego's Cortez Hill neighborhood",
+    "A green bicycle sculpture among palms outside Balboa Park",
+    "A street musician playing violin beneath the greenery of Balboa Park",
+    "ACL 2026 conference entrance signage in San Diego",
+  ]
+
+  [[entries.blocks]]
+  kind = "prose"
+  text = """
+ACL 2026 brought me to San Diego over the Fourth of July. Between sessions,
+I found a city shaped by Pacific light—from Balboa Park's sunlit courtyards
+and the harbor skyline to quiet coastal cliffs and fireworks across the bay.
+It was a conference trip that quickly became a distinctly Californian escape.
+"""
+
+[[entries]]
 id = "florida-2026"
 place = "Florida"
 region = "Orlando · Miami"
