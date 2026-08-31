@@ -58,7 +58,7 @@ target = "experience"
 href = "/experience/"
 
 [[navigation]]
-title = "Travel"
+title = "Miscellaneous"
 type = "page"
 target = "travel"
 href = "/travel/"
