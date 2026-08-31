@@ -245,11 +245,6 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </p>
                                     <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
                                         {pub.journal || pub.conference} {pub.year}
-                                        {pub.status === 'accepted' && (
-                                            <span className="ml-2 inline-flex items-center rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.08em] text-accent-dark ring-1 ring-inset ring-accent/15 dark:text-accent">
-                                                Accepted
-                                            </span>
-                                        )}
                                         {pub.award && (
                                             <span className="ml-2 inline-flex items-center text-xs font-semibold text-amber-700 dark:text-amber-400">
                                                 🏆 {pub.award}
