@@ -160,7 +160,7 @@ export default function ExperiencePage({ config, embedded = false }: ExperienceP
 
                     <div className="overflow-hidden rounded-2xl border border-neutral-200/90 bg-white shadow-[0_12px_35px_-24px_rgba(15,23,42,0.3)] dark:border-white/10 dark:bg-neutral-900">
                         {(activeGroup.items || []).map((item, index) => {
-                            const isCurrent = /\bpresent\b|\bcurrent\b|至今|当前/i.test(item.date || '');
+                            const isCurrent = item.current === true || /\bpresent\b|\bcurrent\b|至今|当前/i.test(item.date || '');
 
                             return (
                                 <motion.article
