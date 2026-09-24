@@ -21,10 +21,6 @@ interface SelectedPublicationsProps {
 function getCompactVenue(publication: Publication): { label: string; full: string } {
     const full = publication.journal || publication.conference || '';
 
-    if (/fagen/i.test(full)) {
-        return { label: 'FAGEN @ ICML', full };
-    }
-
     if (/arxiv/i.test(full)) {
         return { label: 'arXiv', full };
     }
