@@ -38,6 +38,7 @@ export interface Publication {
   project?: string;
   press?: string;
   pressName?: string;
+  pressLabel?: string;
   pdfUrl?: string;
   tags: string[];
   keywords?: string[];
