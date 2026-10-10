@@ -10,14 +10,14 @@ import {
     ClipboardDocumentIcon,
     DocumentTextIcon
 } from '@heroicons/react/24/outline';
-import { Github, Globe } from 'lucide-react';
+import { Github, Globe, Newspaper } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
 import { useMessages } from '@/lib/i18n/useMessages';
 import FormattedBibTeXText from './FormattedBibTeXText';
-import { ArxivIcon } from '@/components/ui/Icons';
+import { ArxivIcon, SyncedIcon } from '@/components/ui/Icons';
 
 interface PublicationsListProps {
     config: PublicationPageConfig;
@@ -290,6 +290,20 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             >
                                                 <Globe className="h-3.5 w-3.5 mr-1.5" />
                                                 Project
+                                            </a>
+                                        )}
+                                        {pub.press && (
+                                            <a
+                                                href={pub.press}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                title={pub.pressName === 'Synced' ? '机器之心 (Synced) coverage' : `${pub.pressName || 'Press'} coverage`}
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                {pub.pressName === 'Synced'
+                                                    ? <SyncedIcon className="h-3.5 w-3.5 mr-1.5" />
+                                                    : <Newspaper className="h-3.5 w-3.5 mr-1.5" />}
+                                                {pub.pressName || 'Press'}
                                             </a>
                                         )}
                                         {pub.abstract && (

@@ -88,6 +88,8 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       url: tags.url,
       code: tags.code,
       project: tags.project,
+      press: tags.press,
+      pressName: cleanBibTeXString(tags.press_name) || undefined,
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
@@ -95,7 +97,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       award: cleanBibTeXString(tags.award) || undefined,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project', 'award', 'url', 'month']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project', 'press', 'press_name', 'award', 'url', 'month']),
     };
 
     // Clean up undefined fields

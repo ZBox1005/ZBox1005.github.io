@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { Github, Globe } from 'lucide-react';
+import { Github, Globe, Newspaper } from 'lucide-react';
 import { BookOpenIcon, ClipboardDocumentIcon } from '@heroicons/react/24/outline';
 import { Publication } from '@/types/publication';
 import { cn } from '@/lib/utils';
 import { useMessages } from '@/lib/i18n/useMessages';
 import FormattedBibTeXText from '@/components/publications/FormattedBibTeXText';
-import { ArxivIcon } from '@/components/ui/Icons';
+import { ArxivIcon, SyncedIcon } from '@/components/ui/Icons';
 
 interface SelectedPublicationsProps {
     publications: Publication[];
@@ -161,6 +161,20 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                         >
                                             <Globe className="h-3.5 w-3.5 mr-1.5" />
                                             Project
+                                        </a>
+                                    )}
+                                    {pub.press && (
+                                        <a
+                                            href={pub.press}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            title={pub.pressName === 'Synced' ? '机器之心 (Synced) coverage' : `${pub.pressName || 'Press'} coverage`}
+                                            className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                        >
+                                            {pub.pressName === 'Synced'
+                                                ? <SyncedIcon className="h-3.5 w-3.5 mr-1.5" />
+                                                : <Newspaper className="h-3.5 w-3.5 mr-1.5" />}
+                                            {pub.pressName || 'Press'}
                                         </a>
                                     )}
                                     {pub.bibtex && (

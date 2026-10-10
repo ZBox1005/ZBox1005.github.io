@@ -36,6 +36,8 @@ export interface Publication {
   url?: string;
   code?: string;
   project?: string;
+  press?: string;
+  pressName?: string;
   pdfUrl?: string;
   tags: string[];
   keywords?: string[];

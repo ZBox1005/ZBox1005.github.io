@@ -53,3 +53,23 @@ export function ArxivIcon(props: SVGProps<SVGSVGElement>) {
         </svg>
     );
 }
+
+// Compact, monochrome interpretation of Synced's geometric mark for link buttons.
+export function SyncedIcon(props: SVGProps<SVGSVGElement>) {
+    return (
+        <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            aria-hidden="true"
+            {...props}
+        >
+            <path d="M2.6 4.6 8.3 2.5l.7 7.9-2.1-1.5Z" opacity=".8" />
+            <path d="M14.1 1.2 21.2 3l-4.7 8.1Z" opacity=".9" />
+            <circle cx="11.7" cy="9.8" r="1.35" />
+            <path d="M10.4 12.3h5.2v3.7h-5.2z" />
+            <path d="m10.1 16.6.9 6.2-8.3-.8Z" opacity=".8" />
+            <path d="m15.1 16.5 6.6 5.3-3.2 1-3.3-.4Z" opacity=".9" />
+        </svg>
+    );
+}
