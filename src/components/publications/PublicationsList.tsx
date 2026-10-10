@@ -303,7 +303,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 {pub.pressName === 'Synced'
                                                     ? <SyncedIcon className="h-3.5 w-3.5 mr-1.5" />
                                                     : <Newspaper className="h-3.5 w-3.5 mr-1.5" />}
-                                                {pub.pressLabel || pub.pressName || 'Press'}
+                                                {pub.pressName || 'Press'}
                                             </a>
                                         )}
                                         {pub.abstract && (
