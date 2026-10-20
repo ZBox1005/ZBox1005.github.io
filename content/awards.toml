@@ -6,6 +6,8 @@ description = "Selected awards and academic recognition."
 title = "Financial Assistance Award"
 subtitle = "NeurIPS 2026"
 date = "2026.10"
+image = "/logos/neurips.png"
+image_scale = 1.25
 content = "Received a [NeurIPS 2026 Financial Assistance Award](https://neurips.cc/Conferences/2026/FinancialAssistance)."
 tags = ["Conference Support"]
 
