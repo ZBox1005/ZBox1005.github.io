@@ -52,6 +52,7 @@ export interface Publication {
   awards?: string[];
   featured?: boolean;
   selected?: boolean;
+  pinned?: boolean;
   preview?: string;
   award?: string;
   summary?: string;

@@ -75,7 +75,7 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                     <div className="relative w-full flex-shrink-0 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/[0.05] sm:w-52 dark:ring-white/10">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
-                                            src={`/papers/${pub.preview}`}
+                                            src={pub.preview.startsWith('/') ? pub.preview : `/papers/${pub.preview}`}
                                             alt={pub.title}
                                             className="block h-auto w-full transition-transform duration-500 ease-out group-hover/publication:scale-[1.025]"
                                         />

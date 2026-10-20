@@ -217,7 +217,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     <div className="w-full md:w-56 flex-shrink-0">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
-                                            src={`/papers/${pub.preview}`}
+                                            src={pub.preview.startsWith('/') ? pub.preview : `/papers/${pub.preview}`}
                                             alt={pub.title}
                                             className="block w-full h-auto rounded-lg"
                                         />

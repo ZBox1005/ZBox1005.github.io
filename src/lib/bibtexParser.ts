@@ -59,6 +59,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
     // Parse selected field (convert string to boolean)
     const selected = tags.selected === 'true' || tags.selected === 'yes';
+    const pinned = tags.pinned === 'true' || tags.pinned === 'yes';
 
     // Parse preview field (remove braces if present)
     const preview = tags.preview?.replace(/[{}]/g, '');
@@ -93,11 +94,12 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
+      pinned,
       preview,
       award: cleanBibTeXString(tags.award) || undefined,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'project', 'press', 'press_name', 'award', 'url', 'month']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'pinned', 'preview', 'description', 'keywords', 'code', 'project', 'press', 'press_name', 'award', 'url', 'month']),
     };
 
     // Clean up undefined fields
@@ -109,6 +111,9 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
     return publication;
   }).sort((a: Publication, b: Publication) => {
+    // Keep editorially featured work ahead of newer preprints without changing citation dates.
+    if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
+
     // Sort by year (descending), then by month if available
     if (b.year !== a.year) return b.year - a.year;
 

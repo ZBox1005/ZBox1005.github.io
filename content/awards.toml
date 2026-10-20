@@ -3,6 +3,13 @@ title = "Awards & Honors"
 description = "Selected awards and academic recognition."
 
 [[items]]
+title = "Financial Assistance Award"
+subtitle = "NeurIPS 2026"
+date = "2026.10"
+content = "Received a [NeurIPS 2026 Financial Assistance Award](https://neurips.cc/Conferences/2026/FinancialAssistance)."
+tags = ["Conference Support"]
+
+[[items]]
 title = "2025–2026 Excellent TA Award"
 subtitle = "Rutgers University · Department of Computer Science"
 date = "2026.06"
