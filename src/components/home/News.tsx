@@ -24,7 +24,7 @@ const newsMarkdownComponents = {
             {...props}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+            className="text-accent font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm [&_strong]:text-inherit"
         />
     ),
     strong: ({ children }: React.ComponentProps<'strong'>) => <strong className="font-semibold text-primary">{children}</strong>,
