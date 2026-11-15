@@ -1,5 +1,9 @@
 [[news]]
 date = "2026-11"
+content = "🎉 My thesis summary has been accepted to the [AAAI-27 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-27/thirty-second-aaai-sigai-doctoral-consortium-call-for-proposals/). See you in Montréal, Feb 2027!"
+
+[[news]]
+date = "2026-11"
 content = "🎉 Invited to give a talk on [**NYC Student Theory & ML Day**](https://wp.nyu.edu/courantinstituteofmathematicalsciences-nycstudenttheorydayfall2027/) at [**NYU Tandon**](https://engineering.nyu.edu/), sharing our work on [AgentForesight](https://zbox1005.github.io/agent-foresight/) and [Dream2Discern](https://zbox1005.github.io/dream2discern-project/)."
 
 [[news]]
