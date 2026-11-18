@@ -40,13 +40,29 @@ export default function News({ items, title, delay = 0.3 }: NewsProps) {
     const [expanded, setExpanded] = useState(false);
     const visibleItems = expanded ? items : items.slice(0, 5);
     const hasMoreItems = items.length > 5;
+    const hasHiddenItems = hasMoreItems && !expanded;
 
     return (
         <motion.section
             className="animate-fade-up"
             style={{ animationDelay: `${delay}s` }}
         >
-            <h2 className="text-2xl font-serif font-bold text-primary mb-4">{resolvedTitle}</h2>
+            <div className="mb-4 flex items-center justify-between gap-4">
+                <h2 className="text-2xl font-serif font-bold text-primary">{resolvedTitle}</h2>
+                {/* Lives in the header (like "View All" on Selected Publications) so the
+                    list doesn't need a button row of its own underneath. */}
+                {hasMoreItems && (
+                    <button
+                        type="button"
+                        onClick={() => setExpanded((current) => !current)}
+                        aria-expanded={expanded}
+                        className="inline-flex flex-shrink-0 items-center gap-1 rounded text-sm font-medium text-accent transition-all duration-200 hover:bg-accent/10 hover:text-accent-dark hover:shadow-sm"
+                    >
+                        {expanded ? 'Show Less' : `Show More (${items.length - 5})`}
+                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`} />
+                    </button>
+                )}
+            </div>
             <div>
                 {visibleItems.map((item, index) => {
                     const isLatest = index === 0;
@@ -69,6 +85,10 @@ export default function News({ items, title, delay = 0.3 }: NewsProps) {
                                 {!isLast && (
                                     <span className="absolute bottom-[-0.5rem] top-4 w-px bg-gradient-to-b from-neutral-200 to-neutral-100 dark:from-neutral-700 dark:to-neutral-800" />
                                 )}
+                                {/* Older news folded away: let the line trail off instead of stopping dead. */}
+                                {isLast && hasHiddenItems && (
+                                    <span className="absolute bottom-0 top-4 w-px bg-gradient-to-b from-neutral-200 to-transparent dark:from-neutral-700" />
+                                )}
                                 <span className={`relative mt-3 h-2 w-2 rounded-full ring-4 ${
                                     isLatest
                                         ? 'bg-accent shadow-[0_0_8px_var(--accent)] ring-accent/15'
@@ -87,20 +107,6 @@ export default function News({ items, title, delay = 0.3 }: NewsProps) {
                         </motion.div>
                     );
                 })}
-
-                {hasMoreItems && (
-                    <div className="mt-2 flex justify-center">
-                        <button
-                            type="button"
-                            onClick={() => setExpanded((current) => !current)}
-                            aria-expanded={expanded}
-                            className="group inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-4 py-2 text-xs font-semibold text-neutral-500 shadow-sm transition-all hover:border-accent/35 hover:text-accent-dark hover:shadow-md dark:border-white/10 dark:bg-neutral-900 dark:text-neutral-400 dark:hover:text-accent"
-                        >
-                            {expanded ? 'Show Less' : `Show More (${items.length - 5})`}
-                            <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`} />
-                        </button>
-                    </div>
-                )}
             </div>
         </motion.section>
     );
