@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { ProjectItem } from '@/types/page';
+import { useSwipe } from '@/hooks/useSwipe';
 
 interface ProjectShowcaseProps {
     projects: ProjectItem[];
@@ -31,10 +32,9 @@ const cardVariants = {
 
 export default function ProjectShowcase({ projects, title = 'Recent Projects', delay = 0.4 }: ProjectShowcaseProps) {
     const [[activeIndex, direction], setActive] = useState<[number, number]>([0, 1]);
-
-    if (projects.length === 0) return null;
-
-    const activeProject = projects[activeIndex];
+    const tabStripRef = useRef<HTMLDivElement>(null);
+    // Which ends of the tab strip have more tabs scrolled out of view.
+    const [overflow, setOverflow] = useState({ start: false, end: false });
 
     const selectProject = (nextIndex: number) => {
         if (nextIndex === activeIndex) return;
@@ -45,6 +45,56 @@ export default function ProjectShowcase({ projects, title = 'Recent Projects', d
         const nextIndex = (activeIndex + step + projects.length) % projects.length;
         setActive([nextIndex, step]);
     };
+
+    const swipeHandlers = useSwipe(paginate);
+
+    const measureOverflow = useCallback(() => {
+        const strip = tabStripRef.current;
+        if (!strip) return;
+        const hidden = strip.scrollWidth - strip.clientWidth;
+        const start = strip.scrollLeft > 2;
+        const end = strip.scrollLeft < hidden - 2;
+        setOverflow((previous) => (
+            previous.start === start && previous.end === end ? previous : { start, end }
+        ));
+    }, []);
+
+    useEffect(() => {
+        const strip = tabStripRef.current;
+        if (!strip) return;
+
+        measureOverflow();
+        const observer = new ResizeObserver(measureOverflow);
+        observer.observe(strip);
+        strip.addEventListener('scroll', measureOverflow, { passive: true });
+
+        return () => {
+            observer.disconnect();
+            strip.removeEventListener('scroll', measureOverflow);
+        };
+    }, [measureOverflow, projects.length]);
+
+    // Keep the active tab in view when the strip is scrollable. Scrolls the strip
+    // itself (never the page), centring the tab so its neighbours stay reachable.
+    useEffect(() => {
+        const strip = tabStripRef.current;
+        const tab = strip?.querySelector<HTMLElement>('[aria-selected="true"]');
+        if (!strip || !tab) return;
+        strip.scrollTo({
+            left: tab.offsetLeft - (strip.clientWidth - tab.offsetWidth) / 2,
+            behavior: 'smooth',
+        });
+    }, [activeIndex]);
+
+    if (projects.length === 0) return null;
+
+    const activeProject = projects[activeIndex];
+
+    // Fade whichever edge still has tabs beyond it, as the cue that the strip scrolls.
+    const edgeFade = '2rem';
+    const tabStripMask = overflow.start || overflow.end
+        ? `linear-gradient(to right, ${overflow.start ? 'transparent' : '#000'}, #000 ${edgeFade}, #000 calc(100% - ${edgeFade}), ${overflow.end ? 'transparent' : '#000'})`
+        : undefined;
 
     return (
         <motion.section
@@ -83,7 +133,7 @@ export default function ProjectShowcase({ projects, title = 'Recent Projects', d
                 </div>
             </div>
 
-            <div className="group/showcase relative">
+            <div className="group/showcase relative touch-pan-y" {...swipeHandlers}>
                 <div className="pointer-events-none absolute -inset-3 rounded-[1.75rem] bg-gradient-to-r from-accent/10 via-transparent to-primary/5 opacity-0 blur-2xl transition-opacity duration-500 sm:group-hover/showcase:opacity-100 dark:to-accent/5" />
 
                 <AnimatePresence initial={false} custom={direction} mode="wait">
@@ -140,7 +190,17 @@ export default function ProjectShowcase({ projects, title = 'Recent Projects', d
                 </AnimatePresence>
             </div>
 
-            <div className="mt-3 grid grid-cols-3 gap-1.5 sm:grid-cols-6" role="tablist" aria-label="Select project">
+            {/* One row, always. Tabs share the width equally while they fit (`flex-1`) but
+                never shrink below their label (`min-w-max`); past that point the strip
+                scrolls sideways instead of wrapping a stray tab onto a second line. */}
+            <motion.div
+                ref={tabStripRef}
+                layoutScroll
+                role="tablist"
+                aria-label="Select project"
+                className="relative -mx-1 mt-2 flex gap-1 overflow-x-auto p-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                style={{ maskImage: tabStripMask, WebkitMaskImage: tabStripMask }}
+            >
                 {projects.map((project, index) => {
                     const isActive = index === activeIndex;
                     return (
@@ -150,7 +210,7 @@ export default function ProjectShowcase({ projects, title = 'Recent Projects', d
                             role="tab"
                             aria-selected={isActive}
                             onClick={() => selectProject(index)}
-                            className={`group/tab relative overflow-hidden rounded-lg px-2 py-2.5 text-left transition-all duration-200 ${
+                            className={`group/tab relative min-w-max flex-1 overflow-hidden rounded-lg px-2.5 py-2.5 text-left transition-all duration-200 ${
                                 isActive
                                     ? 'bg-neutral-100 text-primary shadow-sm ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-white/10'
                                     : 'text-neutral-400 hover:bg-neutral-50 hover:text-primary dark:text-neutral-500 dark:hover:bg-neutral-800/50'
@@ -166,13 +226,13 @@ export default function ProjectShowcase({ projects, title = 'Recent Projects', d
                             <span className="block text-[9px] font-medium tabular-nums opacity-60">
                                 {String(index + 1).padStart(2, '0')}
                             </span>
-                            <span className="mt-0.5 block truncate text-[11px] font-semibold">
+                            <span className="mt-0.5 block whitespace-nowrap text-[11px] font-semibold">
                                 {project.title}
                             </span>
                         </button>
                     );
                 })}
-            </div>
+            </motion.div>
 
             <div className="mt-3 flex items-center justify-center gap-2 sm:hidden">
                 <button
