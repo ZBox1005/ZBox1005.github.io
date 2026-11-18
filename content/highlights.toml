@@ -28,3 +28,13 @@ description = "A 7B auditor that catches multi-agent failures before the task br
 image = "/highlights/agentforesight-synced.jpg"
 alt = "机器之心 (Synced) article covering AgentForesight"
 href = "https://mp.weixin.qq.com/s/awzMC_bgJxEbRV_XbysqwA"
+
+[[highlights]]
+tag = "Media Coverage"
+date = "Nov 2025"
+venue = "Medium"
+title = "Agent Matrix featured in AI Advances (Medium)"
+description = "“From Chatbots to Clones: The Strange Evolution of AI Autonomy”"
+image = "/highlights/agent-matrix-ai-advances.jpg"
+alt = "AI Advances article “From Chatbots to Clones: The Strange Evolution of AI Autonomy” covering Agent Matrix"
+href = "https://aiadvances.org/from-chatbots-to-clones-the-strange-evolution-of-ai-autonomy-2c0f131645ee"
