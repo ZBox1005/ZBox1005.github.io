@@ -30,6 +30,7 @@ export interface LocaleMessages {
     currently: string;
     active: string;
     onThisPage: string;
+    highlights: string;
     like: string;
     liked: string;
     thanks: string;
@@ -88,6 +89,7 @@ const en: LocaleMessages = {
     currently: 'Currently',
     active: 'Active',
     onThisPage: 'On This Page',
+    highlights: 'Highlights',
     like: 'Like',
     liked: 'Liked',
     thanks: 'Thanks!',
@@ -146,6 +148,7 @@ const zh: LocaleMessages = {
     currently: '当前身份',
     active: '进行中',
     onThisPage: '本页内容',
+    highlights: '近期亮点',
     like: '点赞',
     liked: '已点赞',
     thanks: '感谢支持！',

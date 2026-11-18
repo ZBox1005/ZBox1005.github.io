@@ -9,6 +9,12 @@ research_interests = [
   "ML for Healthcare"
 ]
 
+# Call-out under the roles in the sidebar "Currently" card.
+# Delete this block to remove it; `href` is optional.
+[profile.open_to]
+label = "Open to Summer 2027 internships"
+href = "/files/Boxuan_Zhang_CV.pdf"
+
 [[sections]]
 id = "about"
 type = "markdown"

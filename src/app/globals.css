@@ -24,10 +24,23 @@
 }
 .travel-figure.is-loaded { opacity: 1; transform: none; }
 
+/* Sidebar highlights: the active pagination pill fills up, and its `animationend`
+   is what rotates the next card in — so pausing or removing this animation pauses
+   or disables the auto-rotation too. */
+@keyframes highlight-progress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.highlight-progress {
+  transform-origin: left center;
+  animation: highlight-progress 7s linear both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-slide-down { animation: none; }
   .travel-figure { opacity: 1; transform: none; transition: none; }
+  .highlight-progress { animation: none; }
 }
 
 /* Default to light theme colors - no system preference detection */

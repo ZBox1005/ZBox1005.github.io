@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, type ComponentType } from 'react';
+import { useEffect, useRef, useState, type ComponentType } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import {
@@ -9,11 +9,12 @@ import {
     MapPinIcon
 } from '@heroicons/react/24/outline';
 import { MapPinIcon as MapPinSolidIcon, EnvelopeIcon as EnvelopeSolidIcon } from '@heroicons/react/24/solid';
-import { ChevronRight, Github, Linkedin, Pin } from 'lucide-react';
+import { ArrowUpRight, Briefcase, ChevronRight, Github, Linkedin, Pin } from 'lucide-react';
 import type { SiteConfig } from '@/lib/config';
-import type { CardItem, PageSectionLink } from '@/types/page';
+import type { CardItem, HighlightItem, PageSectionLink, ProfileCallout } from '@/types/page';
 import { useMessages } from '@/lib/i18n/useMessages';
 import { WeChatIcon, XIcon } from '@/components/ui/Icons';
+import Highlights from '@/components/home/Highlights';
 
 // Custom ORCID icon component
 const OrcidIcon = ({ className }: { className?: string }) => (
@@ -27,12 +28,51 @@ const OrcidIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
+/** "Open to …" call-out under the roles in the "Currently" card. */
+function OpenToCallout({ callout, compact = false }: { callout: ProfileCallout; compact?: boolean }) {
+    const className = `group/open flex items-center gap-1.5 rounded-xl border border-accent/25 bg-gradient-to-r from-accent/[0.12] to-accent/[0.03] px-2.5 font-medium leading-snug text-primary transition-colors duration-200 ${
+        compact ? 'mt-2 py-1.5 text-[10.5px]' : 'mt-2.5 py-2 text-[11px]'
+    } ${callout.href ? 'hover:border-accent/45 hover:from-accent/[0.2]' : ''}`;
+    const content = (
+        <>
+            <Briefcase className="h-3.5 w-3.5 flex-shrink-0 text-accent-dark dark:text-accent" />
+            <span className="min-w-0 flex-1 text-balance">{callout.label}</span>
+            {callout.href && (
+                <ArrowUpRight className="h-3.5 w-3.5 flex-shrink-0 text-accent-dark transition-transform duration-200 group-hover/open:-translate-y-0.5 group-hover/open:translate-x-0.5 dark:text-accent" />
+            )}
+        </>
+    );
+
+    if (!callout.href) return <div className={className}>{content}</div>;
+
+    const sameTab = callout.href.startsWith('mailto:') || callout.href.startsWith('#');
+    return (
+        <a
+            href={callout.href}
+            target={sameTab ? undefined : '_blank'}
+            rel={sameTab ? undefined : 'noopener noreferrer'}
+            className={className}
+        >
+            {content}
+        </a>
+    );
+}
+
+/** Matches the `sticky top-8` on the sidebar. */
+const STICKY_TOP = 32;
+/** Breathing room under the sidebar when it is pinned by its bottom edge. */
+const STICKY_BOTTOM_GAP = 24;
+
 interface ProfileProps {
     author: SiteConfig['author'];
     social: SiteConfig['social'];
     features: SiteConfig['features'];
     researchInterests?: string[];
+    /** "Open to …" call-out shown under the roles. */
+    openTo?: ProfileCallout;
     currentRoles?: CardItem[];
+    /** When non-empty, replaces the "On This Page" list in the sidebar card. */
+    highlights?: HighlightItem[];
     sectionLinks?: PageSectionLink[];
     onOpenWeChat?: () => void;
 }
@@ -50,11 +90,16 @@ export default function Profile({
     author,
     social,
     researchInterests = [],
+    openTo,
     currentRoles = [],
+    highlights = [],
     sectionLinks = [],
     onOpenWeChat,
 }: ProfileProps) {
     const messages = useMessages();
+    const showHighlights = highlights.length > 0;
+    const sidebarRef = useRef<HTMLDivElement>(null);
+    const [stickyTop, setStickyTop] = useState<number | null>(null);
 
     const [showAddress, setShowAddress] = useState(false);
     const [isAddressPinned, setIsAddressPinned] = useState(false);
@@ -64,7 +109,7 @@ export default function Profile({
     const [activeSection, setActiveSection] = useState(sectionLinks[0]?.id || '');
 
     useEffect(() => {
-        if (sectionLinks.length === 0) return;
+        if (showHighlights || sectionLinks.length === 0) return;
 
         let animationFrame = 0;
         const updateActiveSection = () => {
@@ -99,7 +144,35 @@ export default function Profile({
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleScroll);
         };
-    }, [sectionLinks]);
+    }, [sectionLinks, showHighlights]);
+
+    // With highlights the sidebar can be taller than the window. A plain `sticky top-8`
+    // would leave its bottom (the highlights) off-screen for the whole scroll, so in
+    // that case pin it by the bottom edge instead: a negative `top` lets the sidebar
+    // scroll up just far enough for its last pixel to come into view, then holds it.
+    useEffect(() => {
+        const sidebar = sidebarRef.current;
+        if (!showHighlights || !sidebar) {
+            setStickyTop(null);
+            return;
+        }
+
+        const desktop = window.matchMedia('(min-width: 1024px)');
+        const update = () => {
+            const room = window.innerHeight - sidebar.offsetHeight - STICKY_BOTTOM_GAP;
+            setStickyTop(desktop.matches && room < STICKY_TOP ? room : null);
+        };
+
+        const observer = new ResizeObserver(update);
+        observer.observe(sidebar);
+        window.addEventListener('resize', update);
+        update();
+
+        return () => {
+            observer.disconnect();
+            window.removeEventListener('resize', update);
+        };
+    }, [showHighlights]);
 
     const socialLinks: SocialLink[] = [
         ...(social.email ? [{
@@ -149,7 +222,9 @@ export default function Profile({
 
     return (
         <motion.div
+            ref={sidebarRef}
             className="sticky top-8 animate-fade-up"
+            style={stickyTop === null ? undefined : { top: stickyTop }}
         >
             {/* Profile Image */}
             <div className="w-64 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
@@ -432,11 +507,18 @@ export default function Profile({
                                 </div>
                             ))}
                         </div>
+                        {openTo && <OpenToCallout callout={openTo} compact />}
+                        {showHighlights && (
+                            <>
+                                <div className="my-3.5 h-px bg-gradient-to-r from-transparent via-neutral-200 to-transparent dark:via-white/10" />
+                                <Highlights items={highlights} title={messages.profile.highlights} compact />
+                            </>
+                        )}
                     </div>
                 </motion.aside>
             )}
 
-            {(currentRoles.length > 0 || sectionLinks.length > 0) && (
+            {(currentRoles.length > 0 || showHighlights || sectionLinks.length > 0) && (
                 <motion.aside
                     whileHover={{ y: -3 }}
                     transition={{ type: 'spring', stiffness: 320, damping: 24 }}
@@ -490,14 +572,19 @@ export default function Profile({
                                         </div>
                                     ))}
                                 </div>
+                                {openTo && <OpenToCallout callout={openTo} />}
                             </div>
                         )}
 
-                        {currentRoles.length > 0 && sectionLinks.length > 0 && (
+                        {currentRoles.length > 0 && (showHighlights || sectionLinks.length > 0) && (
                             <div className="my-4 h-px bg-gradient-to-r from-transparent via-neutral-200 to-transparent dark:via-white/10" />
                         )}
 
-                        {sectionLinks.length > 0 && (
+                        {showHighlights && (
+                            <Highlights items={highlights} title={messages.profile.highlights} />
+                        )}
+
+                        {!showHighlights && sectionLinks.length > 0 && (
                             <nav aria-label={messages.profile.onThisPage}>
                                 <h2 className="mb-2 px-2 text-[11px] font-bold uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
                                     {messages.profile.onThisPage}

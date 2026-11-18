@@ -3,7 +3,7 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem, ProjectItem, ExperiencePageConfig } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem, HighlightItem, ProfileCallout, ProjectItem, ExperiencePageConfig } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 import { resolveExperiencePage } from '@/lib/experience';
 
@@ -86,12 +86,21 @@ function loadCurrentRoles(locale?: string): CardItem[] {
     .slice(0, 2);
 }
 
+/** Sidebar highlights. Empty (file missing, `enabled = false`, or no cards) means the
+ *  sidebar falls back to the "On This Page" list. */
+function loadHighlights(locale?: string): HighlightItem[] {
+  const data = getTomlContent<{ enabled?: boolean; highlights?: HighlightItem[] }>('highlights.toml', locale);
+  if (!data || data.enabled === false) return [];
+  return (data.highlights || []).filter((item) => item.title && item.image);
+}
+
 function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
   const localeConfig = getConfig(locale);
   const enableOnePageMode = localeConfig.features.enable_one_page_mode;
 
-  const aboutConfig = getPageConfig<{ profile?: { research_interests?: string[] }; sections?: SectionConfig[] }>('about', locale);
+  const aboutConfig = getPageConfig<{ profile?: { research_interests?: string[]; open_to?: ProfileCallout }; sections?: SectionConfig[] }>('about', locale);
   const researchInterests = aboutConfig?.profile?.research_interests;
+  const openTo = aboutConfig?.profile?.open_to?.label ? aboutConfig.profile.open_to : undefined;
   const sectionLinks = (aboutConfig?.sections || []).map((section) => ({
     id: section.id,
     label: section.title || section.id,
@@ -170,7 +179,9 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
     features: localeConfig.features,
     enableOnePageMode,
     researchInterests,
+    openTo,
     currentRoles: loadCurrentRoles(locale),
+    highlights: loadHighlights(locale),
     sectionLinks,
     pagesToShow,
   };

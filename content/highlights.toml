@@ -1,0 +1,30 @@
+# Homepage sidebar — "Highlights" panel inside the "Currently" card.
+# It takes the place of the old "On This Page" list.
+#
+#   enabled = false   -> hide this panel and bring "On This Page" back.
+#
+# Cards rotate in the order listed, so put the newest first.
+# Images live in public/highlights/ and are shown at a 3:2 ratio (cropped to fill).
+# Optional fields: tag, date, venue, description, inset (small corner image), href, alt.
+enabled = true
+
+[[highlights]]
+tag = "Invited Talk"
+date = "Nov 2026"
+venue = "NYU Tandon"
+title = "Invited talk at NYC Student Theory & ML Day"
+description = "“Before the Damage Is Done: Auditing Agents While They Run”"
+image = "/highlights/nyu-talk.jpg"
+alt = "Boxuan Zhang giving a talk at NYC Student Theory & ML Day, NYU Tandon"
+inset = "/highlights/nyc-theory-ml-day-poster.jpg"
+href = "https://wp.nyu.edu/courantinstituteofmathematicalsciences-nycstudenttheorydayfall2027/"
+
+[[highlights]]
+tag = "Media Coverage"
+date = "Oct 2026"
+venue = "NeurIPS 2026"
+title = "AgentForesight featured by Synced (机器之心)"
+description = "A 7B auditor that catches multi-agent failures before the task breaks."
+image = "/highlights/agentforesight-synced.jpg"
+alt = "机器之心 (Synced) article covering AgentForesight"
+href = "https://mp.weixin.qq.com/s/awzMC_bgJxEbRV_XbysqwA"

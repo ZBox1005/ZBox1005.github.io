@@ -15,7 +15,7 @@ import CardPage from '@/components/pages/CardPage';
 import ExperiencePage from '@/components/pages/ExperiencePage';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardItem, CardPageConfig, ExperiencePageConfig, PageSectionLink, ProjectItem, PublicationPageConfig, TextPageConfig } from '@/types/page';
+import { CardItem, CardPageConfig, ExperiencePageConfig, HighlightItem, PageSectionLink, ProfileCallout, ProjectItem, PublicationPageConfig, TextPageConfig } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
@@ -44,7 +44,9 @@ export interface HomePageLocaleData {
   features: SiteConfig['features'];
   enableOnePageMode?: boolean;
   researchInterests?: string[];
+  openTo?: ProfileCallout;
   currentRoles: CardItem[];
+  highlights: HighlightItem[];
   sectionLinks: PageSectionLink[];
   pagesToShow: PageData[];
 }
@@ -84,7 +86,9 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
             social={data.social}
             features={data.features}
             researchInterests={data.researchInterests}
+            openTo={data.openTo}
             currentRoles={data.currentRoles}
+            highlights={data.highlights}
             sectionLinks={data.sectionLinks}
             onOpenWeChat={openWeChat}
           />

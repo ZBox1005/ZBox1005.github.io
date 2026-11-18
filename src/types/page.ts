@@ -117,6 +117,27 @@ export interface PageSectionLink {
     label: string;
 }
 
+/** "Open to …" call-out in the sidebar "Currently" card — `[profile.open_to]` in about.toml. */
+export interface ProfileCallout {
+    label: string;
+    href?: string;
+}
+
+/** One card in the sidebar "Highlights" panel — see content/highlights.toml. */
+export interface HighlightItem {
+    title: string;
+    image: string;
+    alt?: string;
+    href?: string;
+    /** Chip over the photo, e.g. "Invited Talk". */
+    tag?: string;
+    date?: string;
+    venue?: string;
+    description?: string;
+    /** Small image pinned to the photo's corner, e.g. an event poster. */
+    inset?: string;
+}
+
 export interface ProjectItem {
     title: string;
     subtitle: string;
